@@ -148,7 +148,15 @@
       position: relative;
       overflow: hidden;
     }
-
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
     .hero-image::before {
       content: "";
       position: absolute;
@@ -498,8 +506,8 @@
       </div>
 
       <div class="hero-image">
-        <span class="image-label">Featured artwork</span>
-      </div>
+  <img src="images/IMG_8154.jpeg" alt="Featured color realism tattoo by Henry D. Flores">
+</div>
 
     </section>
 
