@@ -223,23 +223,45 @@
       color: #66625c;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 22px;
-      align-items: start;
-    }
+  .gallery {
+  column-count: 2;
+  column-gap: 22px;
+  width: 100%;
+}
 
-    .gallery-column {
-      display: grid;
-      gap: 22px;
-    }
+.gallery-column {
+  display: contents;
+}
 
-    .art-card {
-      background: var(--sand);
-      overflow: hidden;
-      position: relative;
-    }
+.art-card {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 22px;
+  break-inside: avoid;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+}
+
+.art-card.large,
+.art-card.medium,
+.art-card.small {
+  min-height: 0;
+  height: auto;
+}
+
+.art-card img {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .gallery {
+    column-count: 1;
+  }
+}
 
     .art-card.large {
       min-height: 700px;
