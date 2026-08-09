@@ -1,690 +1,1296 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Henry D. Flores | Color Realism Tattoo Artist</title>
+<title>Henry D. Flores | Color Realism Tattoo Artist</title>
 
-  <meta
-    name="description"
-    content="Henry D. Flores is a tattoo artist focused on color realism, fantasy and original large-scale tattoo projects."
-  />
+<meta name="description" content="Henry D. Flores – tattoo artist specializing in color realism, fantasy and original custom tattoo projects in České Budějovice and Kirchheim unter Teck.">
 
-  <style>
-    :root {
-      --ivory: #FAF8F3;
-      --graphite: #2F2F2F;
-      --bronze: #8E6A45;
-      --sand: #EFE7DB;
-      --soft-line: rgba(47, 47, 47, 0.16);
-    }
+<meta name="robots" content="index, follow">
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: var(--ivory);
-      color: var(--graphite);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.5;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    /* NAVIGATION */
-
-    .nav {
-      width: 100%;
-      padding: 26px 5vw;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      z-index: 10;
-    }
-
-    .brand {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 18px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 30px;
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    .nav-links a {
-      transition: opacity 0.25s ease;
-    }
-
-    .nav-links a:hover {
-      opacity: 0.55;
-    }
-
-    /* HERO */
-
-    .hero {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      padding: 110px 5vw 60px;
-      gap: 6vw;
-      align-items: center;
-    }
-
-    .hero-copy {
-      max-width: 620px;
-    }
-
-    .eyebrow {
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--bronze);
-      margin-bottom: 28px;
-    }
-
-    h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(58px, 8vw, 122px);
-      font-weight: 400;
-      line-height: 0.88;
-      letter-spacing: -4px;
-    }
-
-    .hero-subtitle {
-      margin-top: 30px;
-      max-width: 470px;
-      font-size: 16px;
-      color: #5d5b57;
-      line-height: 1.8;
-    }
-
-    .hero-meta {
-      margin-top: 38px;
-      display: flex;
-      gap: 28px;
-      flex-wrap: wrap;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    .hero-meta span {
-      padding-bottom: 6px;
-      border-bottom: 1px solid var(--soft-line);
-    }
-
-    .hero-image {
-      height: 72vh;
-      min-height: 520px;
-      background:
-        linear-gradient(
-          145deg,
-          rgba(142, 106, 69, 0.16),
-          rgba(47, 47, 47, 0.07)
-        ),
-        var(--sand);
-      display: flex;
-      align-items: flex-end;
-      padding: 28px;
-      position: relative;
-      overflow: hidden;
-    }
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 42%;
-  display: block;
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
-    .hero-image::before {
-      content: "";
-      position: absolute;
-      width: 55%;
-      height: 70%;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.22);
-      filter: blur(60px);
-      top: 5%;
-      right: -5%;
-    }
-
-    .image-label {
-      position: relative;
-      z-index: 2;
-      font-size: 10px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    /* INTRO */
-
-    .intro {
-      padding: 120px 5vw;
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 10vw;
-      border-top: 1px solid var(--soft-line);
-    }
-
-    .section-number {
-      color: var(--bronze);
-      font-size: 11px;
-      letter-spacing: 2px;
-    }
-
-    .intro h2,
-    .work h2,
-    .about h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-weight: 400;
-      font-size: clamp(42px, 5vw, 76px);
-      line-height: 1;
-    }
-
-    .intro-text {
-      font-size: clamp(22px, 2.6vw, 38px);
-      line-height: 1.35;
-      font-family: Georgia, "Times New Roman", serif;
-      max-width: 850px;
-    }
-
-    /* WORK */
-
-    .work {
-      padding: 110px 5vw;
-      border-top: 1px solid var(--soft-line);
-    }
-
-    .section-heading {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      margin-bottom: 55px;
-      gap: 30px;
-    }
-
-    .section-note {
-      max-width: 300px;
-      font-size: 13px;
-      line-height: 1.7;
-      color: #66625c;
-    }
-
-  .gallery {
-  column-count: 2;
-  column-gap: 22px;
-  width: 100%;
+<style>
+:root{
+  --ivory:#FAF8F3;
+  --graphite:#2F2F2F;
+  --bronze:#8E6A45;
+  --sand:#EFE7DB;
+  --line:rgba(47,47,47,.16);
 }
 
-.gallery-column {
-  display: contents;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-.art-card {
-  display: inline-block;
-  width: 100%;
-  margin: 0 0 22px;
-  break-inside: avoid;
-  overflow: hidden;
-  background: transparent;
-  position: relative;
+html{
+  scroll-behavior:smooth;
 }
 
-.art-card.large,
-.art-card.medium,
-.art-card.small {
-  min-height: 0;
-  height: auto;
+body{
+  background:var(--ivory);
+  color:var(--graphite);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.5;
 }
 
-.art-card img {
-  display: block;
-  width: 100%;
-  height: auto !important;
-  object-fit: contain;
+a{
+  color:inherit;
+  text-decoration:none;
 }
 
-@media (max-width: 700px) {
-  .gallery {
-    column-count: 1;
+img{
+  max-width:100%;
+}
+
+/* NAVIGATION */
+
+.nav{
+  width:100%;
+  padding:26px 5vw;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:relative;
+  z-index:10;
+}
+
+.brand{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:18px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:35px;
+}
+
+.nav-links{
+  display:flex;
+  gap:28px;
+  font-size:10px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.nav-links a:hover{
+  opacity:.55;
+}
+
+.languages{
+  display:flex;
+  gap:14px;
+  font-size:10px;
+  letter-spacing:1px;
+}
+
+.languages button{
+  border:0;
+  background:none;
+  cursor:pointer;
+  color:#777;
+  padding:4px 0;
+}
+
+.languages button.active{
+  color:var(--graphite);
+  border-bottom:1px solid var(--graphite);
+}
+
+/* HERO */
+
+.hero{
+  min-height:90vh;
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  padding:65px 5vw 80px;
+  gap:6vw;
+  align-items:center;
+}
+
+.hero-copy{
+  max-width:620px;
+}
+
+.eyebrow{
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--bronze);
+  margin-bottom:28px;
+}
+
+h1{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(58px,7.5vw,115px);
+  font-weight:400;
+  line-height:.88;
+  letter-spacing:-4px;
+}
+
+.hero-subtitle{
+  margin-top:32px;
+  max-width:500px;
+  font-size:16px;
+  color:#5d5b57;
+  line-height:1.8;
+}
+
+.hero-meta{
+  margin-top:35px;
+  display:flex;
+  gap:28px;
+  flex-wrap:wrap;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
+
+.hero-meta span{
+  padding-bottom:6px;
+  border-bottom:1px solid var(--line);
+}
+
+.hero-buttons{
+  margin-top:38px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  padding:16px 22px;
+  border:1px solid var(--graphite);
+  font-size:10px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  transition:.25s;
+}
+
+.btn-dark{
+  background:var(--graphite);
+  color:white;
+}
+
+.btn:hover{
+  opacity:.7;
+}
+
+.hero-image{
+  height:72vh;
+  min-height:520px;
+  background:var(--sand);
+  overflow:hidden;
+}
+
+.hero-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+
+/* INTRO */
+
+.intro{
+  padding:110px 5vw;
+  display:grid;
+  grid-template-columns:1fr 1.4fr;
+  gap:10vw;
+  border-top:1px solid var(--line);
+}
+
+.section-number{
+  color:var(--bronze);
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.intro-text{
+  font-size:clamp(22px,2.6vw,38px);
+  line-height:1.35;
+  font-family:Georgia,"Times New Roman",serif;
+  max-width:850px;
+}
+
+/* PORTFOLIO */
+
+.work{
+  padding:110px 5vw;
+  border-top:1px solid var(--line);
+}
+
+.section-heading{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  margin-bottom:55px;
+  gap:30px;
+}
+
+.section-heading h2,
+.about h2,
+.book h2,
+.project h2{
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:400;
+  font-size:clamp(42px,5vw,76px);
+  line-height:1;
+  margin-top:12px;
+}
+
+.section-note{
+  max-width:340px;
+  font-size:13px;
+  line-height:1.7;
+  color:#66625c;
+}
+
+.gallery{
+  column-count:2;
+  column-gap:22px;
+  width:100%;
+}
+
+.gallery-column{
+  display:contents;
+}
+
+.art-card{
+  display:inline-block;
+  width:100%;
+  margin:0 0 22px;
+  break-inside:avoid;
+  overflow:hidden;
+}
+
+.art-card img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* BOOK */
+
+.book{
+  padding:120px 5vw;
+  border-top:1px solid var(--line);
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:8vw;
+  align-items:center;
+}
+
+.book-visual{
+  min-height:560px;
+  background:var(--sand);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:50px;
+}
+
+.book-symbol{
+  font-family:Georgia,"Times New Roman",serif;
+  text-align:center;
+}
+
+.book-symbol strong{
+  display:block;
+  font-size:clamp(48px,6vw,90px);
+  font-weight:400;
+  line-height:1;
+}
+
+.book-symbol span{
+  display:block;
+  margin-top:20px;
+  font-size:11px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--bronze);
+}
+
+.book-copy p{
+  margin-top:30px;
+  max-width:620px;
+  font-size:16px;
+  line-height:1.9;
+  color:#5d5b57;
+}
+
+.book-actions{
+  margin-top:32px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+/* ABOUT */
+
+.about{
+  padding:120px 5vw;
+  border-top:1px solid var(--line);
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:8vw;
+  align-items:center;
+}
+
+.about-photo{
+  min-height:600px;
+  position:relative;
+  overflow:hidden;
+  background:var(--sand);
+}
+
+.about-photo img{
+  width:100%;
+  height:100%;
+  min-height:600px;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+
+.about-copy p{
+  margin-top:30px;
+  max-width:620px;
+  font-size:17px;
+  line-height:1.9;
+  color:#5d5b57;
+}
+
+.locations{
+  margin-top:30px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+/* PROJECT FORM */
+
+.project{
+  padding:120px 5vw;
+  border-top:1px solid var(--line);
+}
+
+.project-grid{
+  margin-top:60px;
+  display:grid;
+  grid-template-columns:.75fr 1.25fr;
+  gap:8vw;
+}
+
+.project-info p{
+  max-width:430px;
+  font-size:15px;
+  color:#5d5b57;
+  line-height:1.9;
+}
+
+.contact-direct{
+  margin-top:35px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.contact-direct a{
+  width:max-content;
+  border-bottom:1px solid var(--graphite);
+  font-size:11px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
+form{
+  display:grid;
+  gap:22px;
+}
+
+.form-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+label{
+  display:block;
+  margin-bottom:8px;
+  font-size:9px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+input,
+textarea,
+select{
+  width:100%;
+  border:0;
+  border-bottom:1px solid #aaa;
+  background:transparent;
+  padding:12px 2px;
+  font-family:inherit;
+  font-size:15px;
+  color:var(--graphite);
+  outline:none;
+}
+
+textarea{
+  min-height:120px;
+  resize:vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+  border-bottom-color:var(--graphite);
+}
+
+.form-buttons{
+  margin-top:12px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+button.btn{
+  cursor:pointer;
+}
+
+/* CONTACT */
+
+.contact{
+  padding:120px 5vw;
+  border-top:1px solid var(--line);
+}
+
+.contact-title{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(60px,9vw,140px);
+  line-height:.9;
+  font-weight:400;
+  letter-spacing:-5px;
+  margin-top:20px;
+}
+
+.contact-bottom{
+  margin-top:75px;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:30px;
+}
+
+.contact-links{
+  display:flex;
+  gap:25px;
+  flex-wrap:wrap;
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.contact-links a{
+  border-bottom:1px solid var(--graphite);
+  padding-bottom:4px;
+}
+
+footer{
+  padding:25px 5vw;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:15px;
+  font-size:10px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .nav{
+    align-items:flex-start;
+    gap:20px;
   }
+
+  .nav-right{
+    flex-direction:column;
+    align-items:flex-end;
+    gap:15px;
+  }
+
+  .nav-links{
+    gap:13px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    padding-top:80px;
+  }
+
+  .hero-image{
+    height:70vh;
+  }
+
+  .intro{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .book,
+  .about,
+  .project-grid{
+    grid-template-columns:1fr;
+  }
+
 }
 
-    .art-card.large {
-      min-height: 700px;
-    }
+@media(max-width:700px){
 
-    .art-card.medium {
-      min-height: 470px;
-    }
+  .nav{
+    padding:22px;
+  }
 
-    .art-card.small {
-      min-height: 360px;
-    }
+  .brand{
+    font-size:14px;
+  }
 
-    .placeholder {
-      height: 100%;
-      min-height: inherit;
-      display: flex;
-      align-items: flex-end;
-      padding: 24px;
-      background:
-        radial-gradient(
-          circle at 70% 25%,
-          rgba(255,255,255,0.35),
-          transparent 32%
-        ),
-        linear-gradient(
-          145deg,
-          rgba(142,106,69,0.18),
-          rgba(47,47,47,0.06)
-        );
-    }
+  .nav-links{
+    display:none;
+  }
 
-    .placeholder span {
-      font-size: 10px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
+  .hero,
+  .intro,
+  .work,
+  .book,
+  .about,
+  .project,
+  .contact{
+    padding-left:22px;
+    padding-right:22px;
+  }
 
-    /* ABOUT */
+  h1{
+    letter-spacing:-2px;
+  }
 
-    .about {
-      padding: 120px 5vw;
-      border-top: 1px solid var(--soft-line);
-      display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 8vw;
-      align-items: center;
-    }
+  .hero-image{
+    min-height:460px;
+    height:60vh;
+  }
 
-.about-photo {
-  min-height: 600px;
-  position: relative;
-  overflow: hidden;
-  background: var(--sand);
+  .gallery{
+    column-count:1;
+  }
+
+  .section-heading{
+    display:block;
+  }
+
+  .section-note{
+    margin-top:20px;
+  }
+
+  .book-visual{
+    min-height:420px;
+  }
+
+  .about-photo,
+  .about-photo img{
+    min-height:500px;
+  }
+
+  .form-row{
+    grid-template-columns:1fr;
+  }
+
+  .contact-title{
+    letter-spacing:-2px;
+  }
+
 }
 
-.about-photo img {
-  width: 100%;
-  height: 100%;
-  min-height: 600px;
-  object-fit: cover;
-  object-position: center center;
-  display: block;
-}
-
-    .about-copy p {
-      margin-top: 30px;
-      max-width: 600px;
-      font-size: 17px;
-      line-height: 1.9;
-      color: #5d5b57;
-    }
-
-    /* CONTACT */
-
-    .contact {
-      min-height: 70vh;
-      padding: 120px 5vw;
-      border-top: 1px solid var(--soft-line);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .contact-title {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(60px, 10vw, 150px);
-      line-height: 0.9;
-      font-weight: 400;
-      letter-spacing: -5px;
-    }
-
-    .contact-bottom {
-      margin-top: 80px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-
-    .contact-links {
-      display: flex;
-      gap: 25px;
-      flex-wrap: wrap;
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    .contact-links a {
-      border-bottom: 1px solid var(--graphite);
-      padding-bottom: 4px;
-    }
-
-    footer {
-      padding: 25px 5vw;
-      border-top: 1px solid var(--soft-line);
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 15px;
-      font-size: 10px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 800px) {
-      .nav {
-        padding: 22px 22px;
-      }
-
-      .nav-links {
-        gap: 14px;
-        font-size: 9px;
-      }
-
-      .hero {
-        grid-template-columns: 1fr;
-        padding: 130px 22px 45px;
-      }
-
-      .hero-image {
-        height: 60vh;
-        min-height: 460px;
-      }
-
-      h1 {
-        letter-spacing: -2px;
-      }
-
-      .intro {
-        grid-template-columns: 1fr;
-        padding: 85px 22px;
-        gap: 30px;
-      }
-
-      .work {
-        padding: 85px 22px;
-      }
-
-      .section-heading {
-        display: block;
-      }
-
-      .section-note {
-        margin-top: 20px;
-      }
-
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-
-      .art-card.large,
-      .art-card.medium,
-      .art-card.small {
-        min-height: 520px;
-      }
-
-      .about {
-        grid-template-columns: 1fr;
-        padding: 85px 22px;
-      }
-
-      .about-photo {
-        min-height: 520px;
-      }
-
-      .contact {
-        padding: 90px 22px;
-      }
-
-      .contact-title {
-        letter-spacing: -2px;
-      }
-
-      footer {
-        padding: 25px 22px;
-      }
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <header class="nav">
-    <a class="brand" href="#">Henry D. Flores</a>
+<header class="nav">
 
-    <nav class="nav-links">
-      <a href="#work">Work</a>
-      <a href="#about">Artist</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<a class="brand" href="#">Henry D. Flores</a>
 
-  <main>
+<div class="nav-right">
 
-    <section class="hero">
+<nav class="nav-links">
+<a href="#work" data-i18n="navPortfolio">Portfolio</a>
+<a href="#lixteo">Lixteo</a>
+<a href="#about" data-i18n="navArtist">Umělec</a>
+<a href="#project" data-i18n="navProject">Projekt</a>
+<a href="#contact" data-i18n="navContact">Kontakt</a>
+</nav>
 
-      <div class="hero-copy">
-        <p class="eyebrow">Tattoo Artist · Color Realism</p>
-
-        <h1>Art<br>Beyond<br>Skin.</h1>
-
-        <p class="hero-subtitle">
-          Original tattoo projects built through color, composition
-          and visual storytelling.
-        </p>
-
-        <div class="hero-meta">
-          <span>Color Realism</span>
-          <span>Fantasy</span>
-          <span>Custom Projects</span>
-        </div>
-      </div>
-
-      <div class="hero-image">
-  <img src="images/IMG_8145.jpeg" alt="Featured color realism tattoo by Henry D. Flores">
+<div class="languages">
+<button class="lang active" data-lang="cs">CZ</button>
+<button class="lang" data-lang="en">EN</button>
+<button class="lang" data-lang="de">DE</button>
+<button class="lang" data-lang="es">ES</button>
 </div>
 
-    </section>
+</div>
+</header>
 
+<main>
 
-    <section class="intro">
+<!-- HERO -->
 
-      <div>
-        <span class="section-number">01 / Philosophy</span>
-      </div>
+<section class="hero">
 
-      <p class="intro-text">
-        Each tattoo begins as an individual artwork —
-        designed around the body, the subject and the person who will wear it.
-      </p>
+<div class="hero-copy">
 
-    </section>
+<p class="eyebrow">Tattoo Artist · Color Realism</p>
 
+<h1 data-i18n="heroTitle">
+Umění<br>na kůži.
+</h1>
 
-    <section class="work" id="work">
+<p class="hero-subtitle" data-i18n="heroSubtitle">
+Originální tetovací projekty založené na barvě, kompozici a vizuálním příběhu.
+</p>
 
-      <div class="section-heading">
+<div class="hero-meta">
+<span>Color Realism</span>
+<span>Fantasy</span>
+<span data-i18n="customProjects">Individuální projekty</span>
+</div>
 
-        <div>
-          <span class="section-number">02 / Selected Work</span>
-          <h2>Portfolio</h2>
-        </div>
+<div class="hero-buttons">
 
-        <p class="section-note">
-          A selection of original tattoo projects focused on
-          color realism, fantasy and large-scale composition.
-        </p>
+<a href="#project" class="btn btn-dark" data-i18n="fillForm">
+Vyplnit formulář
+</a>
 
-      </div>
+<a href="#work" class="btn" data-i18n="viewPortfolio">
+Zobrazit portfolio
+</a>
 
-  <div class="gallery">
+</div>
+</div>
 
-  <div class="gallery-column">
+<div class="hero-image">
+<img
+src="images/IMG_8145.jpeg"
+alt="Fantasy color realism tattoo by Henry D. Flores">
+</div>
 
-    <article class="art-card large">
-      <img src="images/IMG_8145.jpeg" alt="Color realism tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
+</section>
 
-    <article class="art-card medium">
-      <img src="images/IMG_8147.jpeg" alt="Color realism tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
+<!-- PHILOSOPHY -->
 
-    <article class="art-card large">
-      <img src="images/IMG_8148.jpeg" alt="Fantasy tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
+<section class="intro">
 
-    <article class="art-card medium">
-      <img src="images/IMG_8149.jpeg" alt="Realistic tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
+<div>
+<span class="section-number" data-i18n="philosophy">
+01 / Filozofie
+</span>
+</div>
 
-    <article class="art-card large">
-      <img src="images/IMG_8150.jpeg" alt="Color tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
+<p class="intro-text" data-i18n="philosophyText">
+Každé tetování začíná jako samostatné umělecké dílo — navržené podle těla, tématu a člověka, který jej bude nosit.
+</p>
 
-    <article class="art-card medium">
-      <img src="images/IMG_8151.jpeg" alt="Custom tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
+</section>
 
-    <article class="art-card large">
-      <img src="images/IMG_8152.jpeg" alt="Color realism tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
+<!-- PORTFOLIO -->
 
-    <article class="art-card medium">
-      <img src="images/IMG_8153.jpeg" alt="Fantasy realism tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
+<section class="work" id="work">
 
-    <article class="art-card large">
-      <img src="images/IMG_8154.jpeg" alt="Large scale tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
+<div class="section-heading">
 
-  </div>
+<div>
+<span class="section-number" data-i18n="selectedWork">
+02 / Vybrané práce
+</span>
 
+<h2 data-i18n="portfolio">
+Portfolio
+</h2>
+</div>
 
-  <div class="gallery-column">
-
-    <article class="art-card medium">
-      <img src="images/IMG_8155.jpeg" alt="Color realism tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
-
-    <article class="art-card large">
-      <img src="images/IMG_8156.jpeg" alt="Animal realism tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
-
-    <article class="art-card medium">
-      <img src="images/IMG_8157.jpeg" alt="Color animal tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
-
-    <article class="art-card large">
-      <img src="images/IMG_8158.jpeg" alt="Fantasy color tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
-
-    <article class="art-card medium">
-      <img src="images/IMG_8159.jpeg" alt="Realism tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
-
-    <article class="art-card large">
-      <img src="images/IMG_8160.jpeg" alt="Custom color tattoo by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
-
-    <article class="art-card medium">
-      <img src="images/IMG_8161.jpeg" alt="Original tattoo artwork by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
-
-    <article class="art-card large">
-      <img src="images/IMG_8163.jpeg" alt="Tattoo portfolio by Henry D. Flores" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </article>
-
-  </div>
+<p class="section-note" data-i18n="portfolioText">
+Výběr originálních tetovacích projektů zaměřených na barevný realismus, fantasy a rozsáhlé kompozice.
+</p>
 
 </div>
 
-    </section>
+<div class="gallery">
 
+<div class="gallery-column">
 
-    <section class="about" id="about">
+<article class="art-card">
+<img src="images/IMG_8147.jpeg" alt="Color realism tattoo by Henry D. Flores">
+</article>
 
-      <div class="about-photo">
-        <span class="image-label">Artist portrait</span>
-      </div>
+<article class="art-card">
+<img src="images/IMG_8148.jpeg" alt="Fantasy tattoo by Henry D. Flores">
+</article>
 
-      <div class="about-copy">
+<article class="art-card">
+<img src="images/IMG_8149.jpeg" alt="Realistic tattoo by Henry D. Flores">
+</article>
 
-        <span class="section-number">03 / Artist</span>
+<article class="art-card">
+<img src="images/IMG_8150.jpeg" alt="Color tattoo by Henry D. Flores">
+</article>
 
-        <h2>Henry<br>D. Flores</h2>
+<article class="art-card">
+<img src="images/IMG_8152.jpeg" alt="Color realism tattoo by Henry D. Flores">
+</article>
 
-        <p>
-          Tattoo artist focused on color realism and original,
-          large-scale projects. Each design is developed individually,
-          combining strong composition, controlled color and
-          visual storytelling.
-        </p>
+<article class="art-card">
+<img src="images/IMG_8153.jpeg" alt="Fantasy realism tattoo by Henry D. Flores">
+</article>
 
-      </div>
+<article class="art-card">
+<img src="images/IMG_8154.jpeg" alt="Large scale tattoo by Henry D. Flores">
+</article>
 
-    </section>
+</div>
 
+<div class="gallery-column">
 
-    <section class="contact" id="contact">
+<article class="art-card">
+<img src="images/IMG_8155.jpeg" alt="Color realism tattoo by Henry D. Flores">
+</article>
 
-      <div>
-        <span class="section-number">04 / Contact</span>
+<article class="art-card">
+<img src="images/IMG_8156.jpeg" alt="Animal realism tattoo by Henry D. Flores">
+</article>
 
-        <h2 class="contact-title">
-          Start a<br>project.
-        </h2>
-      </div>
+<article class="art-card">
+<img src="images/IMG_8157.jpeg" alt="Color animal tattoo by Henry D. Flores">
+</article>
 
-      <div class="contact-bottom">
+<article class="art-card">
+<img src="images/IMG_8158.jpeg" alt="Fantasy color tattoo by Henry D. Flores">
+</article>
 
-        <div class="contact-links">
-          <a href="#">Instagram</a>
-          <a href="#">WhatsApp</a>
-          <a href="#">Email</a>
-        </div>
+<article class="art-card">
+<img src="images/IMG_8159.jpeg" alt="Realism tattoo by Henry D. Flores">
+</article>
 
-        <div>
-          České Budějovice · Czech Republic
-        </div>
+<article class="art-card">
+<img src="images/IMG_8160.jpeg" alt="Custom color tattoo by Henry D. Flores">
+</article>
 
-      </div>
+<article class="art-card">
+<img src="images/IMG_8161.jpeg" alt="Original tattoo artwork by Henry D. Flores">
+</article>
 
-    </section>
+<article class="art-card">
+<img src="images/IMG_8163.jpeg" alt="Tattoo portfolio by Henry D. Flores">
+</article>
 
-  </main>
+</div>
 
-  <footer>
-    <span>© 2026 Henry D. Flores</span>
-    <span>Color Realism · Tattoo Artist</span>
-  </footer>
+</div>
+</section>
+
+<!-- LIXTEO -->
+
+<section class="book" id="lixteo">
+
+<div class="book-visual">
+
+<div class="book-symbol">
+<strong>Lixteo</strong>
+<span data-i18n="bookLabel">Román · Sci-Fi</span>
+</div>
+
+</div>
+
+<div class="book-copy">
+
+<span class="section-number" data-i18n="bookSection">
+03 / Kniha
+</span>
+
+<h2>Lixteo<br>Cazador de emociones</h2>
+
+<p data-i18n="bookText">
+Sci-fi román o emocích, lidské zkušenosti a bytosti, která se je snaží pochopit. Autorský projekt Henryho D. Florese.
+</p>
+
+<p data-i18n="bookAvailability">
+Kniha je v současné době distribuována přímo autorem. Pokud máte zájem o výtisk, kontaktujte mě.
+</p>
+
+<div class="book-actions">
+
+<a
+class="btn btn-dark"
+href="https://wa.me/420720508936?text=Hello%2C%20I%20am%20interested%20in%20Lixteo."
+target="_blank"
+rel="noopener"
+data-i18n="askBook">
+Mám zájem o knihu
+</a>
+
+<a
+class="btn"
+href="mailto:tattooink.henry@gmail.com?subject=Lixteo%20-%20Book%20inquiry"
+data-i18n="email">
+Email
+</a>
+
+</div>
+</div>
+
+</section>
+
+<!-- ARTIST -->
+
+<section class="about" id="about">
+
+<div class="about-photo">
+<img
+src="images/IMG_8151.jpeg"
+alt="Henry D. Flores working as a tattoo artist">
+</div>
+
+<div class="about-copy">
+
+<span class="section-number" data-i18n="artistSection">
+04 / Umělec
+</span>
+
+<h2>Henry<br>D. Flores</h2>
+
+<p data-i18n="artistText">
+Tatér zaměřený na barevný realismus a originální rozsáhlé projekty. Každý návrh vzniká individuálně s důrazem na kompozici, barvu a vizuální vyprávění.
+</p>
+
+<div class="locations">
+<span>České Budějovice · Czech Republic</span>
+<span>Kirchheim unter Teck · Germany</span>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECT -->
+
+<section class="project" id="project">
+
+<span class="section-number" data-i18n="projectSection">
+05 / Váš projekt
+</span>
+
+<h2 data-i18n="projectTitle">
+Řekněte mi o svém nápadu.
+</h2>
+
+<div class="project-grid">
+
+<div class="project-info">
+
+<p data-i18n="projectText">
+Popište svou představu, motiv, umístění a přibližnou velikost tetování. Formulář připraví zprávu, kterou můžete odeslat přes WhatsApp nebo e-mail.
+</p>
+
+<div class="contact-direct">
+
+<a
+href="https://wa.me/420720508936"
+target="_blank"
+rel="noopener">
+WhatsApp · +420 720 508 936
+</a>
+
+<a href="mailto:tattooink.henry@gmail.com">
+tattooink.henry@gmail.com
+</a>
+
+</div>
+</div>
+
+<form id="projectForm">
+
+<div class="form-row">
+
+<div>
+<label for="name" data-i18n="name">Jméno</label>
+<input id="name" type="text" required>
+</div>
+
+<div>
+<label for="location" data-i18n="location">Preferované město</label>
+
+<select id="location">
+<option value="České Budějovice">České Budějovice</option>
+<option value="Kirchheim unter Teck">Kirchheim unter Teck</option>
+</select>
+
+</div>
+</div>
+
+<div class="form-row">
+
+<div>
+<label for="placement" data-i18n="placement">Umístění tetování</label>
+<input id="placement" type="text">
+</div>
+
+<div>
+<label for="size" data-i18n="size">Přibližná velikost</label>
+<input id="size" type="text">
+</div>
+
+</div>
+
+<div>
+<label for="idea" data-i18n="idea">Popište svůj nápad</label>
+<textarea id="idea" required></textarea>
+</div>
+
+<div class="form-buttons">
+
+<button
+type="button"
+class="btn btn-dark"
+onclick="sendWhatsApp()"
+data-i18n="sendWhatsApp">
+Odeslat přes WhatsApp
+</button>
+
+<button
+type="button"
+class="btn"
+onclick="sendEmail()"
+data-i18n="sendEmail">
+Odeslat e-mailem
+</button>
+
+</div>
+
+</form>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div>
+
+<span class="section-number" data-i18n="contactSection">
+06 / Kontakt
+</span>
+
+<h2 class="contact-title" data-i18n="contactTitle">
+Začněme<br>projekt.
+</h2>
+
+</div>
+
+<div class="contact-bottom">
+
+<div class="contact-links">
+
+<a
+href="https://www.instagram.com/henry_d._flores/"
+target="_blank"
+rel="noopener">
+Instagram
+</a>
+
+<a
+href="https://wa.me/420720508936"
+target="_blank"
+rel="noopener">
+WhatsApp
+</a>
+
+<a href="mailto:tattooink.henry@gmail.com">
+Email
+</a>
+
+</div>
+
+<div>
+České Budějovice · Kirchheim unter Teck
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+
+<span>© 2026 Henry D. Flores</span>
+
+<span>
+Color Realism · Tattoo Artist
+</span>
+
+</footer>
+
+<script>
+
+const translations={
+
+cs:{
+navPortfolio:"Portfolio",
+navArtist:"Umělec",
+navProject:"Projekt",
+navContact:"Kontakt",
+heroTitle:"Umění<br>na kůži.",
+heroSubtitle:"Originální tetovací projekty založené na barvě, kompozici a vizuálním příběhu.",
+customProjects:"Individuální projekty",
+fillForm:"Vyplnit formulář",
+viewPortfolio:"Zobrazit portfolio",
+philosophy:"01 / Filozofie",
+philosophyText:"Každé tetování začíná jako samostatné umělecké dílo — navržené podle těla, tématu a člověka, který jej bude nosit.",
+selectedWork:"02 / Vybrané práce",
+portfolio:"Portfolio",
+portfolioText:"Výběr originálních tetovacích projektů zaměřených na barevný realismus, fantasy a rozsáhlé kompozice.",
+bookLabel:"Román · Sci-Fi",
+bookSection:"03 / Kniha",
+bookText:"Sci-fi román o emocích, lidské zkušenosti a bytosti, která se je snaží pochopit. Autorský projekt Henryho D. Florese.",
+bookAvailability:"Kniha je v současné době distribuována přímo autorem. Pokud máte zájem o výtisk, kontaktujte mě.",
+askBook:"Mám zájem o knihu",
+email:"Email",
+artistSection:"04 / Umělec",
+artistText:"Tatér zaměřený na barevný realismus a originální rozsáhlé projekty. Každý návrh vzniká individuálně s důrazem na kompozici, barvu a vizuální vyprávění.",
+projectSection:"05 / Váš projekt",
+projectTitle:"Řekněte mi o svém nápadu.",
+projectText:"Popište svou představu, motiv, umístění a přibližnou velikost tetování. Formulář připraví zprávu, kterou můžete odeslat přes WhatsApp nebo e-mail.",
+name:"Jméno",
+location:"Preferované město",
+placement:"Umístění tetování",
+size:"Přibližná velikost",
+idea:"Popište svůj nápad",
+sendWhatsApp:"Odeslat přes WhatsApp",
+sendEmail:"Odeslat e-mailem",
+contactSection:"06 / Kontakt",
+contactTitle:"Začněme<br>projekt."
+},
+
+en:{
+navPortfolio:"Portfolio",
+navArtist:"Artist",
+navProject:"Project",
+navContact:"Contact",
+heroTitle:"Art<br>Beyond<br>Skin.",
+heroSubtitle:"Original tattoo projects built through color, composition and visual storytelling.",
+customProjects:"Custom Projects",
+fillForm:"Fill out the form",
+viewPortfolio:"View portfolio",
+philosophy:"01 / Philosophy",
+philosophyText:"Each tattoo begins as an individual artwork — designed around the body, the subject and the person who will wear it.",
+selectedWork:"02 / Selected Work",
+portfolio:"Portfolio",
+portfolioText:"A selection of original tattoo projects focused on color realism, fantasy and large-scale composition.",
+bookLabel:"Novel · Sci-Fi",
+bookSection:"03 / Book",
+bookText:"A science-fiction novel about emotions, human experience and a being trying to understand them. An original project by Henry D. Flores.",
+bookAvailability:"The book is currently distributed directly by the author. If you are interested in a copy, contact me.",
+askBook:"I'm interested in the book",
+email:"Email",
+artistSection:"04 / Artist",
+artistText:"Tattoo artist focused on color realism and original large-scale projects. Each design is developed individually, combining strong composition, controlled color and visual storytelling.",
+projectSection:"05 / Your project",
+projectTitle:"Tell me about your idea.",
+projectText:"Describe your idea, subject, placement and approximate tattoo size. The form will prepare a message that you can send through WhatsApp or email.",
+name:"Name",
+location:"Preferred city",
+placement:"Tattoo placement",
+size:"Approximate size",
+idea:"Describe your idea",
+sendWhatsApp:"Send through WhatsApp",
+sendEmail:"Send by email",
+contactSection:"06 / Contact",
+contactTitle:"Start a<br>project."
+},
+
+de:{
+navPortfolio:"Portfolio",
+navArtist:"Künstler",
+navProject:"Projekt",
+navContact:"Kontakt",
+heroTitle:"Kunst<br>auf der Haut.",
+heroSubtitle:"Individuelle Tattoo-Projekte, entwickelt durch Farbe, Komposition und visuelles Storytelling.",
+customProjects:"Individuelle Projekte",
+fillForm:"Formular ausfüllen",
+viewPortfolio:"Portfolio ansehen",
+philosophy:"01 / Philosophie",
+philosophyText:"Jedes Tattoo beginnt als individuelles Kunstwerk — entwickelt für den Körper, das Motiv und die Person, die es tragen wird.",
+selectedWork:"02 / Ausgewählte Arbeiten",
+portfolio:"Portfolio",
+portfolioText:"Eine Auswahl individueller Tattoo-Projekte mit Schwerpunkt auf Color Realism, Fantasy und großformatigen Kompositionen.",
+bookLabel:"Roman · Sci-Fi",
+bookSection:"03 / Buch",
+bookText:"Ein Science-Fiction-Roman über Emotionen, menschliche Erfahrungen und ein Wesen, das versucht, sie zu verstehen. Ein eigenes Projekt von Henry D. Flores.",
+bookAvailability:"Das Buch wird derzeit direkt vom Autor vertrieben. Wenn Sie an einem Exemplar interessiert sind, kontaktieren Sie mich.",
+askBook:"Ich interessiere mich für das Buch",
+email:"E-Mail",
+artistSection:"04 / Künstler",
+artistText:"Tätowierer mit Schwerpunkt auf Color Realism und individuellen großformatigen Projekten. Jedes Design wird individuell entwickelt und verbindet Komposition, kontrollierte Farbe und visuelles Storytelling.",
+projectSection:"05 / Ihr Projekt",
+projectTitle:"Erzählen Sie mir von Ihrer Idee.",
+projectText:"Beschreiben Sie Ihre Idee, das Motiv, die Körperstelle und die ungefähre Größe. Das Formular erstellt eine Nachricht, die Sie über WhatsApp oder E-Mail senden können.",
+name:"Name",
+location:"Bevorzugte Stadt",
+placement:"Körperstelle",
+size:"Ungefähre Größe",
+idea:"Beschreiben Sie Ihre Idee",
+sendWhatsApp:"Über WhatsApp senden",
+sendEmail:"Per E-Mail senden",
+contactSection:"06 / Kontakt",
+contactTitle:"Starten wir<br>ein Projekt."
+},
+
+es:{
+navPortfolio:"Portafolio",
+navArtist:"Artista",
+navProject:"Proyecto",
+navContact:"Contacto",
+heroTitle:"Arte<br>más allá<br>de la piel.",
+heroSubtitle:"Proyectos de tatuaje originales construidos mediante color, composición y narrativa visual.",
+customProjects:"Proyectos personalizados",
+fillForm:"Llenar formulario",
+viewPortfolio:"Ver portafolio",
+philosophy:"01 / Filosofía",
+philosophyText:"Cada tatuaje comienza como una obra individual — diseñada alrededor del cuerpo, el tema y la persona que la llevará.",
+selectedWork:"02 / Trabajos seleccionados",
+portfolio:"Portafolio",
+portfolioText:"Una selección de proyectos originales enfocados en realismo a color, fantasía y composiciones de gran formato.",
+bookLabel:"Novela · Ciencia ficción",
+bookSection:"03 / Libro",
+bookText:"Una novela de ciencia ficción sobre las emociones, la experiencia humana y un ser que intenta comprenderlas. Un proyecto original de Henry D. Flores.",
+bookAvailability:"Actualmente el libro es distribuido directamente por el autor. Si estás interesado en adquirir un ejemplar, contáctame.",
+askBook:"Me interesa el libro",
+email:"Email",
+artistSection:"04 / Artista",
+artistText:"Tatuador enfocado en realismo a color y proyectos originales de gran formato. Cada diseño se desarrolla individualmente, combinando composición, control del color y narrativa visual.",
+projectSection:"05 / Tu proyecto",
+projectTitle:"Cuéntame tu idea.",
+projectText:"Describe tu idea, temática, ubicación y tamaño aproximado del tatuaje. El formulario preparará un mensaje que podrás enviar por WhatsApp o email.",
+name:"Nombre",
+location:"Ciudad preferida",
+placement:"Zona del tatuaje",
+size:"Tamaño aproximado",
+idea:"Describe tu idea",
+sendWhatsApp:"Enviar por WhatsApp",
+sendEmail:"Enviar por email",
+contactSection:"06 / Contacto",
+contactTitle:"Comencemos<br>un proyecto."
+}
+
+};
+
+function setLanguage(lang){
+
+document.documentElement.lang=lang;
+
+document.querySelectorAll("[data-i18n]").forEach(element=>{
+
+const key=element.dataset.i18n;
+
+if(translations[lang][key]){
+element.innerHTML=translations[lang][key];
+}
+
+});
+
+document.querySelectorAll(".lang").forEach(button=>{
+button.classList.toggle("active",button.dataset.lang===lang);
+});
+
+localStorage.setItem("language",lang);
+
+}
+
+document.querySelectorAll(".lang").forEach(button=>{
+
+button.addEventListener("click",()=>{
+setLanguage(button.dataset.lang);
+});
+
+});
+
+const savedLanguage=localStorage.getItem("language") || "cs";
+setLanguage(savedLanguage);
+
+function buildMessage(){
+
+const name=document.getElementById("name").value.trim();
+const location=document.getElementById("location").value;
+const placement=document.getElementById("placement").value.trim();
+const size=document.getElementById("size").value.trim();
+const idea=document.getElementById("idea").value.trim();
+
+return(
+"Hello Henry,\n\n"+
+"My name: "+name+"\n"+
+"Preferred city: "+location+"\n"+
+"Tattoo placement: "+placement+"\n"+
+"Approximate size: "+size+"\n\n"+
+"My tattoo idea:\n"+idea
+);
+
+}
+
+function sendWhatsApp(){
+
+const message=buildMessage();
+
+const url=
+"https://wa.me/420720508936?text="+
+encodeURIComponent(message);
+
+window.open(url,"_blank");
+
+}
+
+function sendEmail(){
+
+const message=buildMessage();
+
+const subject=
+encodeURIComponent("Tattoo project inquiry");
+
+const body=
+encodeURIComponent(message);
+
+window.location.href=
+"mailto:tattooink.henry@gmail.com?subject="+
+subject+
+"&body="+
+body;
+
+}
+
+</script>
 
 </body>
 </html>
