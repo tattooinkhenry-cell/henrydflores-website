@@ -788,3 +788,143 @@ footer{
     font-size: 9px;
   }
 }
+/* =========================================
+   FOOTER FINAL — SOCIAL ICONS + CLEANUP
+   ========================================= */
+
+/* Oculta cualquier footer antiguo y conserva site-footer */
+body > footer:not(.site-footer) {
+  display: none !important;
+}
+
+/* Footer principal */
+.site-footer {
+  width: 100%;
+  border-top: 1px solid #ddd8cf;
+  background: #faf8f3;
+  padding: 34px 5%;
+  box-sizing: border-box;
+}
+
+.footer-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  letter-spacing: 0.22em;
+  color: #292929;
+  white-space: nowrap;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #292929;
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 0.17em;
+  transition: opacity 0.2s ease;
+}
+
+.footer-social a:hover {
+  opacity: 0.55;
+}
+
+/* Instagram */
+.footer-social a[href*="instagram"]::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+
+  background-color: currentColor;
+
+  -webkit-mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-3.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+
+  mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-3.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+/* Facebook */
+.footer-social a[href*="facebook"]::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+
+  background-color: currentColor;
+
+  -webkit-mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M13.5 22v-9h3l.5-3h-3.5V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7v3h3v9h3.5z'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+
+  mask:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M13.5 22v-9h3l.5-3h-3.5V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7v3h3v9h3.5z'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+.footer-copy {
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: #77736d;
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   FOOTER — MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+  .site-footer {
+    padding: 30px 22px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+  }
+
+  .footer-name {
+    font-size: 13px;
+  }
+
+  .footer-social {
+    gap: 14px;
+  }
+
+  .footer-social a {
+    font-size: 10px;
+    gap: 6px;
+  }
+
+  .footer-social a::before {
+    width: 13px !important;
+    height: 13px !important;
+  }
+
+  .footer-copy {
+    font-size: 8px;
+  }
+}
