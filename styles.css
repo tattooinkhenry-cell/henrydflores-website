@@ -518,11 +518,9 @@ textarea{
   width:100%;
   max-width:1400px;
   margin:0 auto;
-
   display:flex;
   justify-content:space-between;
   align-items:center;
-
   gap:30px;
 }
 
@@ -545,13 +543,10 @@ textarea{
   display:inline-flex;
   align-items:center;
   gap:7px;
-
   color:var(--graphite);
   text-decoration:none;
-
   font-size:10px;
   letter-spacing:.17em;
-
   transition:opacity .2s ease;
 }
 
@@ -564,17 +559,12 @@ textarea{
   margin:0 4px;
 }
 
-
-/* SVG ICONS ONLY */
-
 .social-icon{
   width:14px;
   height:14px;
-
   fill:none;
   stroke:currentColor;
   stroke-width:1.5;
-
   flex:0 0 auto;
 }
 
@@ -586,7 +576,6 @@ textarea{
 .facebook-icon{
   width:13px;
   height:13px;
-
   fill:currentColor;
   stroke:none;
 }
@@ -643,16 +632,67 @@ textarea{
 
 @media(max-width:700px){
 
-  .nav{
-    padding:20px 22px;
+  /*
+    Encabezado móvil:
+    primera fila = nombre e idiomas
+    segunda fila = navegación desplazable
+  */
+
+  header.nav{
+    height:auto;
+    min-height:0;
+    padding:18px 20px 12px;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    grid-template-areas:
+      "brand languages"
+      "links links";
+    align-items:center;
+    gap:12px 18px;
   }
 
-  .nav-links{
+  header.nav > .brand{
+    grid-area:brand;
+    min-width:0;
+    font-size:15px;
+    white-space:nowrap;
+  }
+
+  header.nav > .nav-right{
+    display:contents;
+  }
+
+  header.nav .lang-switch{
+    grid-area:languages;
+    display:flex;
+    justify-self:end;
+    justify-content:flex-end;
+    gap:5px;
+  }
+
+  header.nav .nav-links{
+    grid-area:links;
+    display:flex;
+    width:100%;
+    gap:20px;
+    padding:10px 0 3px;
+    overflow-x:auto;
+    white-space:nowrap;
+    border-top:1px solid var(--line);
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  header.nav .nav-links::-webkit-scrollbar{
     display:none;
   }
 
-  .brand{
-    font-size:15px;
+  header.nav .nav-links a{
+    display:block;
+    flex:0 0 auto;
+    font-size:9px;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
   }
 
   .hero,
@@ -720,9 +760,7 @@ textarea{
     display:flex;
     flex-direction:column;
     gap:0;
-
     min-height:auto;
-
     padding:42px 20px;
   }
 
@@ -738,11 +776,9 @@ textarea{
 
   .home-image{
     order:2;
-
     width:100%;
     height:auto;
     min-height:0;
-
     margin-top:30px;
     overflow:hidden;
   }
@@ -756,10 +792,8 @@ textarea{
 
   .hero-actions{
     order:3;
-
     width:100%;
     margin-top:18px;
-
     display:grid;
     grid-template-columns:1fr;
     gap:10px;
@@ -787,31 +821,24 @@ textarea{
   .home-tags{
     display:flex;
     flex-wrap:wrap;
-
     margin-top:25px;
-
     gap:14px 23px;
   }
 
   .home-tags span{
     font-size:9px;
     letter-spacing:1.5px;
-
     padding-bottom:5px;
   }
 
   .hero-actions .btn{
     width:100%;
     min-height:54px;
-
     padding:16px;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     text-align:center;
-
     font-size:9px;
     letter-spacing:1.4px;
   }
@@ -827,9 +854,7 @@ textarea{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-
     text-align:center;
-
     gap:18px;
   }
 
@@ -858,68 +883,6 @@ textarea{
 
   .footer-copy{
     font-size:8px;
-  }
-
-}
-/* ========================================
-   NAVEGACIÓN MÓVIL
-======================================== */
-
-@media (max-width:700px){
-
-  .nav{
-    height:auto !important;
-    min-height:96px;
-    padding:18px 20px 12px;
-    display:grid !important;
-    grid-template-columns:minmax(0,1fr) auto;
-    align-items:center;
-    gap:14px 18px;
-  }
-
-  .brand{
-    grid-column:1;
-    white-space:nowrap;
-  }
-
-  .nav-right{
-    display:contents !important;
-  }
-
-  .lang-switch{
-    grid-column:2;
-    display:flex;
-    justify-content:flex-end;
-    gap:14px;
-  }
-
-  .nav-links{
-    grid-column:1 / -1;
-    display:flex !important;
-    width:100%;
-    gap:22px;
-    padding:12px 0 4px;
-    overflow-x:auto;
-    white-space:nowrap;
-    border-top:1px solid rgba(47,47,47,.16);
-    scrollbar-width:none;
-    -webkit-overflow-scrolling:touch;
-  }
-
-  .nav-links::-webkit-scrollbar{
-    display:none;
-  }
-
-  .nav-links a{
-    display:block !important;
-    flex:0 0 auto;
-    font-size:9px;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-  }
-
-  .home-hero{
-    padding-top:170px !important;
   }
 
 }
