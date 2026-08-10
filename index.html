@@ -426,10 +426,7 @@
 
 <header class="nav">
 
-  <a
-    class="brand"
-    href="index.html"
-  >
+  <a class="brand" href="index.html">
     HENRY D. FLORES
   </a>
 
@@ -438,17 +435,11 @@
 
     <nav class="nav-links">
 
-      <a
-        href="index.html"
-        data-i18n="navHome"
-      >
+      <a href="index.html" data-i18n="navHome">
         Domů
       </a>
 
-      <a
-        href="portfolio.html"
-        data-i18n="navPortfolio"
-      >
+      <a href="portfolio.html" data-i18n="navPortfolio">
         Portfolio
       </a>
 
@@ -456,24 +447,15 @@
         Lixteo
       </a>
 
-      <a
-        href="artist.html"
-        data-i18n="navArtist"
-      >
+      <a href="artist.html" data-i18n="navArtist">
         Umělec
       </a>
 
-      <a
-        href="project.html"
-        data-i18n="navProject"
-      >
+      <a href="project.html" data-i18n="navProject">
         Projekt
       </a>
 
-      <a
-        href="contact.html"
-        data-i18n="navContact"
-      >
+      <a href="contact.html" data-i18n="navContact">
         Kontakt
       </a>
 
@@ -482,35 +464,19 @@
 
     <div class="lang-switch">
 
-      <button
-        class="lang-btn"
-        id="lang-cs"
-        onclick="setLanguage('cs')"
-      >
+      <button class="lang-btn" id="lang-cs" onclick="setLanguage('cs')">
         CZ
       </button>
 
-      <button
-        class="lang-btn"
-        id="lang-en"
-        onclick="setLanguage('en')"
-      >
+      <button class="lang-btn" id="lang-en" onclick="setLanguage('en')">
         EN
       </button>
 
-      <button
-        class="lang-btn"
-        id="lang-de"
-        onclick="setLanguage('de')"
-      >
+      <button class="lang-btn" id="lang-de" onclick="setLanguage('de')">
         DE
       </button>
 
-      <button
-        class="lang-btn"
-        id="lang-es"
-        onclick="setLanguage('es')"
-      >
+      <button class="lang-btn" id="lang-es" onclick="setLanguage('es')">
         ES
       </button>
 
@@ -519,7 +485,6 @@
   </div>
 
 </header>
-
 
 
 <main>
@@ -535,27 +500,18 @@
 
       <div class="home-copy">
 
-        <p
-          class="eyebrow"
-          data-i18n="heroEyebrow"
-        >
+        <p class="eyebrow" data-i18n="heroEyebrow">
           TATTOO ARTIST · COLOR REALISM
         </p>
 
 
-        <h1
-          class="home-title"
-          data-i18n-html="heroTitle"
-        >
+        <h1 class="home-title" data-i18n-html="heroTitle">
           Umění<br>
           na kůži.
         </h1>
 
 
-        <p
-          class="home-subtitle"
-          data-i18n="heroSubtitle"
-        >
+        <p class="home-subtitle" data-i18n="heroSubtitle">
           Originální tetovací projekty založené
           na barvě, kompozici a vizuálním příběhu.
         </p>
@@ -600,7 +556,6 @@
 
       </div>
 
-
     </div>
 
 
@@ -613,9 +568,7 @@
 
     </div>
 
-
   </section>
-
 
 
   <!-- PORTFOLIO -->
@@ -629,10 +582,7 @@
 
       <div>
 
-        <p
-          class="eyebrow"
-          data-i18n="portfolioNumber"
-        >
+        <p class="eyebrow" data-i18n="portfolioNumber">
           01 / VYBRANÉ PRÁCE
         </p>
 
@@ -722,7 +672,6 @@
   </section>
 
 
-
   <!-- ARTIST -->
 
   <section class="home-artist">
@@ -741,10 +690,7 @@
 
     <div class="home-artist-copy">
 
-      <p
-        class="eyebrow"
-        data-i18n="artistNumber"
-      >
+      <p class="eyebrow" data-i18n="artistNumber">
         02 / UMĚLEC
       </p>
 
@@ -776,9 +722,7 @@
 
     </div>
 
-
   </section>
-
 
 
   <!-- PROJECT -->
@@ -788,16 +732,11 @@
 
     <div>
 
-      <p
-        class="eyebrow"
-        data-i18n="projectNumber"
-      >
+      <p class="eyebrow" data-i18n="projectNumber">
         03 / VÁŠ PROJEKT
       </p>
 
-      <h2
-        data-i18n-html="projectTitle"
-      >
+      <h2 data-i18n-html="projectTitle">
         Máte nápad?<br>
         Pojďme ho vytvořit.
       </h2>
@@ -836,33 +775,15 @@
 
     </div>
 
-
   </section>
 
 
 </main>
 
 
-
-<footer>
-
-  <span>
-    © 2026 Henry D. Flores
-  </span>
-
-  <span>
-    Color Realism · Fantasy · Custom Tattoo Art
-  </span>
-
-</footer>
-
-
-
 <script>
 
-
 const translations = {
-
 
   cs: {
 
@@ -1102,24 +1023,18 @@ const translations = {
 };
 
 
-
 function setLanguage(language){
 
-  localStorage.setItem(
-    "language",
-    language
-  );
+  localStorage.setItem("language", language);
 
-  document.documentElement.lang =
-    language;
+  document.documentElement.lang = language;
 
 
   document
     .querySelectorAll("[data-i18n]")
     .forEach(element => {
 
-      const key =
-        element.dataset.i18n;
+      const key = element.dataset.i18n;
 
       if(
         translations[language] &&
@@ -1158,9 +1073,7 @@ function setLanguage(language){
     .querySelectorAll(".lang-btn")
     .forEach(button => {
 
-      button.classList.remove(
-        "active"
-      );
+      button.classList.remove("active");
 
     });
 
@@ -1173,61 +1086,108 @@ function setLanguage(language){
 
   if(active){
 
-    active.classList.add(
-      "active"
-    );
+    active.classList.add("active");
 
   }
 
 }
 
 
-
 const savedLanguage =
-  localStorage.getItem(
-    "language"
-  ) || "cs";
+  localStorage.getItem("language") || "cs";
 
 
-setLanguage(
-  savedLanguage
-);
-
+setLanguage(savedLanguage);
 
 </script>
 
+
 <footer class="site-footer">
+
   <div class="footer-inner">
 
     <div class="footer-name">
       HENRY D. FLORES
     </div>
 
+
     <div class="footer-social">
+
       <a
         href="https://www.instagram.com/henry_d._flores/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Instagram"
       >
-        INSTAGRAM
+
+        <svg
+          class="social-icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <rect
+            x="3"
+            y="3"
+            width="18"
+            height="18"
+            rx="5"
+            ry="5"
+          ></rect>
+
+          <circle
+            cx="12"
+            cy="12"
+            r="4"
+          ></circle>
+
+          <circle
+            cx="17.5"
+            cy="6.5"
+            r="1"
+            class="social-dot"
+          ></circle>
+        </svg>
+
+        <span>INSTAGRAM</span>
+
       </a>
 
-      <span>·</span>
+
+      <span class="social-separator">·</span>
+
 
       <a
         href="https://www.facebook.com/pinturaenlapiel"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Facebook"
       >
-        FACEBOOK
+
+        <svg
+          class="social-icon facebook-icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            d="M14 8h3V4.5c-.5-.1-1.8-.2-3.4-.2-3.3 0-5.6 2-5.6 5.8V13H4v4h4v7h5v-7h3.5l.6-4H13v-2.5C13 9.3 13.4 8 14 8z"
+          ></path>
+        </svg>
+
+        <span>FACEBOOK</span>
+
       </a>
+
     </div>
+
 
     <div class="footer-copy">
       © 2026 HENRY D. FLORES
     </div>
 
   </div>
+
 </footer>
+
+
 </body>
 </html>
