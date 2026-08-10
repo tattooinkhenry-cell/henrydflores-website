@@ -965,3 +965,15 @@ body > footer:not(.site-footer) {
   content:none !important;
   display:none !important;
 }
+/* =========================================
+   FIX DEFINITIVO — ICONOS SOCIALES DUPLICADOS
+   ========================================= */
+
+.footer-social a::before,
+.footer-social a[href*="instagram"]::before,
+.footer-social a[href*="facebook"]::before {
+  content: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
