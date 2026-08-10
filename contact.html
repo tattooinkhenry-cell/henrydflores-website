@@ -235,10 +235,21 @@
 
     <div class="lang-switch">
 
-      <button class="lang-btn" id="lang-cs" onclick="setLanguage('cs')">CZ</button>
-      <button class="lang-btn" id="lang-en" onclick="setLanguage('en')">EN</button>
-      <button class="lang-btn" id="lang-de" onclick="setLanguage('de')">DE</button>
-      <button class="lang-btn" id="lang-es" onclick="setLanguage('es')">ES</button>
+      <button class="lang-btn" id="lang-cs" onclick="setLanguage('cs')">
+        CZ
+      </button>
+
+      <button class="lang-btn" id="lang-en" onclick="setLanguage('en')">
+        EN
+      </button>
+
+      <button class="lang-btn" id="lang-de" onclick="setLanguage('de')">
+        DE
+      </button>
+
+      <button class="lang-btn" id="lang-es" onclick="setLanguage('es')">
+        ES
+      </button>
 
     </div>
 
@@ -283,7 +294,7 @@
             id="whatsappDirect"
             href="#"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             +420 720 508 936
           </a>
@@ -317,9 +328,27 @@
             class="contact-value"
             href="https://www.instagram.com/henry_d._flores/"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             @henry_d._flores
+          </a>
+
+        </div>
+
+
+        <div class="contact-row">
+
+          <span class="contact-label">
+            Facebook
+          </span>
+
+          <a
+            class="contact-value"
+            href="https://www.facebook.com/pinturaenlapiel"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Henry D. Flores
           </a>
 
         </div>
@@ -335,11 +364,17 @@
 
       <div>
 
-        <h2 class="contact-side-title" data-i18n="projectTitle">
+        <h2
+          class="contact-side-title"
+          data-i18n="projectTitle"
+        >
           Máte nápad na nový projekt?
         </h2>
 
-        <p class="contact-side-text" data-i18n="projectText">
+        <p
+          class="contact-side-text"
+          data-i18n="projectText"
+        >
           Nejlepší způsob, jak začít, je vyplnit krátký formulář.
           Napište mi svou představu, umístění a přibližnou velikost.
         </p>
@@ -350,7 +385,10 @@
 
           <div class="contact-location">
 
-            <span class="contact-country" data-i18n="czechRepublic">
+            <span
+              class="contact-country"
+              data-i18n="czechRepublic"
+            >
               ČESKÁ REPUBLIKA
             </span>
 
@@ -363,7 +401,10 @@
 
           <div class="contact-location">
 
-            <span class="contact-country" data-i18n="germany">
+            <span
+              class="contact-country"
+              data-i18n="germany"
+            >
               NĚMECKO
             </span>
 
@@ -407,12 +448,6 @@
 </main>
 
 
-<footer>
-  <span>© 2026 Henry D. Flores</span>
-  <span>Color Realism · Tattoo Artist</span>
-</footer>
-
-
 <script>
 
 const translations = {
@@ -429,7 +464,7 @@ const translations = {
     title:"Spojme se.",
 
     intro:
-      "Pokud máte nápad na tetování, chcete se zeptat na dostupnost nebo potřebujete další informace, můžete mě kontaktovat přes WhatsApp, e-mail nebo Instagram.",
+      "Pokud máte nápad na tetování, chcete se zeptat na dostupnost nebo potřebujete další informace, můžete mě kontaktovat přes WhatsApp, e-mail, Instagram nebo Facebook.",
 
     projectTitle:
       "Máte nápad na nový projekt?",
@@ -461,7 +496,7 @@ const translations = {
     title:"Let's connect.",
 
     intro:
-      "If you have a tattoo idea, would like to ask about availability or need more information, you can contact me through WhatsApp, email or Instagram.",
+      "If you have a tattoo idea, would like to ask about availability or need more information, you can contact me through WhatsApp, email, Instagram or Facebook.",
 
     projectTitle:
       "Have an idea for a new project?",
@@ -493,7 +528,7 @@ const translations = {
     title:"Lass uns sprechen.",
 
     intro:
-      "Wenn du eine Tattoo-Idee hast, nach verfügbaren Terminen fragen möchtest oder weitere Informationen benötigst, kannst du mich über WhatsApp, E-Mail oder Instagram kontaktieren.",
+      "Wenn du eine Tattoo-Idee hast, nach verfügbaren Terminen fragen möchtest oder weitere Informationen benötigst, kannst du mich über WhatsApp, E-Mail, Instagram oder Facebook kontaktieren.",
 
     projectTitle:
       "Hast du eine Idee für ein neues Projekt?",
@@ -525,7 +560,7 @@ const translations = {
     title:"Hablemos.",
 
     intro:
-      "Si tienes una idea para un tatuaje, quieres consultar disponibilidad o necesitas más información, puedes contactarme por WhatsApp, email o Instagram.",
+      "Si tienes una idea para un tatuaje, quieres consultar disponibilidad o necesitas más información, puedes contactarme por WhatsApp, email, Instagram o Facebook.",
 
     projectTitle:
       "¿Tienes una idea para un nuevo proyecto?",
@@ -549,28 +584,59 @@ const translations = {
 
 function setLanguage(language){
 
-  localStorage.setItem("language", language);
-  document.documentElement.lang = language;
+  localStorage.setItem(
+    "language",
+    language
+  );
 
-  document.querySelectorAll("[data-i18n]").forEach(element => {
+  document.documentElement.lang =
+    language;
 
-    const key = element.dataset.i18n;
 
-    if(translations[language][key]){
-      element.textContent = translations[language][key];
-    }
+  document
+    .querySelectorAll("[data-i18n]")
+    .forEach(element => {
 
-  });
+      const key =
+        element.dataset.i18n;
 
-  document.querySelectorAll(".lang-btn").forEach(button => {
-    button.classList.remove("active");
-  });
+      if(
+        translations[language] &&
+        translations[language][key]
+      ){
 
-  const active = document.getElementById("lang-" + language);
+        element.textContent =
+          translations[language][key];
+
+      }
+
+    });
+
+
+  document
+    .querySelectorAll(".lang-btn")
+    .forEach(button => {
+
+      button.classList.remove(
+        "active"
+      );
+
+    });
+
+
+  const active =
+    document.getElementById(
+      "lang-" + language
+    );
 
   if(active){
-    active.classList.add("active");
+
+    active.classList.add(
+      "active"
+    );
+
   }
+
 
   document.getElementById("whatsappDirect").href =
     "https://wa.me/420720508936?text=" +
@@ -581,41 +647,109 @@ function setLanguage(language){
 }
 
 
-setLanguage(localStorage.getItem("language") || "cs");
+setLanguage(
+  localStorage.getItem("language") || "cs"
+);
 
 </script>
+
+
 <footer class="site-footer">
+
   <div class="footer-inner">
 
     <div class="footer-name">
       HENRY D. FLORES
     </div>
 
+
     <div class="footer-social">
+
       <a
         href="https://www.instagram.com/henry_d._flores/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Instagram"
       >
-        INSTAGRAM
+
+        <svg
+          class="social-icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+
+          <rect
+            x="3"
+            y="3"
+            width="18"
+            height="18"
+            rx="5"
+            ry="5"
+          ></rect>
+
+          <circle
+            cx="12"
+            cy="12"
+            r="4"
+          ></circle>
+
+          <circle
+            cx="17.5"
+            cy="6.5"
+            r="1"
+            class="social-dot"
+          ></circle>
+
+        </svg>
+
+        <span>
+          INSTAGRAM
+        </span>
+
       </a>
 
-      <span>·</span>
+
+      <span class="social-separator">
+        ·
+      </span>
+
 
       <a
         href="https://www.facebook.com/pinturaenlapiel"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Facebook"
       >
-        FACEBOOK
+
+        <svg
+          class="social-icon facebook-icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+
+          <path
+            d="M14 8h3V4.5c-.5-.1-1.8-.2-3.4-.2-3.3 0-5.6 2-5.6 5.8V13H4v4h4v7h5v-7h3.5l.6-4H13v-2.5C13 9.3 13.4 8 14 8z"
+          ></path>
+
+        </svg>
+
+        <span>
+          FACEBOOK
+        </span>
+
       </a>
+
     </div>
+
 
     <div class="footer-copy">
       © 2026 HENRY D. FLORES
     </div>
 
   </div>
+
 </footer>
+
+
 </body>
 </html>
