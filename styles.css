@@ -960,3 +960,8 @@ body > footer:not(.site-footer) {
 .social-separator {
   margin: 0 4px;
 }
+/* FIX — evitar iconos sociales duplicados */
+.footer-social a::before{
+  content:none !important;
+  display:none !important;
+}
