@@ -2,287 +2,255 @@
 <html lang="cs">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kontakt | Henry D. Flores</title>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Contact | Henry D. Flores</title>
 
   <meta
     name="description"
-    content="Contact Henry D. Flores for color realism, fantasy and custom tattoo projects in České Budějovice, Czech Republic and Kirchheim unter Teck, Germany."
+    content="Contact Henry D. Flores for tattoo projects in České Budějovice and Kirchheim unter Teck."
   >
 
   <link rel="stylesheet" href="styles.css">
 
   <style>
 
-    .contact-page {
-      min-height: calc(100vh - 100px);
-      padding: 160px 5vw 100px;
+    .contact-page{
+      min-height:calc(100vh - 100px);
+      padding:100px 5vw;
     }
 
-    .contact-layout {
-      max-width: 1250px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: .8fr 1.2fr;
-      gap: 9vw;
-      align-items: start;
+    .contact-layout{
+      max-width:1250px;
+      margin:0 auto;
+
+      display:grid;
+      grid-template-columns:.8fr 1.2fr;
+
+      gap:9vw;
     }
 
-    .contact-number {
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: #8E6A45;
-      margin-bottom: 25px;
+    .contact-number{
+      margin-bottom:25px;
+
+      font-size:11px;
+      letter-spacing:3px;
+
+      text-transform:uppercase;
+
+      color:#8E6A45;
     }
 
-    .contact-title {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(58px, 7vw, 100px);
-      line-height: .95;
-      font-weight: 400;
-      color: #2F2F2F;
-      margin: 0 0 35px;
+    .contact-title{
+      margin:0 0 35px;
+
+      font-family:Georgia,"Times New Roman",serif;
+
+      font-size:clamp(58px,7vw,100px);
+
+      line-height:.95;
+
+      font-weight:400;
     }
 
-    .contact-intro {
-      max-width: 580px;
-      font-size: 17px;
-      line-height: 1.9;
-      color: #5D5B57;
+    .contact-intro{
+      max-width:580px;
+
+      font-size:17px;
+
+      line-height:1.9;
+
+      color:#5D5B57;
     }
 
-    .contact-details {
-      margin-top: 50px;
-      border-top: 1px solid rgba(47,47,47,.15);
+    .contact-details{
+      margin-top:50px;
+
+      border-top:
+        1px solid rgba(47,47,47,.15);
     }
 
-    .contact-row {
-      padding: 25px 0;
-      border-bottom: 1px solid rgba(47,47,47,.15);
+    .contact-row{
+      padding:25px 0;
+
+      border-bottom:
+        1px solid rgba(47,47,47,.15);
     }
 
-    .contact-label {
-      display: block;
-      margin-bottom: 10px;
-      font-size: 10px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #8E6A45;
+    .contact-label{
+      display:block;
+
+      margin-bottom:10px;
+
+      font-size:10px;
+
+      letter-spacing:2px;
+
+      text-transform:uppercase;
+
+      color:#8E6A45;
     }
 
-    .contact-value {
-      font-size: 17px;
-      color: #2F2F2F;
-      text-decoration: none;
-      line-height: 1.6;
+    .contact-value{
+      font-size:17px;
     }
 
-    .contact-value:hover {
-      opacity: .6;
+    .contact-side{
+      min-height:560px;
+
+      background:#EFE7DB;
+
+      padding:65px;
+
+      display:flex;
+
+      flex-direction:column;
+
+      justify-content:space-between;
     }
 
-    .contact-side {
-      background: #EFE7DB;
-      padding: 65px;
-      min-height: 560px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    .contact-side-title{
+      margin:0 0 30px;
+
+      font-family:Georgia,"Times New Roman",serif;
+
+      font-size:clamp(38px,4vw,58px);
+
+      line-height:1.05;
+
+      font-weight:400;
     }
 
-    .contact-side-title {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(38px, 4vw, 58px);
-      line-height: 1.05;
-      font-weight: 400;
-      margin: 0 0 30px;
-      color: #2F2F2F;
+    .contact-side-text{
+      max-width:500px;
+
+      font-size:16px;
+
+      line-height:1.9;
+
+      color:#5D5B57;
     }
 
-    .contact-side-text {
-      font-size: 16px;
-      line-height: 1.9;
-      color: #5D5B57;
-      max-width: 500px;
+    .contact-location{
+      padding:22px 0;
+
+      border-top:
+        1px solid rgba(47,47,47,.15);
     }
 
-    .locations {
-      margin-top: 45px;
+    .contact-country{
+      display:block;
+
+      margin-bottom:7px;
+
+      font-size:10px;
+
+      letter-spacing:2px;
+
+      text-transform:uppercase;
+
+      color:#8E6A45;
     }
 
-    .location {
-      padding: 22px 0;
-      border-top: 1px solid rgba(47,47,47,.15);
+    .contact-city{
+      font-family:Georgia,"Times New Roman",serif;
+
+      font-size:25px;
     }
 
-    .location:last-child {
-      border-bottom: 1px solid rgba(47,47,47,.15);
-    }
+    @media(max-width:850px){
 
-    .location-country {
-      display: block;
-      margin-bottom: 7px;
-      font-size: 10px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #8E6A45;
-    }
-
-    .location-city {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 25px;
-      color: #2F2F2F;
-    }
-
-    .contact-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 45px;
-    }
-
-    .contact-button {
-      display: inline-block;
-      padding: 18px 25px;
-      border: 1px solid #2F2F2F;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 10px;
-      cursor: pointer;
-      transition: opacity .25s ease;
-    }
-
-    .contact-button:hover {
-      opacity: .65;
-    }
-
-    .contact-button.primary {
-      background: #2F2F2F;
-      color: #FAF8F3;
-    }
-
-    .contact-button.secondary {
-      background: transparent;
-      color: #2F2F2F;
-    }
-
-    .language-switch {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .language-switch button {
-      background: transparent;
-      border: 0;
-      padding: 0 0 4px;
-      cursor: pointer;
-      color: #77736E;
-      font-size: 10px;
-      letter-spacing: 1px;
-    }
-
-    .language-switch button.active {
-      color: #2F2F2F;
-      border-bottom: 1px solid #2F2F2F;
-    }
-
-    @media (max-width: 850px) {
-
-      .contact-page {
-        padding: 120px 6vw 70px;
+      .contact-layout{
+        grid-template-columns:1fr;
       }
 
-      .contact-layout {
-        grid-template-columns: 1fr;
-        gap: 60px;
+      .contact-side{
+        min-height:auto;
       }
 
-      .contact-side {
-        min-height: auto;
-        padding: 40px 30px;
+    }
+
+    @media(max-width:700px){
+
+      .contact-page{
+        padding:60px 20px 75px;
       }
 
-      .contact-actions {
-        flex-direction: column;
-        align-items: flex-start;
+      .contact-side{
+        padding:35px 25px;
       }
 
     }
 
   </style>
+
 </head>
 
 
 <body>
 
 
-<header class="site-header">
+<header class="nav">
 
   <a class="brand" href="index.html">
     HENRY D. FLORES
   </a>
 
+  <div class="nav-right">
 
-  <nav class="nav">
+    <nav class="nav-links">
 
-    <a href="portfolio.html" data-i18n="navPortfolio">
-      Portfolio
-    </a>
+      <a href="index.html" data-i18n="navHome">
+        Domů
+      </a>
 
-    <a href="lixteo.html">
-      Lixteo
-    </a>
+      <a href="portfolio.html" data-i18n="navPortfolio">
+        Portfolio
+      </a>
 
-    <a href="artist.html" data-i18n="navArtist">
-      Umělec
-    </a>
+      <a href="lixteo.html">
+        Lixteo
+      </a>
 
-    <a href="project.html" data-i18n="navProject">
-      Projekt
-    </a>
+      <a href="artist.html" data-i18n="navArtist">
+        Umělec
+      </a>
 
-    <a href="contact.html" data-i18n="navContact">
-      Kontakt
-    </a>
+      <a href="project.html" data-i18n="navProject">
+        Projekt
+      </a>
+
+      <a href="contact.html" data-i18n="navContact">
+        Kontakt
+      </a>
+
+    </nav>
 
 
-    <div class="language-switch">
+    <div class="lang-switch">
 
-      <button type="button" data-lang="cs" class="active">
-        CZ
-      </button>
-
-      <button type="button" data-lang="en">
-        EN
-      </button>
-
-      <button type="button" data-lang="de">
-        DE
-      </button>
-
-      <button type="button" data-lang="es">
-        ES
-      </button>
+      <button class="lang-btn" id="lang-cs" onclick="setLanguage('cs')">CZ</button>
+      <button class="lang-btn" id="lang-en" onclick="setLanguage('en')">EN</button>
+      <button class="lang-btn" id="lang-de" onclick="setLanguage('de')">DE</button>
+      <button class="lang-btn" id="lang-es" onclick="setLanguage('es')">ES</button>
 
     </div>
 
-  </nav>
+  </div>
 
 </header>
-
 
 
 <main class="contact-page">
 
   <div class="contact-layout">
 
-
-    <!-- CONTACT INFORMATION -->
 
     <section>
 
@@ -363,8 +331,6 @@
 
 
 
-    <!-- PROJECT / LOCATIONS -->
-
     <section class="contact-side">
 
       <div>
@@ -376,33 +342,32 @@
         <p class="contact-side-text" data-i18n="projectText">
           Nejlepší způsob, jak začít, je vyplnit krátký formulář.
           Napište mi svou představu, umístění a přibližnou velikost.
-          Pomůže mi to lépe pochopit projekt ještě před první zprávou.
         </p>
 
 
-        <div class="locations">
+        <div style="margin-top:45px;">
 
 
-          <div class="location">
+          <div class="contact-location">
 
-            <span class="location-country" data-i18n="czechRepublic">
+            <span class="contact-country" data-i18n="czechRepublic">
               ČESKÁ REPUBLIKA
             </span>
 
-            <span class="location-city">
+            <span class="contact-city">
               České Budějovice
             </span>
 
           </div>
 
 
-          <div class="location">
+          <div class="contact-location">
 
-            <span class="location-country" data-i18n="germany">
+            <span class="contact-country" data-i18n="germany">
               NĚMECKO
             </span>
 
-            <span class="location-city">
+            <span class="contact-city">
               Kirchheim unter Teck
             </span>
 
@@ -414,10 +379,10 @@
       </div>
 
 
-      <div class="contact-actions">
+      <div class="actions">
 
         <a
-          class="contact-button primary"
+          class="btn primary"
           href="project.html"
           data-i18n="projectButton"
         >
@@ -425,8 +390,7 @@
         </a>
 
         <a
-          class="contact-button secondary"
-          id="emailButton"
+          class="btn"
           href="mailto:tattooink.henry@gmail.com"
           data-i18n="emailButton"
         >
@@ -443,37 +407,26 @@
 </main>
 
 
-
 <footer>
-
-  <span>
-    © 2026 Henry D. Flores
-  </span>
-
-  <span>
-    Color Realism · Tattoo Artist
-  </span>
-
+  <span>© 2026 Henry D. Flores</span>
+  <span>Color Realism · Tattoo Artist</span>
 </footer>
-
 
 
 <script>
 
-
 const translations = {
-
 
   cs: {
 
-    navPortfolio: "Portfolio",
-    navArtist: "Umělec",
-    navProject: "Projekt",
-    navContact: "Kontakt",
+    navHome:"Domů",
+    navPortfolio:"Portfolio",
+    navArtist:"Umělec",
+    navProject:"Projekt",
+    navContact:"Kontakt",
 
-    section: "05 / KONTAKT",
-
-    title: "Spojme se.",
+    section:"05 / KONTAKT",
+    title:"Spojme se.",
 
     intro:
       "Pokud máte nápad na tetování, chcete se zeptat na dostupnost nebo potřebujete další informace, můžete mě kontaktovat přes WhatsApp, e-mail nebo Instagram.",
@@ -482,19 +435,13 @@ const translations = {
       "Máte nápad na nový projekt?",
 
     projectText:
-      "Nejlepší způsob, jak začít, je vyplnit krátký formulář. Napište mi svou představu, umístění a přibližnou velikost. Pomůže mi to lépe pochopit projekt ještě před první zprávou.",
+      "Nejlepší způsob, jak začít, je vyplnit krátký formulář. Napište mi svou představu, umístění a přibližnou velikost.",
 
-    czechRepublic:
-      "ČESKÁ REPUBLIKA",
+    czechRepublic:"ČESKÁ REPUBLIKA",
+    germany:"NĚMECKO",
 
-    germany:
-      "NĚMECKO",
-
-    projectButton:
-      "VYPLNIT FORMULÁŘ",
-
-    emailButton:
-      "NAPSAT E-MAIL",
+    projectButton:"VYPLNIT FORMULÁŘ",
+    emailButton:"NAPSAT E-MAIL",
 
     whatsappMessage:
       "Dobrý den Henry, chtěl/a bych se zeptat na tetování."
@@ -504,14 +451,14 @@ const translations = {
 
   en: {
 
-    navPortfolio: "Portfolio",
-    navArtist: "Artist",
-    navProject: "Project",
-    navContact: "Contact",
+    navHome:"Home",
+    navPortfolio:"Portfolio",
+    navArtist:"Artist",
+    navProject:"Project",
+    navContact:"Contact",
 
-    section: "05 / CONTACT",
-
-    title: "Let's connect.",
+    section:"05 / CONTACT",
+    title:"Let's connect.",
 
     intro:
       "If you have a tattoo idea, would like to ask about availability or need more information, you can contact me through WhatsApp, email or Instagram.",
@@ -520,19 +467,13 @@ const translations = {
       "Have an idea for a new project?",
 
     projectText:
-      "The best way to begin is by completing the short project form. Tell me about your idea, placement and approximate size. This helps me understand the project before our first conversation.",
+      "The best way to begin is by completing the short project form. Tell me about your idea, placement and approximate size.",
 
-    czechRepublic:
-      "CZECH REPUBLIC",
+    czechRepublic:"CZECH REPUBLIC",
+    germany:"GERMANY",
 
-    germany:
-      "GERMANY",
-
-    projectButton:
-      "FILL OUT THE FORM",
-
-    emailButton:
-      "SEND AN EMAIL",
+    projectButton:"FILL OUT THE FORM",
+    emailButton:"SEND AN EMAIL",
 
     whatsappMessage:
       "Hello Henry, I'd like to ask you about a tattoo project."
@@ -542,14 +483,14 @@ const translations = {
 
   de: {
 
-    navPortfolio: "Portfolio",
-    navArtist: "Künstler",
-    navProject: "Projekt",
-    navContact: "Kontakt",
+    navHome:"Start",
+    navPortfolio:"Portfolio",
+    navArtist:"Künstler",
+    navProject:"Projekt",
+    navContact:"Kontakt",
 
-    section: "05 / KONTAKT",
-
-    title: "Lass uns sprechen.",
+    section:"05 / KONTAKT",
+    title:"Lass uns sprechen.",
 
     intro:
       "Wenn du eine Tattoo-Idee hast, nach verfügbaren Terminen fragen möchtest oder weitere Informationen benötigst, kannst du mich über WhatsApp, E-Mail oder Instagram kontaktieren.",
@@ -558,19 +499,13 @@ const translations = {
       "Hast du eine Idee für ein neues Projekt?",
 
     projectText:
-      "Am besten beginnst du mit dem kurzen Projektformular. Beschreibe deine Idee, die gewünschte Körperstelle und die ungefähre Größe. So kann ich dein Projekt bereits vor unserem ersten Gespräch besser verstehen.",
+      "Am besten beginnst du mit dem kurzen Projektformular. Beschreibe deine Idee, die gewünschte Körperstelle und die ungefähre Größe.",
 
-    czechRepublic:
-      "TSCHECHISCHE REPUBLIK",
+    czechRepublic:"TSCHECHISCHE REPUBLIK",
+    germany:"DEUTSCHLAND",
 
-    germany:
-      "DEUTSCHLAND",
-
-    projectButton:
-      "FORMULAR AUSFÜLLEN",
-
-    emailButton:
-      "E-MAIL SENDEN",
+    projectButton:"FORMULAR AUSFÜLLEN",
+    emailButton:"E-MAIL SENDEN",
 
     whatsappMessage:
       "Hallo Henry, ich möchte mich nach einem Tattoo-Projekt erkundigen."
@@ -580,14 +515,14 @@ const translations = {
 
   es: {
 
-    navPortfolio: "Portafolio",
-    navArtist: "Artista",
-    navProject: "Proyecto",
-    navContact: "Contacto",
+    navHome:"Inicio",
+    navPortfolio:"Portafolio",
+    navArtist:"Artista",
+    navProject:"Proyecto",
+    navContact:"Contacto",
 
-    section: "05 / CONTACTO",
-
-    title: "Hablemos.",
+    section:"05 / CONTACTO",
+    title:"Hablemos.",
 
     intro:
       "Si tienes una idea para un tatuaje, quieres consultar disponibilidad o necesitas más información, puedes contactarme por WhatsApp, email o Instagram.",
@@ -596,19 +531,13 @@ const translations = {
       "¿Tienes una idea para un nuevo proyecto?",
 
     projectText:
-      "La mejor manera de comenzar es llenar el breve formulario del proyecto. Cuéntame tu idea, la zona del cuerpo y el tamaño aproximado. Esto me permite comprender mejor el proyecto antes de nuestra primera conversación.",
+      "La mejor manera de comenzar es llenar el breve formulario del proyecto. Cuéntame tu idea, la zona del cuerpo y el tamaño aproximado.",
 
-    czechRepublic:
-      "REPÚBLICA CHECA",
+    czechRepublic:"REPÚBLICA CHECA",
+    germany:"ALEMANIA",
 
-    germany:
-      "ALEMANIA",
-
-    projectButton:
-      "LLENAR EL FORMULARIO",
-
-    emailButton:
-      "ENVIAR EMAIL",
+    projectButton:"LLENAR EL FORMULARIO",
+    emailButton:"ENVIAR EMAIL",
 
     whatsappMessage:
       "Hola Henry, quisiera consultarte sobre un proyecto de tatuaje."
@@ -618,104 +547,43 @@ const translations = {
 };
 
 
+function setLanguage(language){
 
-let currentLanguage =
-  localStorage.getItem("language") || "cs";
+  localStorage.setItem("language", language);
+  document.documentElement.lang = language;
 
+  document.querySelectorAll("[data-i18n]").forEach(element => {
 
+    const key = element.dataset.i18n;
 
-function setLanguage(language) {
-
-  currentLanguage = language;
-
-  localStorage.setItem(
-    "language",
-    language
-  );
-
-  document.documentElement.lang =
-    language;
-
-
-  document
-    .querySelectorAll("[data-i18n]")
-    .forEach(element => {
-
-      const key =
-        element.dataset.i18n;
-
-      if (
-        translations[language] &&
-        translations[language][key]
-      ) {
-
-        element.textContent =
-          translations[language][key];
-
-      }
-
-    });
-
-
-  document
-    .querySelectorAll("[data-lang]")
-    .forEach(button => {
-
-      button.classList.toggle(
-        "active",
-        button.dataset.lang === language
-      );
-
-    });
-
-
-  updateWhatsApp();
-
-}
-
-
-
-function updateWhatsApp() {
-
-  const message =
-    translations[currentLanguage]
-      .whatsappMessage;
-
-
-  document
-    .getElementById("whatsappDirect")
-    .href =
-      "https://wa.me/420720508936?text=" +
-      encodeURIComponent(message);
-
-}
-
-
-
-document
-  .querySelectorAll("[data-lang]")
-  .forEach(button => {
-
-    button.addEventListener(
-      "click",
-      function() {
-
-        setLanguage(
-          this.dataset.lang
-        );
-
-      }
-    );
+    if(translations[language][key]){
+      element.textContent = translations[language][key];
+    }
 
   });
 
+  document.querySelectorAll(".lang-btn").forEach(button => {
+    button.classList.remove("active");
+  });
+
+  const active = document.getElementById("lang-" + language);
+
+  if(active){
+    active.classList.add("active");
+  }
+
+  document.getElementById("whatsappDirect").href =
+    "https://wa.me/420720508936?text=" +
+    encodeURIComponent(
+      translations[language].whatsappMessage
+    );
+
+}
 
 
-setLanguage(currentLanguage);
-
+setLanguage(localStorage.getItem("language") || "cs");
 
 </script>
-
 
 </body>
 </html>
