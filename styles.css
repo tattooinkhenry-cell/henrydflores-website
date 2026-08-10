@@ -928,3 +928,35 @@ body > footer:not(.site-footer) {
     font-size: 8px;
   }
 }
+/* SOCIAL ICONS — FOOTER */
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.social-icon {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  flex-shrink: 0;
+}
+
+.social-icon .social-dot {
+  fill: currentColor;
+  stroke: none;
+}
+
+.facebook-icon {
+  fill: currentColor;
+  stroke: none;
+  width: 13px;
+  height: 13px;
+}
+
+.social-separator {
+  margin: 0 4px;
+}
