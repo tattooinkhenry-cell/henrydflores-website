@@ -9,12 +9,98 @@
 
   <meta
     name="description"
-    content="Henry D. Flores — tattoo artist specializing in color realism, fantasy and original large-scale tattoo projects in České Budějovice and Kirchheim unter Teck."
+    content="Henry D. Flores — tattoo artist specializing in color realism, fantasy and original custom tattoo projects in České Budějovice and Kirchheim unter Teck."
   >
 
-  <meta name="robots" content="index, follow">
-
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+
+    .home-hero{
+      min-height:100vh;
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:6vw;
+      align-items:center;
+      padding:140px 5vw 70px;
+    }
+
+    .home-copy{
+      max-width:620px;
+    }
+
+    .home-title{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(72px,8vw,118px);
+      font-weight:400;
+      line-height:.82;
+      letter-spacing:-4px;
+      margin:0;
+    }
+
+    .home-subtitle{
+      max-width:500px;
+      margin-top:34px;
+      font-size:16px;
+      line-height:1.8;
+      color:#5d5b57;
+    }
+
+    .home-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:28px;
+      margin-top:38px;
+      font-size:10px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+    }
+
+    .home-tags span{
+      padding-bottom:7px;
+      border-bottom:1px solid rgba(47,47,47,.16);
+    }
+
+    .home-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:42px;
+    }
+
+    .home-image{
+      height:72vh;
+      min-height:560px;
+      overflow:hidden;
+    }
+
+    .home-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center center;
+      display:block;
+    }
+
+    @media(max-width:850px){
+
+      .home-hero{
+        grid-template-columns:1fr;
+        padding:125px 22px 55px;
+      }
+
+      .home-image{
+        height:62vh;
+        min-height:480px;
+      }
+
+      .home-title{
+        letter-spacing:-2px;
+      }
+
+    }
+
+  </style>
 </head>
 
 
@@ -27,15 +113,11 @@
     HENRY D. FLORES
   </a>
 
-
   <div class="nav-right">
 
     <nav class="nav-links">
 
-      <a
-        href="portfolio.html"
-        data-i18n="navPortfolio"
-      >
+      <a href="portfolio.html" data-i18n="navPortfolio">
         Portfolio
       </a>
 
@@ -43,24 +125,15 @@
         Lixteo
       </a>
 
-      <a
-        href="artist.html"
-        data-i18n="navArtist"
-      >
+      <a href="artist.html" data-i18n="navArtist">
         Umělec
       </a>
 
-      <a
-        href="project.html"
-        data-i18n="navProject"
-      >
+      <a href="project.html" data-i18n="navProject">
         Projekt
       </a>
 
-      <a
-        href="contact.html"
-        data-i18n="navContact"
-      >
+      <a href="contact.html" data-i18n="navContact">
         Kontakt
       </a>
 
@@ -109,15 +182,12 @@
 
 
 
-<main class="page">
+<main>
+
+  <section class="home-hero">
 
 
-  <!-- HERO -->
-
-  <section class="hero">
-
-
-    <div class="hero-copy">
+    <div class="home-copy">
 
       <p
         class="eyebrow"
@@ -128,6 +198,7 @@
 
 
       <h1
+        class="home-title"
         data-i18n-html="heroTitle"
       >
         Umění<br>
@@ -136,7 +207,7 @@
 
 
       <p
-        class="lead"
+        class="home-subtitle"
         data-i18n="heroSubtitle"
       >
         Originální tetovací projekty založené na barvě,
@@ -144,7 +215,24 @@
       </p>
 
 
-      <div class="actions">
+      <div class="home-tags">
+
+        <span>
+          COLOR REALISM
+        </span>
+
+        <span>
+          FANTASY
+        </span>
+
+        <span data-i18n="customProjects">
+          INDIVIDUÁLNÍ PROJEKTY
+        </span>
+
+      </div>
+
+
+      <div class="home-actions">
 
         <a
           class="btn primary"
@@ -169,7 +257,7 @@
 
 
 
-    <div class="hero-image">
+    <div class="home-image">
 
       <img
         src="images/IMG_8145.jpeg"
@@ -181,226 +269,20 @@
 
   </section>
 
-
-
-  <!-- THREE MAIN AREAS -->
-
-  <section class="cards">
-
-
-    <!-- PORTFOLIO -->
-
-    <article class="card">
-
-      <div>
-
-        <p class="eyebrow">
-          01
-        </p>
-
-        <h3 data-i18n="portfolioCardTitle">
-          Portfolio
-        </h3>
-
-        <p data-i18n="portfolioCardText">
-          Výběr originálních projektů zaměřených na
-          color realism, fantasy a velkoformátové kompozice.
-        </p>
-
-      </div>
-
-
-      <div class="actions">
-
-        <a
-          class="btn"
-          href="portfolio.html"
-          data-i18n="discoverButton"
-        >
-          ZJISTIT VÍCE
-        </a>
-
-      </div>
-
-    </article>
-
-
-
-    <!-- ARTIST -->
-
-    <article class="card">
-
-      <div>
-
-        <p class="eyebrow">
-          02
-        </p>
-
-        <h3>
-          Henry D. Flores
-        </h3>
-
-        <p data-i18n="artistCardText">
-          Příběh mezi vědou, tetováním,
-          malbou, cestováním a psaním.
-        </p>
-
-      </div>
-
-
-      <div class="actions">
-
-        <a
-          class="btn"
-          href="artist.html"
-          data-i18n="artistButton"
-        >
-          POZNAT HENRYHO
-        </a>
-
-      </div>
-
-    </article>
-
-
-
-    <!-- LIXTEO -->
-
-    <article class="card">
-
-      <div>
-
-        <p class="eyebrow">
-          03
-        </p>
-
-        <h3>
-          Lixteo
-        </h3>
-
-        <p data-i18n="lixteoCardText">
-          Sci-fi román o emocích,
-          lidské zkušenosti a snaze porozumět tomu,
-          co z nás dělá lidi.
-        </p>
-
-      </div>
-
-
-      <div class="actions">
-
-        <a
-          class="btn"
-          href="lixteo.html"
-          data-i18n="bookButton"
-        >
-          OBJEVIT KNIHU
-        </a>
-
-      </div>
-
-    </article>
-
-
-  </section>
-
-
-
-  <!-- CONTACT CTA -->
-
-  <section class="page-head">
-
-    <p
-      class="eyebrow"
-      data-i18n="contactNumber"
-    >
-      04 / VÁŠ PROJEKT
-    </p>
-
-
-    <h1
-      data-i18n-html="contactTitle"
-    >
-      Máte nápad?<br>
-      Pojďme ho vytvořit.
-    </h1>
-
-
-    <p
-      class="lead"
-      data-i18n="contactText"
-    >
-      Pokud máte představu o tetování,
-      pošlete mi základní informace o projektu.
-    </p>
-
-
-    <div class="actions">
-
-      <a
-        class="btn primary"
-        href="project.html"
-        data-i18n="contactProject"
-      >
-        VYPLNIT FORMULÁŘ
-      </a>
-
-
-      <a
-        class="btn"
-        href="contact.html"
-        data-i18n="contactButton"
-      >
-        KONTAKT
-      </a>
-
-    </div>
-
-  </section>
-
-
 </main>
-
-
-
-<footer>
-
-  <span>
-    © 2026 Henry D. Flores
-  </span>
-
-  <span>
-    Color Realism · Fantasy · Custom Tattoo Art
-  </span>
-
-</footer>
 
 
 
 <script>
 
-
 const translations = {
-
-
-  /* ======================
-     CZECH
-  ====================== */
 
   cs: {
 
-    navPortfolio:
-      "Portfolio",
-
-    navArtist:
-      "Umělec",
-
-    navProject:
-      "Projekt",
-
-    navContact:
-      "Kontakt",
-
+    navPortfolio: "Portfolio",
+    navArtist: "Umělec",
+    navProject: "Projekt",
+    navContact: "Kontakt",
 
     heroEyebrow:
       "TATTOO ARTIST · COLOR REALISM",
@@ -411,74 +293,24 @@ const translations = {
     heroSubtitle:
       "Originální tetovací projekty založené na barvě, kompozici a vizuálním příběhu.",
 
+    customProjects:
+      "INDIVIDUÁLNÍ PROJEKTY",
+
     projectButton:
       "VYPLNIT FORMULÁŘ",
 
     portfolioButton:
-      "ZOBRAZIT PORTFOLIO",
-
-
-    portfolioCardTitle:
-      "Portfolio",
-
-    portfolioCardText:
-      "Výběr originálních projektů zaměřených na color realism, fantasy a velkoformátové kompozice.",
-
-    discoverButton:
-      "ZJISTIT VÍCE",
-
-
-    artistCardText:
-      "Příběh mezi vědou, tetováním, malbou, cestováním a psaním.",
-
-    artistButton:
-      "POZNAT HENRYHO",
-
-
-    lixteoCardText:
-      "Sci-fi román o emocích, lidské zkušenosti a snaze porozumět tomu, co z nás dělá lidi.",
-
-    bookButton:
-      "OBJEVIT KNIHU",
-
-
-    contactNumber:
-      "04 / VÁŠ PROJEKT",
-
-    contactTitle:
-      "Máte nápad?<br>Pojďme ho vytvořit.",
-
-    contactText:
-      "Pokud máte představu o tetování, pošlete mi základní informace o projektu.",
-
-    contactProject:
-      "VYPLNIT FORMULÁŘ",
-
-    contactButton:
-      "KONTAKT"
+      "ZOBRAZIT PORTFOLIO"
 
   },
 
 
-
-  /* ======================
-     ENGLISH
-  ====================== */
-
   en: {
 
-    navPortfolio:
-      "Portfolio",
-
-    navArtist:
-      "Artist",
-
-    navProject:
-      "Project",
-
-    navContact:
-      "Contact",
-
+    navPortfolio: "Portfolio",
+    navArtist: "Artist",
+    navProject: "Project",
+    navContact: "Contact",
 
     heroEyebrow:
       "TATTOO ARTIST · COLOR REALISM",
@@ -489,74 +321,24 @@ const translations = {
     heroSubtitle:
       "Original tattoo projects built through color, composition and visual storytelling.",
 
+    customProjects:
+      "CUSTOM PROJECTS",
+
     projectButton:
       "FILL OUT THE FORM",
 
     portfolioButton:
-      "VIEW PORTFOLIO",
-
-
-    portfolioCardTitle:
-      "Portfolio",
-
-    portfolioCardText:
-      "A selection of original projects focused on color realism, fantasy and large-scale compositions.",
-
-    discoverButton:
-      "DISCOVER MORE",
-
-
-    artistCardText:
-      "A journey through science, tattooing, painting, travel and writing.",
-
-    artistButton:
-      "MEET HENRY",
-
-
-    lixteoCardText:
-      "A science-fiction novel about emotions, human experience and the attempt to understand what makes us human.",
-
-    bookButton:
-      "DISCOVER THE BOOK",
-
-
-    contactNumber:
-      "04 / YOUR PROJECT",
-
-    contactTitle:
-      "Have an idea?<br>Let's create it.",
-
-    contactText:
-      "If you have a tattoo idea, send me the essential information about your project.",
-
-    contactProject:
-      "FILL OUT THE FORM",
-
-    contactButton:
-      "CONTACT"
+      "VIEW PORTFOLIO"
 
   },
 
 
-
-  /* ======================
-     GERMAN
-  ====================== */
-
   de: {
 
-    navPortfolio:
-      "Portfolio",
-
-    navArtist:
-      "Künstler",
-
-    navProject:
-      "Projekt",
-
-    navContact:
-      "Kontakt",
-
+    navPortfolio: "Portfolio",
+    navArtist: "Künstler",
+    navProject: "Projekt",
+    navContact: "Kontakt",
 
     heroEyebrow:
       "TATTOO ARTIST · COLOR REALISM",
@@ -567,74 +349,24 @@ const translations = {
     heroSubtitle:
       "Individuelle Tattoo-Projekte mit Fokus auf Farbe, Komposition und visuelles Storytelling.",
 
+    customProjects:
+      "INDIVIDUELLE PROJEKTE",
+
     projectButton:
       "FORMULAR AUSFÜLLEN",
 
     portfolioButton:
-      "PORTFOLIO ANSEHEN",
-
-
-    portfolioCardTitle:
-      "Portfolio",
-
-    portfolioCardText:
-      "Eine Auswahl individueller Projekte mit Schwerpunkt auf Color Realism, Fantasy und großformatigen Kompositionen.",
-
-    discoverButton:
-      "MEHR ENTDECKEN",
-
-
-    artistCardText:
-      "Ein Weg zwischen Wissenschaft, Tätowieren, Malerei, Reisen und Schreiben.",
-
-    artistButton:
-      "HENRY KENNENLERNEN",
-
-
-    lixteoCardText:
-      "Ein Science-Fiction-Roman über Emotionen, menschliche Erfahrung und den Versuch zu verstehen, was uns menschlich macht.",
-
-    bookButton:
-      "BUCH ENTDECKEN",
-
-
-    contactNumber:
-      "04 / DEIN PROJEKT",
-
-    contactTitle:
-      "Hast du eine Idee?<br>Lass sie uns umsetzen.",
-
-    contactText:
-      "Wenn du eine Tattoo-Idee hast, schick mir die wichtigsten Informationen zu deinem Projekt.",
-
-    contactProject:
-      "FORMULAR AUSFÜLLEN",
-
-    contactButton:
-      "KONTAKT"
+      "PORTFOLIO ANSEHEN"
 
   },
 
 
-
-  /* ======================
-     SPANISH
-  ====================== */
-
   es: {
 
-    navPortfolio:
-      "Portafolio",
-
-    navArtist:
-      "Artista",
-
-    navProject:
-      "Proyecto",
-
-    navContact:
-      "Contacto",
-
+    navPortfolio: "Portafolio",
+    navArtist: "Artista",
+    navProject: "Proyecto",
+    navContact: "Contacto",
 
     heroEyebrow:
       "TATTOO ARTIST · REALISMO A COLOR",
@@ -645,69 +377,29 @@ const translations = {
     heroSubtitle:
       "Proyectos originales de tatuaje construidos mediante color, composición y narrativa visual.",
 
+    customProjects:
+      "PROYECTOS PERSONALIZADOS",
+
     projectButton:
       "LLENAR FORMULARIO",
 
     portfolioButton:
-      "VER PORTAFOLIO",
-
-
-    portfolioCardTitle:
-      "Portafolio",
-
-    portfolioCardText:
-      "Una selección de proyectos originales centrados en realismo a color, fantasía y composiciones de gran formato.",
-
-    discoverButton:
-      "CONOCER MÁS",
-
-
-    artistCardText:
-      "Un recorrido entre ciencia, tatuaje, pintura, viajes y escritura.",
-
-    artistButton:
-      "CONOCE A HENRY",
-
-
-    lixteoCardText:
-      "Una novela de ciencia ficción sobre las emociones, la experiencia humana y el intento de comprender aquello que nos hace humanos.",
-
-    bookButton:
-      "CONOCER EL LIBRO",
-
-
-    contactNumber:
-      "04 / TU PROYECTO",
-
-    contactTitle:
-      "¿Tienes una idea?<br>Vamos a crearla.",
-
-    contactText:
-      "Si tienes una idea para un tatuaje, envíame la información esencial de tu proyecto.",
-
-    contactProject:
-      "LLENAR FORMULARIO",
-
-    contactButton:
-      "CONTACTO"
+      "VER PORTAFOLIO"
 
   }
 
 };
 
 
-
-function setLanguage(language) {
+function setLanguage(language){
 
   localStorage.setItem(
     "language",
     language
   );
 
-
   document.documentElement.lang =
     language;
-
 
 
   document
@@ -717,19 +409,15 @@ function setLanguage(language) {
       const key =
         element.dataset.i18n;
 
-
-      if (
+      if(
         translations[language] &&
         translations[language][key]
-      ) {
-
+      ){
         element.textContent =
           translations[language][key];
-
       }
 
     });
-
 
 
   document
@@ -739,31 +427,22 @@ function setLanguage(language) {
       const key =
         element.dataset.i18nHtml;
 
-
-      if (
+      if(
         translations[language] &&
         translations[language][key]
-      ) {
-
+      ){
         element.innerHTML =
           translations[language][key];
-
       }
 
     });
 
 
-
   document
     .querySelectorAll(".lang-btn")
     .forEach(button => {
-
-      button.classList.remove(
-        "active"
-      );
-
+      button.classList.remove("active");
     });
-
 
 
   const active =
@@ -771,33 +450,20 @@ function setLanguage(language) {
       "lang-" + language
     );
 
-
-  if (active) {
-
-    active.classList.add(
-      "active"
-    );
-
+  if(active){
+    active.classList.add("active");
   }
 
 }
 
 
-
 const savedLanguage =
-  localStorage.getItem(
-    "language"
-  ) || "cs";
+  localStorage.getItem("language") || "cs";
 
-
-setLanguage(
-  savedLanguage
-);
-
+setLanguage(savedLanguage);
 
 </script>
 
 
 </body>
-
 </html>
