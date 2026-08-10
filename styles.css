@@ -606,3 +606,96 @@ footer{
   }
 
 }
+/* ==========================================
+   MOBILE OPTIMIZATION — HOME
+   ========================================== */
+
+@media (max-width: 700px) {
+
+  /* PORTADA */
+  .home-hero {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 70px 20px 45px;
+  }
+
+  .home-copy {
+    max-width: 100%;
+  }
+
+  /* Texto pequeño superior */
+  .home-copy .eyebrow {
+    margin-bottom: 20px;
+    font-size: 10px;
+    letter-spacing: 2.2px;
+  }
+
+  /* Título principal */
+  .home-title {
+    font-size: clamp(58px, 17vw, 78px);
+    line-height: 0.88;
+    letter-spacing: -2px;
+    margin: 0;
+  }
+
+  /* Descripción */
+  .home-subtitle {
+    margin-top: 26px;
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  /* Categorías */
+  .home-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 24px;
+    margin-top: 25px;
+  }
+
+  .home-tags span {
+    font-size: 9px;
+    letter-spacing: 1.6px;
+    padding-bottom: 5px;
+  }
+
+  /* Botones */
+  .home-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .home-actions .btn {
+    width: 100%;
+    min-height: 52px;
+    padding: 16px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 1.3px;
+    box-sizing: border-box;
+  }
+
+  /* Fotografía protagonista */
+  .home-image {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .home-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+}
