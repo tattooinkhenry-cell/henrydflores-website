@@ -2,28 +2,17 @@
 <html lang="cs">
 
 <head>
-
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <title>
-    Tattoo Project | Henry D. Flores
-  </title>
+  <title>Tattoo Project | Henry D. Flores</title>
 
   <meta
     name="description"
-    content="Send your tattoo project idea to Henry D. Flores. Color realism, fantasy and custom tattoo projects in České Budějovice and Kirchheim unter Teck."
+    content="Send your tattoo project idea to Henry D. Flores in České Budějovice or Kirchheim unter Teck."
   >
 
-  <link
-    rel="stylesheet"
-    href="styles.css"
-  >
-
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 
@@ -32,50 +21,35 @@
 
 <header class="nav">
 
-  <a
-    class="brand"
-    href="index.html"
-  >
+  <a class="brand" href="index.html">
     HENRY D. FLORES
   </a>
 
-
   <div class="nav-right">
-
 
     <nav class="nav-links">
 
-      <a
-        href="portfolio.html"
-        data-i18n="navPortfolio"
-      >
+      <a href="index.html" data-i18n="navHome">
+        Domů
+      </a>
+
+      <a href="portfolio.html" data-i18n="navPortfolio">
         Portfolio
       </a>
 
-      <a
-        href="lixteo.html"
-      >
+      <a href="lixteo.html">
         Lixteo
       </a>
 
-      <a
-        href="artist.html"
-        data-i18n="navArtist"
-      >
+      <a href="artist.html" data-i18n="navArtist">
         Umělec
       </a>
 
-      <a
-        href="project.html"
-        data-i18n="navProject"
-      >
+      <a href="project.html" data-i18n="navProject">
         Projekt
       </a>
 
-      <a
-        href="contact.html"
-        data-i18n="navContact"
-      >
+      <a href="contact.html" data-i18n="navContact">
         Kontakt
       </a>
 
@@ -84,41 +58,10 @@
 
     <div class="lang-switch">
 
-      <button
-        class="lang-btn"
-        id="lang-cs"
-        data-lang="cs"
-        onclick="setLanguage('cs')"
-      >
-        CZ
-      </button>
-
-      <button
-        class="lang-btn"
-        id="lang-en"
-        data-lang="en"
-        onclick="setLanguage('en')"
-      >
-        EN
-      </button>
-
-      <button
-        class="lang-btn"
-        id="lang-de"
-        data-lang="de"
-        onclick="setLanguage('de')"
-      >
-        DE
-      </button>
-
-      <button
-        class="lang-btn"
-        id="lang-es"
-        data-lang="es"
-        onclick="setLanguage('es')"
-      >
-        ES
-      </button>
+      <button class="lang-btn" id="lang-cs" onclick="setLanguage('cs')">CZ</button>
+      <button class="lang-btn" id="lang-en" onclick="setLanguage('en')">EN</button>
+      <button class="lang-btn" id="lang-de" onclick="setLanguage('de')">DE</button>
+      <button class="lang-btn" id="lang-es" onclick="setLanguage('es')">ES</button>
 
     </div>
 
@@ -127,39 +70,24 @@
 </header>
 
 
-
 <main class="page">
-
 
   <section class="project">
 
 
-    <!-- INTRO -->
-
     <div>
 
-      <p
-        class="eyebrow"
-        data-i18n="projectNumber"
-      >
+      <p class="eyebrow" data-i18n="projectNumber">
         04 / VÁŠ PROJEKT
       </p>
 
-
-      <h1
-        data-i18n="projectTitle"
-      >
+      <h1 data-i18n="projectTitle">
         Řekněte mi o svém nápadu.
       </h1>
 
-
-      <p
-        class="lead"
-        data-i18n="projectIntro"
-      >
+      <p class="lead" data-i18n="projectIntro">
         Popište motiv, umístění a přibližnou velikost tetování.
-        Formulář připraví zprávu, kterou můžete odeslat přes
-        WhatsApp nebo e-mail.
+        Zprávu můžete odeslat přes WhatsApp nebo e-mail.
       </p>
 
 
@@ -178,114 +106,69 @@
     </div>
 
 
-
-    <!-- FORM -->
-
-    <form
-      id="projectForm"
-      onsubmit="return false;"
-    >
+    <form id="projectForm" onsubmit="return false;">
 
       <div class="form">
 
 
         <div class="field">
 
-          <label
-            for="name"
-            data-i18n="nameLabel"
-          >
+          <label for="name" data-i18n="nameLabel">
             Jméno
           </label>
 
-          <input
-            id="name"
-            type="text"
-            required
-          >
+          <input id="name" type="text" required>
 
         </div>
 
 
-
         <div class="field">
 
-          <label
-            for="city"
-            data-i18n="cityLabel"
-          >
+          <label for="city" data-i18n="cityLabel">
             Město
           </label>
 
-          <input
-            id="city"
-            type="text"
-          >
+          <input id="city" type="text">
 
         </div>
 
 
-
         <div class="field full">
 
-          <label
-            for="idea"
-            data-i18n="ideaLabel"
-          >
+          <label for="idea" data-i18n="ideaLabel">
             Popište svůj nápad
           </label>
 
-          <textarea
-            id="idea"
-            required
-          ></textarea>
+          <textarea id="idea" required></textarea>
 
         </div>
 
 
-
         <div class="field">
 
-          <label
-            for="bodyArea"
-            data-i18n="bodyAreaLabel"
-          >
+          <label for="bodyArea" data-i18n="bodyAreaLabel">
             Umístění tetování
           </label>
 
-          <input
-            id="bodyArea"
-            type="text"
-          >
+          <input id="bodyArea" type="text">
 
         </div>
-
 
 
         <div class="field">
 
-          <label
-            for="size"
-            data-i18n="sizeLabel"
-          >
+          <label for="size" data-i18n="sizeLabel">
             Přibližná velikost
           </label>
 
-          <input
-            id="size"
-            type="text"
-          >
+          <input id="size" type="text">
 
         </div>
-
 
 
         <div class="field full">
 
-          <label
-            for="location"
-            data-i18n="locationLabel"
-          >
+          <label for="location" data-i18n="locationLabel">
             Preferované město
           </label>
 
@@ -304,25 +187,17 @@
         </div>
 
 
-
         <div class="field full">
 
-          <label
-            for="message"
-            data-i18n="messageLabel"
-          >
+          <label for="message" data-i18n="messageLabel">
             Další informace
           </label>
 
-          <textarea
-            id="message"
-          ></textarea>
+          <textarea id="message"></textarea>
 
         </div>
 
-
       </div>
-
 
 
       <div class="actions">
@@ -336,7 +211,6 @@
           ODESLAT PŘES WHATSAPP
         </button>
 
-
         <button
           type="button"
           class="btn"
@@ -348,599 +222,294 @@
 
       </div>
 
-
     </form>
 
-
   </section>
-
 
 </main>
 
 
-
 <footer>
-
-  <span>
-    © 2026 Henry D. Flores
-  </span>
-
-  <span>
-    Color Realism · Fantasy · Custom Tattoo Art
-  </span>
-
+  <span>© 2026 Henry D. Flores</span>
+  <span>Color Realism · Fantasy · Custom Tattoo Art</span>
 </footer>
-
 
 
 <script>
 
-
 const translations = {
-
 
   cs: {
 
-    navPortfolio:
-      "Portfolio",
+    navHome:"Domů",
+    navPortfolio:"Portfolio",
+    navArtist:"Umělec",
+    navProject:"Projekt",
+    navContact:"Kontakt",
 
-    navArtist:
-      "Umělec",
+    projectNumber:"04 / VÁŠ PROJEKT",
+    projectTitle:"Řekněte mi o svém nápadu.",
+    projectIntro:"Popište motiv, umístění a přibližnou velikost tetování. Zprávu můžete odeslat přes WhatsApp nebo e-mail.",
 
-    navProject:
-      "Projekt",
+    nameLabel:"Jméno",
+    cityLabel:"Město",
+    ideaLabel:"Popište svůj nápad",
+    bodyAreaLabel:"Umístění tetování",
+    sizeLabel:"Přibližná velikost",
+    locationLabel:"Preferované město",
+    messageLabel:"Další informace",
 
-    navContact:
-      "Kontakt",
+    whatsappButton:"ODESLAT PŘES WHATSAPP",
+    emailButton:"ODESLAT E-MAILEM",
 
-    projectNumber:
-      "04 / VÁŠ PROJEKT",
-
-    projectTitle:
-      "Řekněte mi o svém nápadu.",
-
-    projectIntro:
-      "Popište motiv, umístění a přibližnou velikost tetování. Formulář připraví zprávu, kterou můžete odeslat přes WhatsApp nebo e-mail.",
-
-    nameLabel:
-      "Jméno",
-
-    cityLabel:
-      "Město",
-
-    ideaLabel:
-      "Popište svůj nápad",
-
-    bodyAreaLabel:
-      "Umístění tetování",
-
-    sizeLabel:
-      "Přibližná velikost",
-
-    locationLabel:
-      "Preferované město",
-
-    messageLabel:
-      "Další informace",
-
-    whatsappButton:
-      "ODESLAT PŘES WHATSAPP",
-
-    emailButton:
-      "ODESLAT E-MAILEM",
-
-    messageTitle:
-      "Nový dotaz na tetování",
-
-    fieldName:
-      "Jméno",
-
-    fieldCity:
-      "Město",
-
-    fieldIdea:
-      "Nápad",
-
-    fieldArea:
-      "Umístění",
-
-    fieldSize:
-      "Velikost",
-
-    fieldLocation:
-      "Preferované město",
-
-    fieldMessage:
-      "Další informace"
+    messageTitle:"Nový dotaz na tetování",
+    fieldName:"Jméno",
+    fieldCity:"Město",
+    fieldIdea:"Nápad",
+    fieldArea:"Umístění",
+    fieldSize:"Velikost",
+    fieldLocation:"Preferované město",
+    fieldMessage:"Další informace"
 
   },
-
 
 
   en: {
 
-    navPortfolio:
-      "Portfolio",
+    navHome:"Home",
+    navPortfolio:"Portfolio",
+    navArtist:"Artist",
+    navProject:"Project",
+    navContact:"Contact",
 
-    navArtist:
-      "Artist",
+    projectNumber:"04 / YOUR PROJECT",
+    projectTitle:"Tell me about your idea.",
+    projectIntro:"Describe the subject, placement and approximate size of your tattoo. You can send the message by WhatsApp or email.",
 
-    navProject:
-      "Project",
+    nameLabel:"Name",
+    cityLabel:"City",
+    ideaLabel:"Describe your idea",
+    bodyAreaLabel:"Tattoo placement",
+    sizeLabel:"Approximate size",
+    locationLabel:"Preferred city",
+    messageLabel:"Additional information",
 
-    navContact:
-      "Contact",
+    whatsappButton:"SEND BY WHATSAPP",
+    emailButton:"SEND BY EMAIL",
 
-    projectNumber:
-      "04 / YOUR PROJECT",
-
-    projectTitle:
-      "Tell me about your idea.",
-
-    projectIntro:
-      "Describe the subject, placement and approximate size of your tattoo. The form prepares a message that you can send by WhatsApp or email.",
-
-    nameLabel:
-      "Name",
-
-    cityLabel:
-      "City",
-
-    ideaLabel:
-      "Describe your idea",
-
-    bodyAreaLabel:
-      "Tattoo placement",
-
-    sizeLabel:
-      "Approximate size",
-
-    locationLabel:
-      "Preferred city",
-
-    messageLabel:
-      "Additional information",
-
-    whatsappButton:
-      "SEND BY WHATSAPP",
-
-    emailButton:
-      "SEND BY EMAIL",
-
-    messageTitle:
-      "New tattoo inquiry",
-
-    fieldName:
-      "Name",
-
-    fieldCity:
-      "City",
-
-    fieldIdea:
-      "Idea",
-
-    fieldArea:
-      "Placement",
-
-    fieldSize:
-      "Size",
-
-    fieldLocation:
-      "Preferred city",
-
-    fieldMessage:
-      "Additional information"
+    messageTitle:"New tattoo inquiry",
+    fieldName:"Name",
+    fieldCity:"City",
+    fieldIdea:"Idea",
+    fieldArea:"Placement",
+    fieldSize:"Size",
+    fieldLocation:"Preferred city",
+    fieldMessage:"Additional information"
 
   },
-
 
 
   de: {
 
-    navPortfolio:
-      "Portfolio",
+    navHome:"Start",
+    navPortfolio:"Portfolio",
+    navArtist:"Künstler",
+    navProject:"Projekt",
+    navContact:"Kontakt",
 
-    navArtist:
-      "Künstler",
+    projectNumber:"04 / DEIN PROJEKT",
+    projectTitle:"Erzähl mir von deiner Idee.",
+    projectIntro:"Beschreibe Motiv, Körperstelle und ungefähre Größe deines Tattoos. Du kannst die Nachricht per WhatsApp oder E-Mail senden.",
 
-    navProject:
-      "Projekt",
+    nameLabel:"Name",
+    cityLabel:"Stadt",
+    ideaLabel:"Beschreibe deine Idee",
+    bodyAreaLabel:"Körperstelle",
+    sizeLabel:"Ungefähre Größe",
+    locationLabel:"Bevorzugte Stadt",
+    messageLabel:"Weitere Informationen",
 
-    navContact:
-      "Kontakt",
+    whatsappButton:"ÜBER WHATSAPP SENDEN",
+    emailButton:"PER E-MAIL SENDEN",
 
-    projectNumber:
-      "04 / DEIN PROJEKT",
-
-    projectTitle:
-      "Erzähl mir von deiner Idee.",
-
-    projectIntro:
-      "Beschreibe Motiv, Körperstelle und ungefähre Größe deines Tattoos. Das Formular erstellt eine Nachricht, die du per WhatsApp oder E-Mail senden kannst.",
-
-    nameLabel:
-      "Name",
-
-    cityLabel:
-      "Stadt",
-
-    ideaLabel:
-      "Beschreibe deine Idee",
-
-    bodyAreaLabel:
-      "Körperstelle",
-
-    sizeLabel:
-      "Ungefähre Größe",
-
-    locationLabel:
-      "Bevorzugte Stadt",
-
-    messageLabel:
-      "Weitere Informationen",
-
-    whatsappButton:
-      "ÜBER WHATSAPP SENDEN",
-
-    emailButton:
-      "PER E-MAIL SENDEN",
-
-    messageTitle:
-      "Neue Tattoo-Anfrage",
-
-    fieldName:
-      "Name",
-
-    fieldCity:
-      "Stadt",
-
-    fieldIdea:
-      "Idee",
-
-    fieldArea:
-      "Körperstelle",
-
-    fieldSize:
-      "Größe",
-
-    fieldLocation:
-      "Bevorzugte Stadt",
-
-    fieldMessage:
-      "Weitere Informationen"
+    messageTitle:"Neue Tattoo-Anfrage",
+    fieldName:"Name",
+    fieldCity:"Stadt",
+    fieldIdea:"Idee",
+    fieldArea:"Körperstelle",
+    fieldSize:"Größe",
+    fieldLocation:"Bevorzugte Stadt",
+    fieldMessage:"Weitere Informationen"
 
   },
 
 
-
   es: {
 
-    navPortfolio:
-      "Portafolio",
+    navHome:"Inicio",
+    navPortfolio:"Portafolio",
+    navArtist:"Artista",
+    navProject:"Proyecto",
+    navContact:"Contacto",
 
-    navArtist:
-      "Artista",
+    projectNumber:"04 / TU PROYECTO",
+    projectTitle:"Cuéntame tu idea.",
+    projectIntro:"Describe el motivo, la zona y el tamaño aproximado del tatuaje. Puedes enviar el mensaje por WhatsApp o email.",
 
-    navProject:
-      "Proyecto",
+    nameLabel:"Nombre",
+    cityLabel:"Ciudad",
+    ideaLabel:"Describe tu idea",
+    bodyAreaLabel:"Zona del tatuaje",
+    sizeLabel:"Tamaño aproximado",
+    locationLabel:"Ciudad preferida",
+    messageLabel:"Información adicional",
 
-    navContact:
-      "Contacto",
+    whatsappButton:"ENVIAR POR WHATSAPP",
+    emailButton:"ENVIAR POR EMAIL",
 
-    projectNumber:
-      "04 / TU PROYECTO",
-
-    projectTitle:
-      "Cuéntame tu idea.",
-
-    projectIntro:
-      "Describe el motivo, la zona y el tamaño aproximado del tatuaje. El formulario prepara un mensaje que podrás enviar por WhatsApp o email.",
-
-    nameLabel:
-      "Nombre",
-
-    cityLabel:
-      "Ciudad",
-
-    ideaLabel:
-      "Describe tu idea",
-
-    bodyAreaLabel:
-      "Zona del tatuaje",
-
-    sizeLabel:
-      "Tamaño aproximado",
-
-    locationLabel:
-      "Ciudad preferida",
-
-    messageLabel:
-      "Información adicional",
-
-    whatsappButton:
-      "ENVIAR POR WHATSAPP",
-
-    emailButton:
-      "ENVIAR POR EMAIL",
-
-    messageTitle:
-      "Nueva consulta de tatuaje",
-
-    fieldName:
-      "Nombre",
-
-    fieldCity:
-      "Ciudad",
-
-    fieldIdea:
-      "Idea",
-
-    fieldArea:
-      "Zona",
-
-    fieldSize:
-      "Tamaño",
-
-    fieldLocation:
-      "Ciudad preferida",
-
-    fieldMessage:
-      "Información adicional"
+    messageTitle:"Nueva consulta de tatuaje",
+    fieldName:"Nombre",
+    fieldCity:"Ciudad",
+    fieldIdea:"Idea",
+    fieldArea:"Zona",
+    fieldSize:"Tamaño",
+    fieldLocation:"Ciudad preferida",
+    fieldMessage:"Información adicional"
 
   }
 
 };
 
 
+function setLanguage(language){
 
-function setLanguage(language) {
+  localStorage.setItem("language", language);
+  document.documentElement.lang = language;
 
-  localStorage.setItem(
-    "language",
-    language
-  );
+  document.querySelectorAll("[data-i18n]").forEach(element => {
 
+    const key = element.dataset.i18n;
 
-  document.documentElement.lang =
-    language;
+    if(translations[language][key]){
+      element.textContent = translations[language][key];
+    }
 
+  });
 
-  document
-    .querySelectorAll(
-      "[data-i18n]"
-    )
-    .forEach(element => {
+  document.querySelectorAll(".lang-btn").forEach(button => {
+    button.classList.remove("active");
+  });
 
-      const key =
-        element.dataset.i18n;
+  const active = document.getElementById("lang-" + language);
 
-
-      if (
-        translations[language] &&
-        translations[language][key]
-      ) {
-
-        element.textContent =
-          translations[language][key];
-
-      }
-
-    });
-
-
-
-  document
-    .querySelectorAll(
-      ".lang-btn"
-    )
-    .forEach(button => {
-
-      button
-        .classList
-        .remove("active");
-
-    });
-
-
-
-  const activeButton =
-    document.getElementById(
-      "lang-" + language
-    );
-
-
-  if (activeButton) {
-
-    activeButton
-      .classList
-      .add("active");
-
+  if(active){
+    active.classList.add("active");
   }
 
 }
 
 
+function getValue(id){
 
-function getValue(id) {
+  const element = document.getElementById(id);
 
-  const element =
-    document.getElementById(id);
-
-  if (!element) {
-    return "";
-  }
-
-  return element.value.trim();
+  return element ? element.value.trim() : "";
 
 }
 
 
+function buildMessage(){
 
-function buildMessage() {
-
-  const language =
-    localStorage.getItem(
-      "language"
-    ) || "cs";
-
-
-  const t =
-    translations[language];
-
+  const language = localStorage.getItem("language") || "cs";
+  const t = translations[language];
 
   return (
-    t.messageTitle +
-    "\n\n" +
+    t.messageTitle + "\n\n" +
 
-    t.fieldName +
-    ": " +
-    getValue("name") +
-    "\n" +
+    t.fieldName + ": " +
+    getValue("name") + "\n" +
 
-    t.fieldCity +
-    ": " +
-    getValue("city") +
-    "\n\n" +
+    t.fieldCity + ": " +
+    getValue("city") + "\n\n" +
 
-    t.fieldIdea +
-    ":\n" +
-    getValue("idea") +
-    "\n\n" +
+    t.fieldIdea + ":\n" +
+    getValue("idea") + "\n\n" +
 
-    t.fieldArea +
-    ": " +
-    getValue("bodyArea") +
-    "\n" +
+    t.fieldArea + ": " +
+    getValue("bodyArea") + "\n" +
 
-    t.fieldSize +
-    ": " +
-    getValue("size") +
-    "\n" +
+    t.fieldSize + ": " +
+    getValue("size") + "\n" +
 
-    t.fieldLocation +
-    ": " +
-    getValue("location") +
-    "\n\n" +
+    t.fieldLocation + ": " +
+    getValue("location") + "\n\n" +
 
-    t.fieldMessage +
-    ":\n" +
+    t.fieldMessage + ":\n" +
     getValue("message")
   );
 
 }
 
 
+function validateForm(){
 
-function validateForm() {
+  const name = document.getElementById("name");
+  const idea = document.getElementById("idea");
 
-  const name =
-    document.getElementById(
-      "name"
-    );
-
-
-  const idea =
-    document.getElementById(
-      "idea"
-    );
-
-
-  if (!name.value.trim()) {
-
+  if(!name.value.trim()){
     name.focus();
     return false;
-
   }
 
-
-  if (!idea.value.trim()) {
-
+  if(!idea.value.trim()){
     idea.focus();
     return false;
-
   }
-
 
   return true;
 
 }
 
 
+function sendWhatsApp(){
 
-function sendWhatsApp() {
-
-  if (!validateForm()) {
+  if(!validateForm()){
     return;
   }
-
-
-  const message =
-    buildMessage();
-
 
   const url =
     "https://wa.me/420720508936?text=" +
-    encodeURIComponent(message);
+    encodeURIComponent(buildMessage());
 
-
-  window.open(
-    url,
-    "_blank"
-  );
+  window.open(url, "_blank");
 
 }
 
 
+function sendEmail(){
 
-function sendEmail() {
-
-  if (!validateForm()) {
+  if(!validateForm()){
     return;
   }
 
-
-  const message =
-    buildMessage();
-
-
   const language =
-    localStorage.getItem(
-      "language"
-    ) || "cs";
-
+    localStorage.getItem("language") || "cs";
 
   const subject =
-    translations[language]
-      .messageTitle;
+    translations[language].messageTitle;
 
-
-  const url =
+  window.location.href =
     "mailto:tattooink.henry@gmail.com?subject=" +
     encodeURIComponent(subject) +
     "&body=" +
-    encodeURIComponent(message);
-
-
-  window.location.href =
-    url;
+    encodeURIComponent(buildMessage());
 
 }
 
 
-
-const savedLanguage =
-  localStorage.getItem(
-    "language"
-  ) || "cs";
-
-
-setLanguage(
-  savedLanguage
-);
-
+setLanguage(localStorage.getItem("language") || "cs");
 
 </script>
-
 
 </body>
 </html>
