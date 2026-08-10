@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio | Henry D. Flores — Color Realism Tattoo Artist</title>
+
+  <meta
+    name="description"
+    content="Portfolio Henryho D. Florese — barevný realismus, fantasy a originální tetovací projekty v České republice a Německu."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <a class="brand" href="index.html">
+    HENRY D. FLORES
+  </a>
+
+  <nav class="nav">
+
+    <a href="portfolio.html" data-i18n="navPortfolio">
+      Portfolio
+    </a>
+
+    <a href="lixteo.html">
+      Lixteo
+    </a>
+
+    <a href="artist.html" data-i18n="navArtist">
+      Umělec
+    </a>
+
+    <a href="project.html" data-i18n="navProject">
+      Projekt
+    </a>
+
+    <a href="project.html#contact" data-i18n="navContact">
+      Kontakt
+    </a>
+
+  </nav>
+
+  <div class="languages">
+    <button onclick="setLanguage('cs')" id="lang-cs">CZ</button>
+    <button onclick="setLanguage('en')" id="lang-en">EN</button>
+    <button onclick="setLanguage('de')" id="lang-de">DE</button>
+    <button onclick="setLanguage('es')" id="lang-es">ES</button>
+  </div>
+
+</header>
+
+
+<main>
+
+  <!-- PORTFOLIO INTRO -->
+
+  <section class="page-hero">
+
+    <span class="eyebrow" data-i18n="portfolioNumber">
+      02 / VYBRANÉ PRÁCE
+    </span>
+
+    <h1 data-i18n="portfolioTitle">
+      Portfolio
+    </h1>
+
+    <p data-i18n="portfolioIntro">
+      Výběr originálních tetovacích projektů zaměřených na barevný realismus,
+      fantasy a rozsáhlé kompozice.
+    </p>
+
+  </section>
+
+
+  <!-- GALLERY -->
+
+  <section class="portfolio-gallery">
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8145.jpeg"
+        alt="Color realism fantasy tattoo by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8147.jpeg"
+        alt="Color realism tattoo by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8148.jpeg"
+        alt="Custom color tattoo by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8149.jpeg"
+        alt="Fantasy tattoo by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8150.jpeg"
+        alt="Color realism tattoo artwork by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8152.jpeg"
+        alt="Original tattoo project by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8153.jpeg"
+        alt="Realistic color tattoo by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8154.jpeg"
+        alt="Fantasy color tattoo by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8155.jpeg"
+        alt="Custom tattoo artwork by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8156.jpeg"
+        alt="Color realism tattoo portfolio Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8157.jpeg"
+        alt="Large scale tattoo project by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8158.jpeg"
+        alt="Tattoo artwork by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8159.jpeg"
+        alt="Color tattoo project by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8160.jpeg"
+        alt="Fantasy realism tattoo by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8161.jpeg"
+        alt="Custom realism tattoo by Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+
+    <figure class="portfolio-item">
+      <img
+        src="images/IMG_8163.jpeg"
+        alt="Color realism tattoo artist Henry D. Flores"
+        loading="lazy"
+      >
+    </figure>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="portfolio-cta">
+
+    <span class="eyebrow" data-i18n="ctaNumber">
+      03 / VÁŠ PROJEKT
+    </span>
+
+    <h2 data-i18n="ctaTitle">
+      Máte nápad na tetování?
+    </h2>
+
+    <p data-i18n="ctaText">
+      Pokud máte představu o novém projektu, můžete mi poslat základní
+      informace prostřednictvím formuláře.
+    </p>
+
+    <a class="button dark" href="project.html" data-i18n="ctaButton">
+      VYPLNIT FORMULÁŘ
+    </a>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <span>
+    © 2026 Henry D. Flores
+  </span>
+
+  <span>
+    Color Realism · Fantasy · Custom Tattoo Art
+  </span>
+
+</footer>
+
+
+<script>
+
+const translations = {
+
+  cs: {
+    navPortfolio: "Portfolio",
+    navArtist: "Umělec",
+    navProject: "Projekt",
+    navContact: "Kontakt",
+
+    portfolioNumber: "02 / VYBRANÉ PRÁCE",
+    portfolioTitle: "Portfolio",
+    portfolioIntro:
+      "Výběr originálních tetovacích projektů zaměřených na barevný realismus, fantasy a rozsáhlé kompozice.",
+
+    ctaNumber: "03 / VÁŠ PROJEKT",
+    ctaTitle: "Máte nápad na tetování?",
+    ctaText:
+      "Pokud máte představu o novém projektu, můžete mi poslat základní informace prostřednictvím formuláře.",
+    ctaButton: "VYPLNIT FORMULÁŘ"
+  },
+
+
+  en: {
+    navPortfolio: "Portfolio",
+    navArtist: "Artist",
+    navProject: "Project",
+    navContact: "Contact",
+
+    portfolioNumber: "02 / SELECTED WORK",
+    portfolioTitle: "Portfolio",
+    portfolioIntro:
+      "A selection of original tattoo projects focused on color realism, fantasy and large-scale compositions.",
+
+    ctaNumber: "03 / YOUR PROJECT",
+    ctaTitle: "Have an idea for a tattoo?",
+    ctaText:
+      "If you have an idea for a new project, send me the basic information through the project form.",
+    ctaButton: "FILL OUT THE FORM"
+  },
+
+
+  de: {
+    navPortfolio: "Portfolio",
+    navArtist: "Künstler",
+    navProject: "Projekt",
+    navContact: "Kontakt",
+
+    portfolioNumber: "02 / AUSGEWÄHLTE ARBEITEN",
+    portfolioTitle: "Portfolio",
+    portfolioIntro:
+      "Eine Auswahl individueller Tattoo-Projekte mit Schwerpunkt auf Farbrealismus, Fantasy und großformatigen Kompositionen.",
+
+    ctaNumber: "03 / DEIN PROJEKT",
+    ctaTitle: "Hast du eine Tattoo-Idee?",
+    ctaText:
+      "Wenn du eine Idee für ein neues Projekt hast, kannst du mir die wichtigsten Informationen über das Formular senden.",
+    ctaButton: "FORMULAR AUSFÜLLEN"
+  },
+
+
+  es: {
+    navPortfolio: "Portafolio",
+    navArtist: "Artista",
+    navProject: "Proyecto",
+    navContact: "Contacto",
+
+    portfolioNumber: "02 / TRABAJOS SELECCIONADOS",
+    portfolioTitle: "Portafolio",
+    portfolioIntro:
+      "Una selección de proyectos originales de tatuaje centrados en realismo a color, fantasía y composiciones de gran formato.",
+
+    ctaNumber: "03 / TU PROYECTO",
+    ctaTitle: "¿Tienes una idea para un tatuaje?",
+    ctaText:
+      "Si tienes una idea para un nuevo proyecto, puedes enviarme la información básica mediante el formulario.",
+    ctaButton: "LLENAR FORMULARIO"
+  }
+
+};
+
+
+function setLanguage(language) {
+
+  localStorage.setItem("language", language);
+
+  document.documentElement.lang = language;
+
+  document
+    .querySelectorAll("[data-i18n]")
+    .forEach(element => {
+
+      const key = element.dataset.i18n;
+
+      if (translations[language][key]) {
+        element.textContent = translations[language][key];
+      }
+
+    });
+
+
+  document
+    .querySelectorAll(".languages button")
+    .forEach(button => button.classList.remove("active"));
+
+
+  const activeButton =
+    document.getElementById("lang-" + language);
+
+  if (activeButton) {
+    activeButton.classList.add("active");
+  }
+
+}
+
+
+const savedLanguage =
+  localStorage.getItem("language") || "cs";
+
+setLanguage(savedLanguage);
+
+</script>
+
+
+</body>
+</html>
