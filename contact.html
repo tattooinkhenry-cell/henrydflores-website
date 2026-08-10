@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kontakt | Henry D. Flores</title>
+
+  <meta
+    name="description"
+    content="Contact Henry D. Flores for color realism, fantasy and custom tattoo projects in České Budějovice, Czech Republic and Kirchheim unter Teck, Germany."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+
+    .contact-page {
+      min-height: calc(100vh - 100px);
+      padding: 160px 5vw 100px;
+    }
+
+    .contact-layout {
+      max-width: 1250px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 9vw;
+      align-items: start;
+    }
+
+    .contact-number {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #8E6A45;
+      margin-bottom: 25px;
+    }
+
+    .contact-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(58px, 7vw, 100px);
+      line-height: .95;
+      font-weight: 400;
+      color: #2F2F2F;
+      margin: 0 0 35px;
+    }
+
+    .contact-intro {
+      max-width: 580px;
+      font-size: 17px;
+      line-height: 1.9;
+      color: #5D5B57;
+    }
+
+    .contact-details {
+      margin-top: 50px;
+      border-top: 1px solid rgba(47,47,47,.15);
+    }
+
+    .contact-row {
+      padding: 25px 0;
+      border-bottom: 1px solid rgba(47,47,47,.15);
+    }
+
+    .contact-label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #8E6A45;
+    }
+
+    .contact-value {
+      font-size: 17px;
+      color: #2F2F2F;
+      text-decoration: none;
+      line-height: 1.6;
+    }
+
+    .contact-value:hover {
+      opacity: .6;
+    }
+
+    .contact-side {
+      background: #EFE7DB;
+      padding: 65px;
+      min-height: 560px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .contact-side-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(38px, 4vw, 58px);
+      line-height: 1.05;
+      font-weight: 400;
+      margin: 0 0 30px;
+      color: #2F2F2F;
+    }
+
+    .contact-side-text {
+      font-size: 16px;
+      line-height: 1.9;
+      color: #5D5B57;
+      max-width: 500px;
+    }
+
+    .locations {
+      margin-top: 45px;
+    }
+
+    .location {
+      padding: 22px 0;
+      border-top: 1px solid rgba(47,47,47,.15);
+    }
+
+    .location:last-child {
+      border-bottom: 1px solid rgba(47,47,47,.15);
+    }
+
+    .location-country {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #8E6A45;
+    }
+
+    .location-city {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 25px;
+      color: #2F2F2F;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 45px;
+    }
+
+    .contact-button {
+      display: inline-block;
+      padding: 18px 25px;
+      border: 1px solid #2F2F2F;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 10px;
+      cursor: pointer;
+      transition: opacity .25s ease;
+    }
+
+    .contact-button:hover {
+      opacity: .65;
+    }
+
+    .contact-button.primary {
+      background: #2F2F2F;
+      color: #FAF8F3;
+    }
+
+    .contact-button.secondary {
+      background: transparent;
+      color: #2F2F2F;
+    }
+
+    .language-switch {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .language-switch button {
+      background: transparent;
+      border: 0;
+      padding: 0 0 4px;
+      cursor: pointer;
+      color: #77736E;
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+
+    .language-switch button.active {
+      color: #2F2F2F;
+      border-bottom: 1px solid #2F2F2F;
+    }
+
+    @media (max-width: 850px) {
+
+      .contact-page {
+        padding: 120px 6vw 70px;
+      }
+
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 60px;
+      }
+
+      .contact-side {
+        min-height: auto;
+        padding: 40px 30px;
+      }
+
+      .contact-actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+  <a class="brand" href="index.html">
+    HENRY D. FLORES
+  </a>
+
+
+  <nav class="nav">
+
+    <a href="portfolio.html" data-i18n="navPortfolio">
+      Portfolio
+    </a>
+
+    <a href="lixteo.html">
+      Lixteo
+    </a>
+
+    <a href="artist.html" data-i18n="navArtist">
+      Umělec
+    </a>
+
+    <a href="project.html" data-i18n="navProject">
+      Projekt
+    </a>
+
+    <a href="contact.html" data-i18n="navContact">
+      Kontakt
+    </a>
+
+
+    <div class="language-switch">
+
+      <button type="button" data-lang="cs" class="active">
+        CZ
+      </button>
+
+      <button type="button" data-lang="en">
+        EN
+      </button>
+
+      <button type="button" data-lang="de">
+        DE
+      </button>
+
+      <button type="button" data-lang="es">
+        ES
+      </button>
+
+    </div>
+
+  </nav>
+
+</header>
+
+
+
+<main class="contact-page">
+
+  <div class="contact-layout">
+
+
+    <!-- CONTACT INFORMATION -->
+
+    <section>
+
+      <div class="contact-number" data-i18n="section">
+        05 / KONTAKT
+      </div>
+
+      <h1 class="contact-title" data-i18n="title">
+        Spojme se.
+      </h1>
+
+      <p class="contact-intro" data-i18n="intro">
+        Pokud máte nápad na tetování, chcete se zeptat na dostupnost
+        nebo potřebujete další informace, můžete mě kontaktovat přes
+        WhatsApp, e-mail nebo Instagram.
+      </p>
+
+
+      <div class="contact-details">
+
+
+        <div class="contact-row">
+
+          <span class="contact-label">
+            WhatsApp
+          </span>
+
+          <a
+            class="contact-value"
+            id="whatsappDirect"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          >
+            +420 720 508 936
+          </a>
+
+        </div>
+
+
+        <div class="contact-row">
+
+          <span class="contact-label">
+            Email
+          </span>
+
+          <a
+            class="contact-value"
+            href="mailto:tattooink.henry@gmail.com"
+          >
+            tattooink.henry@gmail.com
+          </a>
+
+        </div>
+
+
+        <div class="contact-row">
+
+          <span class="contact-label">
+            Instagram
+          </span>
+
+          <a
+            class="contact-value"
+            href="https://www.instagram.com/henry_d._flores/"
+            target="_blank"
+            rel="noopener"
+          >
+            @henry_d._flores
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- PROJECT / LOCATIONS -->
+
+    <section class="contact-side">
+
+      <div>
+
+        <h2 class="contact-side-title" data-i18n="projectTitle">
+          Máte nápad na nový projekt?
+        </h2>
+
+        <p class="contact-side-text" data-i18n="projectText">
+          Nejlepší způsob, jak začít, je vyplnit krátký formulář.
+          Napište mi svou představu, umístění a přibližnou velikost.
+          Pomůže mi to lépe pochopit projekt ještě před první zprávou.
+        </p>
+
+
+        <div class="locations">
+
+
+          <div class="location">
+
+            <span class="location-country" data-i18n="czechRepublic">
+              ČESKÁ REPUBLIKA
+            </span>
+
+            <span class="location-city">
+              České Budějovice
+            </span>
+
+          </div>
+
+
+          <div class="location">
+
+            <span class="location-country" data-i18n="germany">
+              NĚMECKO
+            </span>
+
+            <span class="location-city">
+              Kirchheim unter Teck
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <div class="contact-actions">
+
+        <a
+          class="contact-button primary"
+          href="project.html"
+          data-i18n="projectButton"
+        >
+          VYPLNIT FORMULÁŘ
+        </a>
+
+        <a
+          class="contact-button secondary"
+          id="emailButton"
+          href="mailto:tattooink.henry@gmail.com"
+          data-i18n="emailButton"
+        >
+          NAPSAT E-MAIL
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </div>
+
+</main>
+
+
+
+<footer>
+
+  <span>
+    © 2026 Henry D. Flores
+  </span>
+
+  <span>
+    Color Realism · Tattoo Artist
+  </span>
+
+</footer>
+
+
+
+<script>
+
+
+const translations = {
+
+
+  cs: {
+
+    navPortfolio: "Portfolio",
+    navArtist: "Umělec",
+    navProject: "Projekt",
+    navContact: "Kontakt",
+
+    section: "05 / KONTAKT",
+
+    title: "Spojme se.",
+
+    intro:
+      "Pokud máte nápad na tetování, chcete se zeptat na dostupnost nebo potřebujete další informace, můžete mě kontaktovat přes WhatsApp, e-mail nebo Instagram.",
+
+    projectTitle:
+      "Máte nápad na nový projekt?",
+
+    projectText:
+      "Nejlepší způsob, jak začít, je vyplnit krátký formulář. Napište mi svou představu, umístění a přibližnou velikost. Pomůže mi to lépe pochopit projekt ještě před první zprávou.",
+
+    czechRepublic:
+      "ČESKÁ REPUBLIKA",
+
+    germany:
+      "NĚMECKO",
+
+    projectButton:
+      "VYPLNIT FORMULÁŘ",
+
+    emailButton:
+      "NAPSAT E-MAIL",
+
+    whatsappMessage:
+      "Dobrý den Henry, chtěl/a bych se zeptat na tetování."
+
+  },
+
+
+  en: {
+
+    navPortfolio: "Portfolio",
+    navArtist: "Artist",
+    navProject: "Project",
+    navContact: "Contact",
+
+    section: "05 / CONTACT",
+
+    title: "Let's connect.",
+
+    intro:
+      "If you have a tattoo idea, would like to ask about availability or need more information, you can contact me through WhatsApp, email or Instagram.",
+
+    projectTitle:
+      "Have an idea for a new project?",
+
+    projectText:
+      "The best way to begin is by completing the short project form. Tell me about your idea, placement and approximate size. This helps me understand the project before our first conversation.",
+
+    czechRepublic:
+      "CZECH REPUBLIC",
+
+    germany:
+      "GERMANY",
+
+    projectButton:
+      "FILL OUT THE FORM",
+
+    emailButton:
+      "SEND AN EMAIL",
+
+    whatsappMessage:
+      "Hello Henry, I'd like to ask you about a tattoo project."
+
+  },
+
+
+  de: {
+
+    navPortfolio: "Portfolio",
+    navArtist: "Künstler",
+    navProject: "Projekt",
+    navContact: "Kontakt",
+
+    section: "05 / KONTAKT",
+
+    title: "Lass uns sprechen.",
+
+    intro:
+      "Wenn du eine Tattoo-Idee hast, nach verfügbaren Terminen fragen möchtest oder weitere Informationen benötigst, kannst du mich über WhatsApp, E-Mail oder Instagram kontaktieren.",
+
+    projectTitle:
+      "Hast du eine Idee für ein neues Projekt?",
+
+    projectText:
+      "Am besten beginnst du mit dem kurzen Projektformular. Beschreibe deine Idee, die gewünschte Körperstelle und die ungefähre Größe. So kann ich dein Projekt bereits vor unserem ersten Gespräch besser verstehen.",
+
+    czechRepublic:
+      "TSCHECHISCHE REPUBLIK",
+
+    germany:
+      "DEUTSCHLAND",
+
+    projectButton:
+      "FORMULAR AUSFÜLLEN",
+
+    emailButton:
+      "E-MAIL SENDEN",
+
+    whatsappMessage:
+      "Hallo Henry, ich möchte mich nach einem Tattoo-Projekt erkundigen."
+
+  },
+
+
+  es: {
+
+    navPortfolio: "Portafolio",
+    navArtist: "Artista",
+    navProject: "Proyecto",
+    navContact: "Contacto",
+
+    section: "05 / CONTACTO",
+
+    title: "Hablemos.",
+
+    intro:
+      "Si tienes una idea para un tatuaje, quieres consultar disponibilidad o necesitas más información, puedes contactarme por WhatsApp, email o Instagram.",
+
+    projectTitle:
+      "¿Tienes una idea para un nuevo proyecto?",
+
+    projectText:
+      "La mejor manera de comenzar es llenar el breve formulario del proyecto. Cuéntame tu idea, la zona del cuerpo y el tamaño aproximado. Esto me permite comprender mejor el proyecto antes de nuestra primera conversación.",
+
+    czechRepublic:
+      "REPÚBLICA CHECA",
+
+    germany:
+      "ALEMANIA",
+
+    projectButton:
+      "LLENAR EL FORMULARIO",
+
+    emailButton:
+      "ENVIAR EMAIL",
+
+    whatsappMessage:
+      "Hola Henry, quisiera consultarte sobre un proyecto de tatuaje."
+
+  }
+
+};
+
+
+
+let currentLanguage =
+  localStorage.getItem("language") || "cs";
+
+
+
+function setLanguage(language) {
+
+  currentLanguage = language;
+
+  localStorage.setItem(
+    "language",
+    language
+  );
+
+  document.documentElement.lang =
+    language;
+
+
+  document
+    .querySelectorAll("[data-i18n]")
+    .forEach(element => {
+
+      const key =
+        element.dataset.i18n;
+
+      if (
+        translations[language] &&
+        translations[language][key]
+      ) {
+
+        element.textContent =
+          translations[language][key];
+
+      }
+
+    });
+
+
+  document
+    .querySelectorAll("[data-lang]")
+    .forEach(button => {
+
+      button.classList.toggle(
+        "active",
+        button.dataset.lang === language
+      );
+
+    });
+
+
+  updateWhatsApp();
+
+}
+
+
+
+function updateWhatsApp() {
+
+  const message =
+    translations[currentLanguage]
+      .whatsappMessage;
+
+
+  document
+    .getElementById("whatsappDirect")
+    .href =
+      "https://wa.me/420720508936?text=" +
+      encodeURIComponent(message);
+
+}
+
+
+
+document
+  .querySelectorAll("[data-lang]")
+  .forEach(button => {
+
+    button.addEventListener(
+      "click",
+      function() {
+
+        setLanguage(
+          this.dataset.lang
+        );
+
+      }
+    );
+
+  });
+
+
+
+setLanguage(currentLanguage);
+
+
+</script>
+
+
+</body>
+</html>
