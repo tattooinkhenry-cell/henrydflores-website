@@ -2,28 +2,17 @@
 <html lang="cs">
 
 <head>
-
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <title>
-    Henry D. Flores | Tattoo Artist — Biography
-  </title>
+  <title>Henry D. Flores | Artist</title>
 
   <meta
     name="description"
-    content="Henry D. Flores is a Mexican tattoo artist focused on color realism, fantasy and original large-scale tattoo projects, working in the Czech Republic and Germany."
+    content="Biography of Henry D. Flores, Mexican tattoo artist focused on color realism, fantasy and original large-scale tattoo projects."
   >
 
-  <link
-    rel="stylesheet"
-    href="styles.css"
-  >
-
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 
@@ -32,50 +21,35 @@
 
 <header class="nav">
 
-  <a
-    class="brand"
-    href="index.html"
-  >
+  <a class="brand" href="index.html">
     HENRY D. FLORES
   </a>
 
-
   <div class="nav-right">
-
 
     <nav class="nav-links">
 
-      <a
-        href="portfolio.html"
-        data-i18n="navPortfolio"
-      >
+      <a href="index.html" data-i18n="navHome">
+        Domů
+      </a>
+
+      <a href="portfolio.html" data-i18n="navPortfolio">
         Portfolio
       </a>
 
-      <a
-        href="lixteo.html"
-      >
+      <a href="lixteo.html">
         Lixteo
       </a>
 
-      <a
-        href="artist.html"
-        data-i18n="navArtist"
-      >
+      <a href="artist.html" data-i18n="navArtist">
         Umělec
       </a>
 
-      <a
-        href="project.html"
-        data-i18n="navProject"
-      >
+      <a href="project.html" data-i18n="navProject">
         Projekt
       </a>
 
-      <a
-        href="contact.html"
-        data-i18n="navContact"
-      >
+      <a href="contact.html" data-i18n="navContact">
         Kontakt
       </a>
 
@@ -84,39 +58,19 @@
 
     <div class="lang-switch">
 
-      <button
-        class="lang-btn"
-        id="lang-cs"
-        data-lang="cs"
-        onclick="setLanguage('cs')"
-      >
+      <button class="lang-btn" id="lang-cs" onclick="setLanguage('cs')">
         CZ
       </button>
 
-      <button
-        class="lang-btn"
-        id="lang-en"
-        data-lang="en"
-        onclick="setLanguage('en')"
-      >
+      <button class="lang-btn" id="lang-en" onclick="setLanguage('en')">
         EN
       </button>
 
-      <button
-        class="lang-btn"
-        id="lang-de"
-        data-lang="de"
-        onclick="setLanguage('de')"
-      >
+      <button class="lang-btn" id="lang-de" onclick="setLanguage('de')">
         DE
       </button>
 
-      <button
-        class="lang-btn"
-        id="lang-es"
-        data-lang="es"
-        onclick="setLanguage('es')"
-      >
+      <button class="lang-btn" id="lang-es" onclick="setLanguage('es')">
         ES
       </button>
 
@@ -127,14 +81,9 @@
 </header>
 
 
-
 <main class="page">
 
-
   <section class="artist">
-
-
-    <!-- PHOTO -->
 
     <div class="artist-photo">
 
@@ -146,33 +95,19 @@
     </div>
 
 
-    <!-- ARTIST INFORMATION -->
-
     <div>
 
-
-      <p
-        class="eyebrow"
-        data-i18n="artistNumber"
-      >
+      <p class="eyebrow" data-i18n="artistNumber">
         02 / UMĚLEC
       </p>
 
-
       <h1>
-        Henry<br>
-        D. Flores
+        Henry<br>D. Flores
       </h1>
 
-
-      <p
-        class="lead"
-        data-i18n="artistIntro"
-      >
-        Mexický tatér zaměřený na color realism, fantasy
-        a originální velkoformátové projekty.
-        Jeho práce propojuje umění, technickou přesnost
-        a vizuální vyprávění.
+      <p class="lead" data-i18n="artistIntro">
+        Mexický tatér zaměřený na color realism, fantasy a originální
+        velkoformátové projekty.
       </p>
 
 
@@ -204,206 +139,58 @@
       </div>
 
 
+      <div id="biography" class="bio" hidden>
 
-      <!-- EXPANDED BIOGRAPHY -->
+        <p data-i18n="bio1"></p>
 
-      <div
-        id="biography"
-        class="bio"
-        hidden
-      >
+        <p data-i18n="bio2"></p>
 
+        <p data-i18n="bio3"></p>
 
-        <p data-i18n="bio1">
-          Henry Flores Santiago se narodil v Mexiku,
-          kde vystudoval chemické inženýrství
-          a následně získal magisterský titul
-          v biotechnologii.
-        </p>
+        <p data-i18n="bio4"></p>
 
+        <p data-i18n="bio5"></p>
 
-        <p data-i18n="bio2">
-          Před profesionální dráhou tatéra pracoval
-          v klinických laboratořích
-          a vyučoval fyziku, chemii a matematiku
-          na univerzitní úrovni.
-        </p>
+        <p data-i18n="bio6"></p>
 
+        <p data-i18n="bio7"></p>
 
-        <p data-i18n="bio3">
-          Postupem času našla přesnost vycvičená
-          mezi laboratorními přístroji a vzorci
-          jiné pole působnosti: lidskou kůži.
-          Tetování začalo jako umělecký zájem
-          a postupně se stalo jeho hlavní profesí.
-        </p>
-
-
-        <p data-i18n="bio4">
-          Dnes se soustředí především na color realism,
-          fantasy a originální velkoformátové projekty,
-          které vznikají s ohledem na anatomii,
-          kompozici, barvu a vizuální příběh.
-        </p>
-
-
-        <p data-i18n="bio5">
-          Tetování se pro něj stalo také způsobem,
-          jak poznávat svět.
-          Jeho práce ho zavedla do Mexika,
-          Spojených států, Kanady, Švýcarska,
-          Belgie, Dánska a Německa.
-        </p>
-
-
-        <p data-i18n="bio6">
-          V současnosti žije v České republice
-          a pracuje mezi Českými Budějovicemi
-          a Kirchheim unter Teck v Německu.
-        </p>
-
-
-        <p data-i18n="bio7">
-          Jeho vztah k vědě nikdy nezmizel.
-          V České republice absolvoval část
-          doktorského studia zaměřeného
-          na bioremediaci půd.
-        </p>
-
-
-        <p data-i18n="bio8">
-          Vedle tetování se věnuje olejomalbě,
-          psaní a četbě.
-          Je také autorem sci-fi románu
-          Lixteo – Cazador de emociones
-          a účastní se různých charitativních akcí.
-        </p>
-
-
-        <p data-i18n="bio9">
-          Mezi vědou, tetováním, malbou
-          a literaturou vidí společný impuls:
-          pozorně se dívat, snažit se porozumět
-          a potom proměnit myšlenku
-          v obraz, příběh nebo zkušenost.
-        </p>
-
+        <p data-i18n="bio8"></p>
 
       </div>
 
-
     </div>
 
   </section>
-
-
-
-  <!-- NEXT STEP -->
-
-  <section class="page-head">
-
-    <p
-      class="eyebrow"
-      data-i18n="nextNumber"
-    >
-      03 / PRÁCE
-    </p>
-
-
-    <h1 data-i18n="nextTitle">
-      Prohlédněte si<br>
-      mé portfolio.
-    </h1>
-
-
-    <p
-      class="lead"
-      data-i18n="nextText"
-    >
-      Výběr projektů zaměřených
-      na color realism, fantasy
-      a originální kompozice.
-    </p>
-
-
-    <div class="actions">
-
-      <a
-        class="btn primary"
-        href="portfolio.html"
-        data-i18n="portfolioButton"
-      >
-        ZOBRAZIT PORTFOLIO
-      </a>
-
-
-      <a
-        class="btn"
-        href="project.html"
-        data-i18n="projectButton"
-      >
-        VYPLNIT FORMULÁŘ
-      </a>
-
-    </div>
-
-  </section>
-
 
 </main>
 
 
-
 <footer>
-
-  <span>
-    © 2026 Henry D. Flores
-  </span>
-
-  <span>
-    Color Realism · Fantasy · Custom Tattoo Art
-  </span>
-
+  <span>© 2026 Henry D. Flores</span>
+  <span>Color Realism · Fantasy · Custom Tattoo Art</span>
 </footer>
-
 
 
 <script>
 
-
 const translations = {
-
-
-  /* CZECH */
 
   cs: {
 
-    navPortfolio:
-      "Portfolio",
+    navHome:"Domů",
+    navPortfolio:"Portfolio",
+    navArtist:"Umělec",
+    navProject:"Projekt",
+    navContact:"Kontakt",
 
-    navArtist:
-      "Umělec",
-
-    navProject:
-      "Projekt",
-
-    navContact:
-      "Kontakt",
-
-
-    artistNumber:
-      "02 / UMĚLEC",
+    artistNumber:"02 / UMĚLEC",
 
     artistIntro:
       "Mexický tatér zaměřený na color realism, fantasy a originální velkoformátové projekty. Jeho práce propojuje umění, technickou přesnost a vizuální vyprávění.",
 
-
-    moreHenry:
-      "POZNEJTE HENRYHO",
-
-    lessHenry:
-      "ZOBRAZIT MÉNĚ",
-
+    moreHenry:"POZNEJTE HENRYHO",
+    lessHenry:"ZOBRAZIT MÉNĚ",
 
     bio1:
       "Henry Flores Santiago se narodil v Mexiku, kde vystudoval chemické inženýrství a následně získal magisterský titul v biotechnologii.",
@@ -427,61 +214,26 @@ const translations = {
       "Jeho vztah k vědě nikdy nezmizel. V České republice absolvoval část doktorského studia zaměřeného na bioremediaci půd.",
 
     bio8:
-      "Vedle tetování se věnuje olejomalbě, psaní a četbě. Je také autorem sci-fi románu Lixteo – Cazador de emociones a účastní se různých charitativních akcí.",
-
-    bio9:
-      "Mezi vědou, tetováním, malbou a literaturou vidí společný impuls: pozorně se dívat, snažit se porozumět a potom proměnit myšlenku v obraz, příběh nebo zkušenost.",
-
-
-    nextNumber:
-      "03 / PRÁCE",
-
-    nextTitle:
-      "Prohlédněte si mé portfolio.",
-
-    nextText:
-      "Výběr projektů zaměřených na color realism, fantasy a originální kompozice.",
-
-    portfolioButton:
-      "ZOBRAZIT PORTFOLIO",
-
-    projectButton:
-      "VYPLNIT FORMULÁŘ"
+      "Vedle tetování se věnuje olejomalbě, psaní a četbě. Je také autorem sci-fi románu Lixteo – Lovec emocí a účastní se různých charitativních akcí."
 
   },
 
 
-
-  /* ENGLISH */
-
   en: {
 
-    navPortfolio:
-      "Portfolio",
+    navHome:"Home",
+    navPortfolio:"Portfolio",
+    navArtist:"Artist",
+    navProject:"Project",
+    navContact:"Contact",
 
-    navArtist:
-      "Artist",
-
-    navProject:
-      "Project",
-
-    navContact:
-      "Contact",
-
-
-    artistNumber:
-      "02 / ARTIST",
+    artistNumber:"02 / ARTIST",
 
     artistIntro:
       "Mexican tattoo artist focused on color realism, fantasy and original large-scale projects. His work connects artistic thinking, technical precision and visual storytelling.",
 
-
-    moreHenry:
-      "MORE ABOUT HENRY",
-
-    lessHenry:
-      "SHOW LESS",
-
+    moreHenry:"MORE ABOUT HENRY",
+    lessHenry:"SHOW LESS",
 
     bio1:
       "Henry Flores Santiago was born in Mexico, where he trained as a chemical engineer and later earned a master's degree in biotechnology.",
@@ -505,61 +257,26 @@ const translations = {
       "His relationship with science never disappeared. In the Czech Republic he completed part of a doctoral program focused on soil bioremediation.",
 
     bio8:
-      "Alongside tattooing, he paints in oils, writes and reads. He is also the author of the science-fiction novel Lixteo – Cazador de emociones and participates in various charity events.",
-
-    bio9:
-      "Across science, tattooing, painting and literature, he sees the same impulse: to observe carefully, try to understand and then transform an idea into an image, a story or an experience.",
-
-
-    nextNumber:
-      "03 / WORK",
-
-    nextTitle:
-      "Explore my portfolio.",
-
-    nextText:
-      "A selection of projects focused on color realism, fantasy and original compositions.",
-
-    portfolioButton:
-      "VIEW PORTFOLIO",
-
-    projectButton:
-      "START A PROJECT"
+      "Alongside tattooing, he paints in oils, writes and reads. He is also the author of the science-fiction novel Lixteo – Hunter of Emotions and participates in various charity events."
 
   },
 
 
-
-  /* GERMAN */
-
   de: {
 
-    navPortfolio:
-      "Portfolio",
+    navHome:"Start",
+    navPortfolio:"Portfolio",
+    navArtist:"Künstler",
+    navProject:"Projekt",
+    navContact:"Kontakt",
 
-    navArtist:
-      "Künstler",
-
-    navProject:
-      "Projekt",
-
-    navContact:
-      "Kontakt",
-
-
-    artistNumber:
-      "02 / KÜNSTLER",
+    artistNumber:"02 / KÜNSTLER",
 
     artistIntro:
       "Mexikanischer Tätowierer mit Schwerpunkt auf Color Realism, Fantasy und individuellen großformatigen Projekten. Seine Arbeit verbindet künstlerisches Denken, technische Präzision und visuelles Storytelling.",
 
-
-    moreHenry:
-      "MEHR ÜBER HENRY",
-
-    lessHenry:
-      "WENIGER ANZEIGEN",
-
+    moreHenry:"MEHR ÜBER HENRY",
+    lessHenry:"WENIGER ANZEIGEN",
 
     bio1:
       "Henry Flores Santiago wurde in Mexiko geboren, wo er Chemieingenieurwesen studierte und später einen Masterabschluss in Biotechnologie erwarb.",
@@ -583,61 +300,26 @@ const translations = {
       "Seine Verbindung zur Wissenschaft ist nie verschwunden. In Tschechien absolvierte er einen Teil eines Promotionsstudiums mit Schwerpunkt auf Bodenbioremediation.",
 
     bio8:
-      "Neben dem Tätowieren malt er mit Öl, schreibt und liest. Außerdem ist er Autor des Science-Fiction-Romans Lixteo – Cazador de emociones und beteiligt sich an verschiedenen Wohltätigkeitsveranstaltungen.",
-
-    bio9:
-      "In Wissenschaft, Tätowieren, Malerei und Literatur sieht er denselben Impuls: genau hinzusehen, verstehen zu wollen und eine Idee anschließend in ein Bild, eine Geschichte oder eine Erfahrung zu verwandeln.",
-
-
-    nextNumber:
-      "03 / ARBEITEN",
-
-    nextTitle:
-      "Entdecke mein Portfolio.",
-
-    nextText:
-      "Eine Auswahl von Projekten mit Schwerpunkt auf Color Realism, Fantasy und individuellen Kompositionen.",
-
-    portfolioButton:
-      "PORTFOLIO ANSEHEN",
-
-    projectButton:
-      "PROJEKT STARTEN"
+      "Neben dem Tätowieren malt er mit Öl, schreibt und liest. Außerdem ist er Autor des Science-Fiction-Romans Lixteo – Jäger der Emotionen und beteiligt sich an verschiedenen Wohltätigkeitsveranstaltungen."
 
   },
 
 
-
-  /* SPANISH */
-
   es: {
 
-    navPortfolio:
-      "Portafolio",
+    navHome:"Inicio",
+    navPortfolio:"Portafolio",
+    navArtist:"Artista",
+    navProject:"Proyecto",
+    navContact:"Contacto",
 
-    navArtist:
-      "Artista",
-
-    navProject:
-      "Proyecto",
-
-    navContact:
-      "Contacto",
-
-
-    artistNumber:
-      "02 / ARTISTA",
+    artistNumber:"02 / ARTISTA",
 
     artistIntro:
       "Tatuador mexicano enfocado en realismo a color, fantasía y proyectos originales de gran formato. Su trabajo conecta pensamiento artístico, precisión técnica y narrativa visual.",
 
-
-    moreHenry:
-      "CONOCE MÁS A HENRY",
-
-    lessHenry:
-      "MOSTRAR MENOS",
-
+    moreHenry:"CONOCE MÁS A HENRY",
+    lessHenry:"MOSTRAR MENOS",
 
     bio1:
       "Henry Flores Santiago nació en México, donde se formó como ingeniero químico y posteriormente obtuvo una maestría en biotecnología.",
@@ -661,198 +343,76 @@ const translations = {
       "Su relación con la ciencia nunca desapareció. En la República Checa cursó parte de un doctorado enfocado en biorremediación de suelos.",
 
     bio8:
-      "Además del tatuaje, pinta al óleo, escribe y lee. También es autor de la novela de ciencia ficción Lixteo – Cazador de emociones y participa en distintos eventos de caridad.",
-
-    bio9:
-      "Entre ciencia, tatuaje, pintura y literatura encuentra un mismo impulso: observar con atención, intentar comprender y después transformar una idea en una imagen, una historia o una experiencia.",
-
-
-    nextNumber:
-      "03 / TRABAJO",
-
-    nextTitle:
-      "Conoce mi portafolio.",
-
-    nextText:
-      "Una selección de proyectos centrados en realismo a color, fantasía y composiciones originales.",
-
-    portfolioButton:
-      "VER PORTAFOLIO",
-
-    projectButton:
-      "INICIAR PROYECTO"
+      "Además del tatuaje, pinta al óleo, escribe y lee. También es autor de la novela de ciencia ficción Lixteo – Cazador de emociones y participa en distintos eventos de caridad."
 
   }
 
 };
 
 
-
 let biographyOpen = false;
 
 
+function setLanguage(language){
 
-function setLanguage(language) {
+  localStorage.setItem("language", language);
+  document.documentElement.lang = language;
 
-  localStorage.setItem(
-    "language",
-    language
-  );
+  document.querySelectorAll("[data-i18n]").forEach(element => {
 
+    const key = element.dataset.i18n;
 
-  document.documentElement.lang =
-    language;
+    if(translations[language][key]){
+      element.textContent = translations[language][key];
+    }
 
+  });
 
-  document
-    .querySelectorAll(
-      "[data-i18n]"
-    )
-    .forEach(element => {
+  document.querySelectorAll(".lang-btn").forEach(button => {
+    button.classList.remove("active");
+  });
 
-      const key =
-        element.dataset.i18n;
+  const active = document.getElementById("lang-" + language);
 
-      if (
-        translations[language] &&
-        translations[language][key]
-      ) {
-
-        element.textContent =
-          translations[language][key];
-
-      }
-
-    });
-
-
-
-  document
-    .querySelectorAll(
-      ".lang-btn"
-    )
-    .forEach(button => {
-
-      button
-        .classList
-        .remove("active");
-
-    });
-
-
-
-  const activeButton =
-    document.getElementById(
-      "lang-" + language
-    );
-
-
-  if (activeButton) {
-
-    activeButton
-      .classList
-      .add("active");
-
+  if(active){
+    active.classList.add("active");
   }
 
+  document.getElementById("bioButton").textContent =
+    biographyOpen
+      ? translations[language].lessHenry
+      : translations[language].moreHenry;
+
+}
 
 
-  const bioButton =
-    document.getElementById(
-      "bioButton"
-    );
+function toggleBiography(){
 
+  const biography = document.getElementById("biography");
+  const button = document.getElementById("bioButton");
 
-  if (biographyOpen) {
+  const language = localStorage.getItem("language") || "cs";
 
-    bioButton.textContent =
-      translations[language]
-        .lessHenry;
+  biographyOpen = !biographyOpen;
 
-  }
+  if(biographyOpen){
 
-  else {
+    biography.removeAttribute("hidden");
+    button.textContent = translations[language].lessHenry;
 
-    bioButton.textContent =
-      translations[language]
-        .moreHenry;
+  } else {
+
+    biography.setAttribute("hidden","");
+    button.textContent = translations[language].moreHenry;
 
   }
 
 }
 
 
-
-function toggleBiography() {
-
-  const biography =
-    document.getElementById(
-      "biography"
-    );
-
-
-  const button =
-    document.getElementById(
-      "bioButton"
-    );
-
-
-  const language =
-    localStorage.getItem(
-      "language"
-    ) || "cs";
-
-
-  biographyOpen =
-    !biographyOpen;
-
-
-  if (biographyOpen) {
-
-    biography
-      .removeAttribute(
-        "hidden"
-      );
-
-
-    button.textContent =
-      translations[language]
-        .lessHenry;
-
-  }
-
-  else {
-
-    biography
-      .setAttribute(
-        "hidden",
-        ""
-      );
-
-
-    button.textContent =
-      translations[language]
-        .moreHenry;
-
-  }
-
-}
-
-
-
-const savedLanguage =
-  localStorage.getItem(
-    "language"
-  ) || "cs";
-
-
-setLanguage(
-  savedLanguage
-);
-
+setLanguage(localStorage.getItem("language") || "cs");
 
 </script>
-
 
 </body>
 </html>
