@@ -9,16 +9,18 @@
 
   <meta
     name="description"
-    content="Henry D. Flores — tattoo artist specializing in color realism, fantasy and original custom tattoo projects in České Budějovice and Kirchheim unter Teck."
+    content="Henry D. Flores — tattoo artist specializing in color realism, fantasy and original tattoo projects in České Budějovice and Kirchheim unter Teck."
   >
+
+  <meta name="robots" content="index, follow">
 
   <link rel="stylesheet" href="styles.css">
 
   <style>
 
-    /* =========================
-       HOME HERO
-    ========================= */
+    /* =================================
+       HOME ONLY
+    ================================= */
 
     .home-hero{
       min-height:100vh;
@@ -26,7 +28,7 @@
       grid-template-columns:.9fr 1.1fr;
       gap:6vw;
       align-items:center;
-      padding:140px 5vw 70px;
+      padding:135px 5vw 75px;
     }
 
     .home-copy{
@@ -34,19 +36,19 @@
     }
 
     .home-title{
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(72px,8vw,118px);
-      font-weight:400;
-      line-height:.82;
-      letter-spacing:-4px;
       margin:0;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(68px,8vw,118px);
+      line-height:.84;
+      letter-spacing:-4px;
+      font-weight:400;
     }
 
     .home-subtitle{
       max-width:500px;
-      margin-top:34px;
+      margin-top:32px;
       font-size:16px;
-      line-height:1.8;
+      line-height:1.85;
       color:#5d5b57;
     }
 
@@ -54,7 +56,7 @@
       display:flex;
       flex-wrap:wrap;
       gap:28px;
-      margin-top:38px;
+      margin-top:36px;
       font-size:10px;
       letter-spacing:2px;
       text-transform:uppercase;
@@ -69,34 +71,34 @@
       display:flex;
       flex-wrap:wrap;
       gap:12px;
-      margin-top:42px;
+      margin-top:40px;
     }
 
     .home-image{
       height:72vh;
-      min-height:560px;
+      min-height:540px;
       overflow:hidden;
     }
 
     .home-image img{
+      display:block;
       width:100%;
       height:100%;
       object-fit:cover;
       object-position:center center;
-      display:block;
     }
 
 
-    /* =========================
-       FULL PORTFOLIO
-    ========================= */
+    /* =================================
+       PORTFOLIO ON HOME
+    ================================= */
 
     .home-portfolio{
-      border-top:1px solid rgba(47,47,47,.16);
       padding:105px 5vw 110px;
+      border-top:1px solid rgba(47,47,47,.16);
     }
 
-    .portfolio-heading{
+    .home-section-heading{
       display:flex;
       justify-content:space-between;
       align-items:flex-end;
@@ -104,29 +106,29 @@
       margin-bottom:55px;
     }
 
-    .portfolio-heading h2{
+    .home-section-heading h2{
+      margin:10px 0 0;
       font-family:Georgia,"Times New Roman",serif;
       font-size:clamp(52px,6vw,88px);
       line-height:1;
       font-weight:400;
       letter-spacing:-2px;
-      margin-top:10px;
     }
 
-    .portfolio-description{
+    .home-section-description{
       max-width:430px;
       font-size:15px;
-      line-height:1.8;
+      line-height:1.85;
       color:#5d5b57;
     }
 
-    .full-gallery{
+    .home-gallery{
       column-count:2;
       column-gap:22px;
       width:100%;
     }
 
-    .gallery-item{
+    .home-gallery-item{
       display:inline-block;
       width:100%;
       margin:0 0 22px;
@@ -134,98 +136,92 @@
       overflow:hidden;
     }
 
-    .gallery-item img{
+    .home-gallery-item img{
       display:block;
       width:100%;
       height:auto;
-      transition:transform .35s ease;
-    }
-
-    .gallery-item:hover img{
-      transform:scale(1.01);
-    }
-
-    .portfolio-bottom{
-      display:flex;
-      justify-content:center;
-      margin-top:50px;
     }
 
 
-    /* =========================
+    /* =================================
        ARTIST PREVIEW
-    ========================= */
+    ================================= */
 
-    .artist-preview{
-      border-top:1px solid rgba(47,47,47,.16);
+    .home-artist{
       padding:110px 5vw;
+      border-top:1px solid rgba(47,47,47,.16);
       display:grid;
       grid-template-columns:.9fr 1.1fr;
       gap:8vw;
       align-items:center;
     }
 
-    .artist-preview-image{
+    .home-artist-photo{
       overflow:hidden;
     }
 
-    .artist-preview-image img{
-      width:100%;
+    .home-artist-photo img{
       display:block;
+      width:100%;
+      height:auto;
     }
 
-    .artist-preview h2{
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:clamp(48px,6vw,82px);
-      line-height:.98;
-      font-weight:400;
+    .home-artist-copy{
+      max-width:650px;
+    }
+
+    .home-artist-copy h2{
       margin:12px 0 28px;
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:clamp(52px,6vw,86px);
+      line-height:.96;
+      font-weight:400;
     }
 
-    .artist-preview p{
-      max-width:580px;
+    .home-artist-copy p{
       font-size:16px;
       line-height:1.9;
       color:#5d5b57;
     }
 
 
-    /* =========================
-       FINAL CTA
-    ========================= */
+    /* =================================
+       PROJECT CTA
+    ================================= */
 
-    .home-contact{
-      border-top:1px solid rgba(47,47,47,.16);
+    .home-project{
       padding:110px 5vw;
+      border-top:1px solid rgba(47,47,47,.16);
       display:grid;
       grid-template-columns:1fr 1fr;
       gap:8vw;
       align-items:end;
     }
 
-    .home-contact h2{
+    .home-project h2{
+      margin:12px 0 0;
       font-family:Georgia,"Times New Roman",serif;
       font-size:clamp(52px,7vw,100px);
       line-height:.95;
-      font-weight:400;
       letter-spacing:-3px;
+      font-weight:400;
     }
 
-    .home-contact-copy{
+    .home-project-copy{
       max-width:520px;
     }
 
-    .home-contact-copy p{
-      font-size:16px;
-      line-height:1.8;
-      color:#5d5b57;
+    .home-project-copy p{
       margin-bottom:30px;
+      font-size:16px;
+      line-height:1.85;
+      color:#5d5b57;
     }
 
 
-    /* =========================
+    /* =================================
        RESPONSIVE
-    ========================= */
+    ================================= */
 
     @media(max-width:850px){
 
@@ -234,49 +230,49 @@
         padding:125px 22px 55px;
       }
 
-      .home-image{
-        height:62vh;
-        min-height:480px;
-      }
-
       .home-title{
         letter-spacing:-2px;
+      }
+
+      .home-image{
+        height:60vh;
+        min-height:450px;
       }
 
       .home-portfolio{
         padding:80px 22px;
       }
 
-      .portfolio-heading{
+      .home-section-heading{
         display:block;
       }
 
-      .portfolio-description{
+      .home-section-description{
         margin-top:25px;
       }
 
-      .artist-preview{
+      .home-artist{
         grid-template-columns:1fr;
         padding:80px 22px;
       }
 
-      .home-contact{
+      .home-project{
         grid-template-columns:1fr;
         padding:80px 22px;
       }
 
     }
 
-
     @media(max-width:650px){
 
-      .full-gallery{
+      .home-gallery{
         column-count:1;
       }
 
     }
 
   </style>
+
 </head>
 
 
@@ -346,9 +342,12 @@
 <main>
 
 
-  <!-- HERO -->
+  <!-- =================================
+       PORTADA
+  ================================== -->
 
   <section class="home-hero">
+
 
     <div class="home-copy">
 
@@ -365,6 +364,7 @@
         kompozici a vizuálním příběhu.
       </p>
 
+
       <div class="home-tags">
 
         <span>COLOR REALISM</span>
@@ -376,6 +376,7 @@
         </span>
 
       </div>
+
 
       <div class="home-actions">
 
@@ -409,16 +410,20 @@
 
     </div>
 
+
   </section>
 
 
 
-  <!-- FULL PORTFOLIO -->
+  <!-- =================================
+       PORTFOLIO COMPLETO
+       IMG_8145 NO SE REPITE
+  ================================== -->
 
   <section class="home-portfolio" id="portfolio">
 
 
-    <div class="portfolio-heading">
+    <div class="home-section-heading">
 
       <div>
 
@@ -434,95 +439,154 @@
 
 
       <p
-        class="portfolio-description"
+        class="home-section-description"
         data-i18n="portfolioDescription"
       >
         Výběr originálních tetovacích projektů zaměřených
-        na barevný realismus, fantasy a velkoformátové kompozice.
+        na barevný realismus, fantasy a rozsáhlé kompozice.
       </p>
 
     </div>
 
 
 
-    <div class="full-gallery">
+    <div class="home-gallery">
 
-      <div class="gallery-item">
-        <img src="images/IMG_8145.jpeg" alt="Color realism tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8147.jpeg"
+          alt="Color realism tattoo by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8147.jpeg" alt="Color realism tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8148.jpeg"
+          alt="Fantasy tattoo by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8148.jpeg" alt="Fantasy tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8149.jpeg"
+          alt="Realism tattoo by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8149.jpeg" alt="Realistic tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8150.jpeg"
+          alt="Color tattoo by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8150.jpeg" alt="Color tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8152.jpeg"
+          alt="Color realism tattoo by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8152.jpeg" alt="Color realism tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8153.jpeg"
+          alt="Fantasy realism tattoo by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8153.jpeg" alt="Fantasy realism tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8154.jpeg"
+          alt="Large scale tattoo by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8154.jpeg" alt="Large scale tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8155.jpeg"
+          alt="Color realism tattoo by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8155.jpeg" alt="Color realism tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8156.jpeg"
+          alt="Animal realism tattoo by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8156.jpeg" alt="Animal realism tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8157.jpeg"
+          alt="Color animal tattoo by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8157.jpeg" alt="Color animal tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8158.jpeg"
+          alt="Fantasy color tattoo by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8158.jpeg" alt="Fantasy color tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8159.jpeg"
+          alt="Realism tattoo by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8159.jpeg" alt="Realism tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8160.jpeg"
+          alt="Custom color tattoo by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8160.jpeg" alt="Custom color tattoo by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8161.jpeg"
+          alt="Original tattoo artwork by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8161.jpeg" alt="Original tattoo artwork by Henry D. Flores" loading="lazy">
+
+      <div class="home-gallery-item">
+        <img
+          src="images/IMG_8163.jpeg"
+          alt="Tattoo portfolio by Henry D. Flores"
+          loading="lazy"
+        >
       </div>
 
-      <div class="gallery-item">
-        <img src="images/IMG_8163.jpeg" alt="Tattoo portfolio by Henry D. Flores" loading="lazy">
-      </div>
-
-    </div>
-
-
-    <div class="portfolio-bottom">
-
-      <a
-        class="btn"
-        href="portfolio.html"
-        data-i18n="fullPortfolioButton"
-      >
-        OTEVŘÍT SAMOSTATNÉ PORTFOLIO
-      </a>
 
     </div>
 
@@ -530,11 +594,15 @@
 
 
 
-  <!-- ARTIST -->
+  <!-- =================================
+       ARTISTA
+       IMG_8151 SOLO AQUÍ
+  ================================== -->
 
-  <section class="artist-preview">
+  <section class="home-artist">
 
-    <div class="artist-preview-image">
+
+    <div class="home-artist-photo">
 
       <img
         src="images/IMG_8151.jpeg"
@@ -545,7 +613,7 @@
     </div>
 
 
-    <div>
+    <div class="home-artist-copy">
 
       <p class="eyebrow" data-i18n="artistNumber">
         02 / UMĚLEC
@@ -555,11 +623,14 @@
         Henry<br>D. Flores
       </h2>
 
+
       <p data-i18n="artistText">
-        Mexický tatér zaměřený na color realism, fantasy
-        a originální velkoformátové projekty. Jeho cesta
-        propojuje vědu, tetování, malbu a psaní.
+        Henry D. Flores je mexický tatér zaměřený na barevný realismus,
+        fantasy a originální rozsáhlé projekty. Jeho cesta propojuje
+        vědu, tetování, malbu a psaní a hledá společný prostor mezi
+        technickou přesností a vizuálním vyprávěním.
       </p>
+
 
       <div class="home-actions">
 
@@ -575,33 +646,39 @@
 
     </div>
 
+
   </section>
 
 
 
-  <!-- CONTACT -->
+  <!-- =================================
+       PROJEKT
+  ================================== -->
 
-  <section class="home-contact">
+  <section class="home-project">
+
 
     <div>
 
-      <p class="eyebrow" data-i18n="contactNumber">
+      <p class="eyebrow" data-i18n="projectNumber">
         03 / VÁŠ PROJEKT
       </p>
 
-      <h2 data-i18n-html="contactTitle">
+      <h2 data-i18n-html="projectTitle">
         Máte nápad?<br>Pojďme ho vytvořit.
       </h2>
 
     </div>
 
 
-    <div class="home-contact-copy">
+    <div class="home-project-copy">
 
-      <p data-i18n="contactText">
-        Pokud máte představu o tetování,
-        pošlete mi základní informace o projektu.
+      <p data-i18n="projectText">
+        Pokud máte představu o novém tetování,
+        pošlete mi základní informace o motivu,
+        umístění a přibližné velikosti.
       </p>
+
 
       <div class="home-actions">
 
@@ -625,6 +702,7 @@
 
     </div>
 
+
   </section>
 
 
@@ -634,7 +712,9 @@
 
 <footer>
 
-  <span>© 2026 Henry D. Flores</span>
+  <span>
+    © 2026 Henry D. Flores
+  </span>
 
   <span>
     Color Realism · Fantasy · Custom Tattoo Art
@@ -659,43 +739,50 @@ const translations = {
 
     heroEyebrow:"TATTOO ARTIST · COLOR REALISM",
 
-    heroTitle:"Umění<br>na kůži.",
+    heroTitle:
+      "Umění<br>na kůži.",
 
     heroSubtitle:
       "Originální tetovací projekty založené na barvě, kompozici a vizuálním příběhu.",
 
-    customProjects:"INDIVIDUÁLNÍ PROJEKTY",
+    customProjects:
+      "INDIVIDUÁLNÍ PROJEKTY",
 
-    projectButton:"VYPLNIT FORMULÁŘ",
+    projectButton:
+      "VYPLNIT FORMULÁŘ",
 
-    portfolioButton:"ZOBRAZIT PORTFOLIO",
+    portfolioButton:
+      "ZOBRAZIT PORTFOLIO",
 
-    portfolioNumber:"01 / VYBRANÉ PRÁCE",
+    portfolioNumber:
+      "01 / VYBRANÉ PRÁCE",
 
-    portfolioTitle:"Portfolio",
+    portfolioTitle:
+      "Portfolio",
 
     portfolioDescription:
-      "Výběr originálních tetovacích projektů zaměřených na barevný realismus, fantasy a velkoformátové kompozice.",
+      "Výběr originálních tetovacích projektů zaměřených na barevný realismus, fantasy a rozsáhlé kompozice.",
 
-    fullPortfolioButton:
-      "OTEVŘÍT SAMOSTATNÉ PORTFOLIO",
-
-    artistNumber:"02 / UMĚLEC",
+    artistNumber:
+      "02 / UMĚLEC",
 
     artistText:
-      "Mexický tatér zaměřený na color realism, fantasy a originální velkoformátové projekty. Jeho cesta propojuje vědu, tetování, malbu a psaní.",
+      "Henry D. Flores je mexický tatér zaměřený na barevný realismus, fantasy a originální rozsáhlé projekty. Jeho cesta propojuje vědu, tetování, malbu a psaní a hledá společný prostor mezi technickou přesností a vizuálním vyprávěním.",
 
-    artistButton:"POZNEJTE HENRYHO",
+    artistButton:
+      "POZNEJTE HENRYHO",
 
-    contactNumber:"03 / VÁŠ PROJEKT",
+    projectNumber:
+      "03 / VÁŠ PROJEKT",
 
-    contactTitle:
+    projectTitle:
       "Máte nápad?<br>Pojďme ho vytvořit.",
 
-    contactText:
-      "Pokud máte představu o tetování, pošlete mi základní informace o projektu.",
+    projectText:
+      "Pokud máte představu o novém tetování, pošlete mi základní informace o motivu, umístění a přibližné velikosti.",
 
-    contactButton:"KONTAKT"
+    contactButton:
+      "KONTAKT"
 
   },
 
@@ -707,45 +794,53 @@ const translations = {
     navProject:"Project",
     navContact:"Contact",
 
-    heroEyebrow:"TATTOO ARTIST · COLOR REALISM",
+    heroEyebrow:
+      "TATTOO ARTIST · COLOR REALISM",
 
-    heroTitle:"Art<br>Beyond<br>Skin.",
+    heroTitle:
+      "Art<br>Beyond<br>Skin.",
 
     heroSubtitle:
       "Original tattoo projects built through color, composition and visual storytelling.",
 
-    customProjects:"CUSTOM PROJECTS",
+    customProjects:
+      "CUSTOM PROJECTS",
 
-    projectButton:"FILL OUT THE FORM",
+    projectButton:
+      "FILL OUT THE FORM",
 
-    portfolioButton:"VIEW PORTFOLIO",
+    portfolioButton:
+      "VIEW PORTFOLIO",
 
-    portfolioNumber:"01 / SELECTED WORK",
+    portfolioNumber:
+      "01 / SELECTED WORK",
 
-    portfolioTitle:"Portfolio",
+    portfolioTitle:
+      "Portfolio",
 
     portfolioDescription:
       "A selection of original tattoo projects focused on color realism, fantasy and large-scale compositions.",
 
-    fullPortfolioButton:
-      "OPEN FULL PORTFOLIO",
-
-    artistNumber:"02 / ARTIST",
+    artistNumber:
+      "02 / ARTIST",
 
     artistText:
-      "Mexican tattoo artist focused on color realism, fantasy and original large-scale projects. His journey connects science, tattooing, painting and writing.",
+      "Henry D. Flores is a Mexican tattoo artist focused on color realism, fantasy and original large-scale projects. His path connects science, tattooing, painting and writing, searching for common ground between technical precision and visual storytelling.",
 
-    artistButton:"MORE ABOUT HENRY",
+    artistButton:
+      "MORE ABOUT HENRY",
 
-    contactNumber:"03 / YOUR PROJECT",
+    projectNumber:
+      "03 / YOUR PROJECT",
 
-    contactTitle:
+    projectTitle:
       "Have an idea?<br>Let's create it.",
 
-    contactText:
-      "If you have a tattoo idea, send me the essential information about your project.",
+    projectText:
+      "If you have an idea for a new tattoo, send me the essential information about the subject, placement and approximate size.",
 
-    contactButton:"CONTACT"
+    contactButton:
+      "CONTACT"
 
   },
 
@@ -757,45 +852,53 @@ const translations = {
     navProject:"Projekt",
     navContact:"Kontakt",
 
-    heroEyebrow:"TATTOO ARTIST · COLOR REALISM",
+    heroEyebrow:
+      "TATTOO ARTIST · COLOR REALISM",
 
-    heroTitle:"Kunst<br>auf der Haut.",
+    heroTitle:
+      "Kunst<br>auf der Haut.",
 
     heroSubtitle:
       "Individuelle Tattoo-Projekte mit Fokus auf Farbe, Komposition und visuelles Storytelling.",
 
-    customProjects:"INDIVIDUELLE PROJEKTE",
+    customProjects:
+      "INDIVIDUELLE PROJEKTE",
 
-    projectButton:"FORMULAR AUSFÜLLEN",
+    projectButton:
+      "FORMULAR AUSFÜLLEN",
 
-    portfolioButton:"PORTFOLIO ANSEHEN",
+    portfolioButton:
+      "PORTFOLIO ANSEHEN",
 
-    portfolioNumber:"01 / AUSGEWÄHLTE ARBEITEN",
+    portfolioNumber:
+      "01 / AUSGEWÄHLTE ARBEITEN",
 
-    portfolioTitle:"Portfolio",
+    portfolioTitle:
+      "Portfolio",
 
     portfolioDescription:
       "Eine Auswahl individueller Tattoo-Projekte mit Schwerpunkt auf Color Realism, Fantasy und großformatigen Kompositionen.",
 
-    fullPortfolioButton:
-      "GESAMTES PORTFOLIO ÖFFNEN",
-
-    artistNumber:"02 / KÜNSTLER",
+    artistNumber:
+      "02 / KÜNSTLER",
 
     artistText:
-      "Mexikanischer Tätowierer mit Schwerpunkt auf Color Realism, Fantasy und individuellen großformatigen Projekten. Sein Weg verbindet Wissenschaft, Tätowieren, Malerei und Schreiben.",
+      "Henry D. Flores ist ein mexikanischer Tätowierer mit Schwerpunkt auf Color Realism, Fantasy und individuellen großformatigen Projekten. Sein Weg verbindet Wissenschaft, Tätowieren, Malerei und Schreiben und sucht den gemeinsamen Raum zwischen technischer Präzision und visueller Erzählung.",
 
-    artistButton:"MEHR ÜBER HENRY",
+    artistButton:
+      "MEHR ÜBER HENRY",
 
-    contactNumber:"03 / DEIN PROJEKT",
+    projectNumber:
+      "03 / DEIN PROJEKT",
 
-    contactTitle:
+    projectTitle:
       "Hast du eine Idee?<br>Lass sie uns umsetzen.",
 
-    contactText:
-      "Wenn du eine Tattoo-Idee hast, schick mir die wichtigsten Informationen zu deinem Projekt.",
+    projectText:
+      "Wenn du eine Idee für ein neues Tattoo hast, schick mir die wichtigsten Informationen zu Motiv, Körperstelle und ungefährer Größe.",
 
-    contactButton:"KONTAKT"
+    contactButton:
+      "KONTAKT"
 
   },
 
@@ -807,45 +910,53 @@ const translations = {
     navProject:"Proyecto",
     navContact:"Contacto",
 
-    heroEyebrow:"TATTOO ARTIST · REALISMO A COLOR",
+    heroEyebrow:
+      "TATTOO ARTIST · REALISMO A COLOR",
 
-    heroTitle:"Arte<br>más allá<br>de la piel.",
+    heroTitle:
+      "Arte<br>más allá<br>de la piel.",
 
     heroSubtitle:
       "Proyectos originales de tatuaje construidos mediante color, composición y narrativa visual.",
 
-    customProjects:"PROYECTOS PERSONALIZADOS",
+    customProjects:
+      "PROYECTOS PERSONALIZADOS",
 
-    projectButton:"LLENAR FORMULARIO",
+    projectButton:
+      "LLENAR FORMULARIO",
 
-    portfolioButton:"VER PORTAFOLIO",
+    portfolioButton:
+      "VER PORTAFOLIO",
 
-    portfolioNumber:"01 / TRABAJOS SELECCIONADOS",
+    portfolioNumber:
+      "01 / TRABAJOS SELECCIONADOS",
 
-    portfolioTitle:"Portafolio",
+    portfolioTitle:
+      "Portafolio",
 
     portfolioDescription:
       "Una selección de proyectos originales de tatuaje centrados en realismo a color, fantasía y composiciones de gran formato.",
 
-    fullPortfolioButton:
-      "ABRIR PORTAFOLIO COMPLETO",
-
-    artistNumber:"02 / ARTISTA",
+    artistNumber:
+      "02 / ARTISTA",
 
     artistText:
-      "Tatuador mexicano enfocado en realismo a color, fantasía y proyectos originales de gran formato. Su recorrido conecta ciencia, tatuaje, pintura y escritura.",
+      "Henry D. Flores es un tatuador mexicano especializado en realismo a color, fantasía y proyectos originales de gran formato. Su recorrido conecta ciencia, tatuaje, pintura y escritura, buscando un punto común entre la precisión técnica y la narrativa visual.",
 
-    artistButton:"CONOCE MÁS A HENRY",
+    artistButton:
+      "CONOCE MÁS A HENRY",
 
-    contactNumber:"03 / TU PROYECTO",
+    projectNumber:
+      "03 / TU PROYECTO",
 
-    contactTitle:
+    projectTitle:
       "¿Tienes una idea?<br>Vamos a crearla.",
 
-    contactText:
-      "Si tienes una idea para un tatuaje, envíame la información esencial de tu proyecto.",
+    projectText:
+      "Si tienes una idea para un nuevo tatuaje, envíame la información esencial sobre el motivo, la zona y el tamaño aproximado.",
 
-    contactButton:"CONTACTO"
+    contactButton:
+      "CONTACTO"
 
   }
 
@@ -855,22 +966,28 @@ const translations = {
 
 function setLanguage(language){
 
-  localStorage.setItem("language", language);
+  localStorage.setItem(
+    "language",
+    language
+  );
 
-  document.documentElement.lang = language;
+  document.documentElement.lang =
+    language;
 
 
   document
     .querySelectorAll("[data-i18n]")
     .forEach(element => {
 
-      const key = element.dataset.i18n;
+      const key =
+        element.dataset.i18n;
 
       if(
         translations[language] &&
         translations[language][key]
       ){
-        element.textContent = translations[language][key];
+        element.textContent =
+          translations[language][key];
       }
 
     });
@@ -880,13 +997,15 @@ function setLanguage(language){
     .querySelectorAll("[data-i18n-html]")
     .forEach(element => {
 
-      const key = element.dataset.i18nHtml;
+      const key =
+        element.dataset.i18nHtml;
 
       if(
         translations[language] &&
         translations[language][key]
       ){
-        element.innerHTML = translations[language][key];
+        element.innerHTML =
+          translations[language][key];
       }
 
     });
@@ -900,7 +1019,9 @@ function setLanguage(language){
 
 
   const active =
-    document.getElementById("lang-" + language);
+    document.getElementById(
+      "lang-" + language
+    );
 
   if(active){
     active.classList.add("active");
@@ -917,6 +1038,7 @@ setLanguage(savedLanguage);
 
 
 </script>
+
 
 </body>
 </html>
