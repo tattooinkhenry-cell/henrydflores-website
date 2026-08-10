@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lixteo – Cazador de emociones | Henry D. Flores</title>
+
+  <meta
+    name="description"
+    content="Lixteo – Cazador de emociones. Sci-fi román Henryho D. Florese o emocích, lidské zkušenosti a bytosti, která se je snaží pochopit."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+
+    .book-page {
+      min-height: 100vh;
+      padding: 150px 5vw 100px;
+    }
+
+    .book-layout {
+      max-width: 1250px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 8vw;
+      align-items: center;
+    }
+
+    .book-cover {
+      min-height: 620px;
+      background: #EFE7DB;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px;
+      border: 1px solid rgba(47,47,47,.08);
+    }
+
+    .book-cover-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(65px, 8vw, 105px);
+      font-weight: 400;
+      line-height: .95;
+      color: #2F2F2F;
+    }
+
+    .book-cover-subtitle {
+      margin-top: 28px;
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #8E6A45;
+    }
+
+    .book-number {
+      margin-bottom: 25px;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #8E6A45;
+    }
+
+    .book-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(52px, 6vw, 90px);
+      line-height: .98;
+      font-weight: 400;
+      color: #2F2F2F;
+      margin: 0 0 35px;
+      max-width: 750px;
+    }
+
+    .book-description {
+      max-width: 680px;
+      font-size: 17px;
+      line-height: 1.9;
+      color: #5D5B57;
+    }
+
+    .book-description p {
+      margin-bottom: 25px;
+    }
+
+    .book-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin: 35px 0;
+    }
+
+    .book-tag {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(47,47,47,.25);
+      padding-bottom: 7px;
+    }
+
+    .book-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 35px;
+    }
+
+    .book-button {
+      display: inline-block;
+      padding: 18px 28px;
+      border: 1px solid #2F2F2F;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 10px;
+      transition: .25s ease;
+      cursor: pointer;
+    }
+
+    .book-button.primary {
+      background: #2F2F2F;
+      color: #FAF8F3;
+    }
+
+    .book-button.secondary {
+      background: transparent;
+      color: #2F2F2F;
+    }
+
+    .book-button:hover {
+      opacity: .7;
+    }
+
+    .book-note {
+      margin-top: 45px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(47,47,47,.15);
+      max-width: 680px;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #77736E;
+    }
+
+    .language-switch {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .language-switch button {
+      background: none;
+      border: none;
+      padding: 0 0 4px;
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: #77736E;
+      cursor: pointer;
+    }
+
+    .language-switch button.active {
+      color: #2F2F2F;
+      border-bottom: 1px solid #2F2F2F;
+    }
+
+    @media (max-width: 850px) {
+
+      .book-page {
+        padding: 120px 6vw 70px;
+      }
+
+      .book-layout {
+        grid-template-columns: 1fr;
+        gap: 60px;
+      }
+
+      .book-cover {
+        min-height: 500px;
+      }
+
+      .book-actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <a class="brand" href="index.html">
+    HENRY D. FLORES
+  </a>
+
+  <nav class="nav">
+
+    <a href="portfolio.html" data-i18n="navPortfolio">
+      Portfolio
+    </a>
+
+    <a href="lixteo.html">
+      Lixteo
+    </a>
+
+    <a href="artist.html" data-i18n="navArtist">
+      Umělec
+    </a>
+
+    <a href="project.html" data-i18n="navProject">
+      Projekt
+    </a>
+
+    <a href="contact.html" data-i18n="navContact">
+      Kontakt
+    </a>
+
+    <div class="language-switch">
+
+      <button type="button" data-lang="cs" class="active">
+        CZ
+      </button>
+
+      <button type="button" data-lang="en">
+        EN
+      </button>
+
+      <button type="button" data-lang="de">
+        DE
+      </button>
+
+      <button type="button" data-lang="es">
+        ES
+      </button>
+
+    </div>
+
+  </nav>
+
+</header>
+
+
+<main class="book-page">
+
+  <div class="book-layout">
+
+    <!-- PORTADA TEMPORAL -->
+
+    <div class="book-cover" id="bookCover">
+
+      <div class="book-cover-title">
+        Lixteo
+      </div>
+
+      <div
+        class="book-cover-subtitle"
+        data-i18n="coverSubtitle"
+      >
+        ROMÁN · SCI-FI
+      </div>
+
+    </div>
+
+
+    <!-- INFORMACIÓN DEL LIBRO -->
+
+    <div class="book-info">
+
+      <div
+        class="book-number"
+        data-i18n="section"
+      >
+        03 / KNIHA
+      </div>
+
+      <h1
+        class="book-title"
+        data-i18n="title"
+      >
+        Lixteo<br>
+        Lovec emocí
+      </h1>
+
+
+      <div class="book-tags">
+
+        <span class="book-tag">
+          SCI-FI
+        </span>
+
+        <span
+          class="book-tag"
+          data-i18n="tagEmotions"
+        >
+          EMOCE
+        </span>
+
+        <span
+          class="book-tag"
+          data-i18n="tagHuman"
+        >
+          LIDSKÁ ZKUŠENOST
+        </span>
+
+      </div>
+
+
+      <div class="book-description">
+
+        <p data-i18n="description1">
+          Sci-fi román o emocích, lidské zkušenosti a bytosti,
+          která přichází z jiného světa, aby pochopila něco,
+          co nelze jednoduše změřit ani vysvětlit: lidské emoce.
+        </p>
+
+        <p data-i18n="description2">
+          Lixteo pozoruje lidské životy, vztahy, bolest, radost,
+          strach a lásku z pohledu někoho, pro koho jsou tyto
+          zkušenosti zcela nové.
+        </p>
+
+        <p data-i18n="description3">
+          Kniha propojuje science fiction s otázkami o lidské
+          povaze a o tom, proč právě emoce tolik ovlivňují to,
+          kým jsme.
+        </p>
+
+        <p data-i18n="availability">
+          Kniha je v současné době distribuována přímo autorem.
+          Pokud máte zájem o výtisk, můžete mě kontaktovat.
+        </p>
+
+      </div>
+
+
+      <div class="book-actions">
+
+        <a
+          id="bookWhatsApp"
+          class="book-button primary"
+          href="#"
+          target="_blank"
+          rel="noopener"
+          data-i18n="buyButton"
+        >
+          MÁM ZÁJEM O KNIHU
+        </a>
+
+        <a
+          id="bookEmail"
+          class="book-button secondary"
+          href="#"
+          data-i18n="emailButton"
+        >
+          EMAIL
+        </a>
+
+      </div>
+
+
+      <div
+        class="book-note"
+        data-i18n="note"
+      >
+        Dostupnost jednotlivých jazykových verzí se může lišit.
+        Pro informace o aktuálně dostupném vydání mě kontaktujte.
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+
+  <span>
+    © 2026 Henry D. Flores
+  </span>
+
+  <span>
+    Color Realism · Tattoo Artist
+  </span>
+
+</footer>
+
+
+<script>
+
+const translations = {
+
+  cs: {
+
+    navPortfolio: "Portfolio",
+    navArtist: "Umělec",
+    navProject: "Projekt",
+    navContact: "Kontakt",
+
+    coverSubtitle: "ROMÁN · SCI-FI",
+
+    section: "03 / KNIHA",
+
+    title: "Lixteo<br>Lovec emocí",
+
+    tagEmotions: "EMOCE",
+    tagHuman: "LIDSKÁ ZKUŠENOST",
+
+    description1:
+      "Sci-fi román o emocích, lidské zkušenosti a bytosti, která přichází z jiného světa, aby pochopila něco, co nelze jednoduše změřit ani vysvětlit: lidské emoce.",
+
+    description2:
+      "Lixteo pozoruje lidské životy, vztahy, bolest, radost, strach a lásku z pohledu někoho, pro koho jsou tyto zkušenosti zcela nové.",
+
+    description3:
+      "Kniha propojuje science fiction s otázkami o lidské povaze a o tom, proč právě emoce tolik ovlivňují to, kým jsme.",
+
+    availability:
+      "Kniha je v současné době distribuována přímo autorem. Pokud máte zájem o výtisk, můžete mě kontaktovat.",
+
+    buyButton:
+      "MÁM ZÁJEM O KNIHU",
+
+    emailButton:
+      "EMAIL",
+
+    note:
+      "Dostupnost jednotlivých jazykových verzí se může lišit. Pro informace o aktuálně dostupném vydání mě kontaktujte.",
+
+    whatsapp:
+      "Dobrý den Henry, mám zájem o knihu Lixteo – Lovec emocí. Mohl byste mi prosím poslat více informací?",
+
+    emailSubject:
+      "Lixteo – zájem o knihu",
+
+    emailBody:
+      "Dobrý den Henry,\n\nmám zájem o knihu Lixteo – Lovec emocí. Mohl byste mi prosím poslat více informací?"
+
+  },
+
+
+  en: {
+
+    navPortfolio: "Portfolio",
+    navArtist: "Artist",
+    navProject: "Project",
+    navContact: "Contact",
+
+    coverSubtitle: "NOVEL · SCI-FI",
+
+    section: "03 / BOOK",
+
+    title: "Lixteo<br>Hunter of Emotions",
+
+    tagEmotions: "EMOTIONS",
+    tagHuman: "HUMAN EXPERIENCE",
+
+    description1:
+      "A science-fiction novel about emotions, human experience and a being who comes from another world to understand something that cannot simply be measured or explained: human emotion.",
+
+    description2:
+      "Lixteo observes human lives, relationships, pain, joy, fear and love through the eyes of someone for whom these experiences are completely new.",
+
+    description3:
+      "The book combines science fiction with questions about human nature and why emotions have such a profound influence on who we are.",
+
+    availability:
+      "The book is currently distributed directly by the author. If you are interested in obtaining a copy, you can contact me directly.",
+
+    buyButton:
+      "I'M INTERESTED IN THE BOOK",
+
+    emailButton:
+      "EMAIL",
+
+    note:
+      "Availability may vary between language editions. Contact me for information about the editions currently available.",
+
+    whatsapp:
+      "Hello Henry, I'm interested in your book Lixteo – Hunter of Emotions. Could you please send me more information?",
+
+    emailSubject:
+      "Lixteo – book inquiry",
+
+    emailBody:
+      "Hello Henry,\n\nI'm interested in your book Lixteo – Hunter of Emotions. Could you please send me more information?"
+
+  },
+
+
+  de: {
+
+    navPortfolio: "Portfolio",
+    navArtist: "Künstler",
+    navProject: "Projekt",
+    navContact: "Kontakt",
+
+    coverSubtitle: "ROMAN · SCI-FI",
+
+    section: "03 / BUCH",
+
+    title: "Lixteo<br>Jäger der Emotionen",
+
+    tagEmotions: "EMOTIONEN",
+    tagHuman: "MENSCHLICHE ERFAHRUNG",
+
+    description1:
+      "Ein Science-Fiction-Roman über Emotionen, menschliche Erfahrungen und ein Wesen aus einer anderen Welt, das etwas verstehen möchte, das sich nicht einfach messen oder erklären lässt: menschliche Gefühle.",
+
+    description2:
+      "Lixteo beobachtet menschliche Leben, Beziehungen, Schmerz, Freude, Angst und Liebe aus der Perspektive eines Wesens, für das all diese Erfahrungen völlig neu sind.",
+
+    description3:
+      "Das Buch verbindet Science-Fiction mit Fragen über die menschliche Natur und darüber, warum Emotionen einen so tiefgreifenden Einfluss darauf haben, wer wir sind.",
+
+    availability:
+      "Das Buch wird derzeit direkt vom Autor vertrieben. Wenn Sie Interesse an einem Exemplar haben, können Sie mich direkt kontaktieren.",
+
+    buyButton:
+      "ICH INTERESSIERE MICH FÜR DAS BUCH",
+
+    emailButton:
+      "E-MAIL",
+
+    note:
+      "Die Verfügbarkeit kann je nach Sprachausgabe variieren. Kontaktieren Sie mich für Informationen zu den derzeit verfügbaren Ausgaben.",
+
+    whatsapp:
+      "Hallo Henry, ich interessiere mich für dein Buch Lixteo – Jäger der Emotionen. Könntest du mir bitte weitere Informationen schicken?",
+
+    emailSubject:
+      "Lixteo – Buchanfrage",
+
+    emailBody:
+      "Hallo Henry,\n\nich interessiere mich für dein Buch Lixteo – Jäger der Emotionen. Könntest du mir bitte weitere Informationen schicken?"
+
+  },
+
+
+  es: {
+
+    navPortfolio: "Portafolio",
+    navArtist: "Artista",
+    navProject: "Proyecto",
+    navContact: "Contacto",
+
+    coverSubtitle: "NOVELA · CIENCIA FICCIÓN",
+
+    section: "03 / LIBRO",
+
+    title: "Lixteo<br>Cazador de emociones",
+
+    tagEmotions: "EMOCIONES",
+    tagHuman: "EXPERIENCIA HUMANA",
+
+    description1:
+      "Una novela de ciencia ficción sobre las emociones, la experiencia humana y un ser que llega desde otro mundo para comprender algo que no puede medirse ni explicarse con facilidad: las emociones humanas.",
+
+    description2:
+      "Lixteo observa vidas, relaciones, dolor, alegría, miedo y amor desde la mirada de alguien para quien todas estas experiencias son completamente nuevas.",
+
+    description3:
+      "El libro combina ciencia ficción con preguntas sobre la naturaleza humana y sobre por qué las emociones influyen tan profundamente en aquello que somos.",
+
+    availability:
+      "Actualmente el libro es distribuido directamente por el autor. Si estás interesado en obtener un ejemplar, puedes contactarme directamente.",
+
+    buyButton:
+      "ME INTERESA EL LIBRO",
+
+    emailButton:
+      "EMAIL",
+
+    note:
+      "La disponibilidad puede variar según la edición y el idioma. Contáctame para conocer las versiones disponibles actualmente.",
+
+    whatsapp:
+      "Hola Henry, estoy interesado en tu libro Lixteo – Cazador de emociones. ¿Podrías enviarme más información?",
+
+    emailSubject:
+      "Lixteo – información sobre el libro",
+
+    emailBody:
+      "Hola Henry,\n\nEstoy interesado en tu libro Lixteo – Cazador de emociones. ¿Podrías enviarme más información?"
+
+  }
+
+};
+
+
+let currentLanguage = "cs";
+
+
+function changeLanguage(lang) {
+
+  currentLanguage = lang;
+
+  document.documentElement.lang = lang;
+
+  const text = translations[lang];
+
+
+  document.querySelectorAll("[data-i18n]").forEach(element => {
+
+    const key = element.dataset.i18n;
+
+    if (text[key]) {
+      element.innerHTML = text[key];
+    }
+
+  });
+
+
+  document.querySelectorAll("[data-lang]").forEach(button => {
+
+    button.classList.toggle(
+      "active",
+      button.dataset.lang === lang
+    );
+
+  });
+
+
+  updateContactLinks();
+
+}
+
+
+function updateContactLinks() {
+
+  const text = translations[currentLanguage];
+
+
+  const whatsappURL =
+    "https://wa.me/420720508936?text=" +
+    encodeURIComponent(text.whatsapp);
+
+
+  document.getElementById("bookWhatsApp").href =
+    whatsappURL;
+
+
+  const emailURL =
+    "mailto:tattooink.henry@gmail.com?subject=" +
+    encodeURIComponent(text.emailSubject) +
+    "&body=" +
+    encodeURIComponent(text.emailBody);
+
+
+  document.getElementById("bookEmail").href =
+    emailURL;
+
+}
+
+
+document.querySelectorAll("[data-lang]").forEach(button => {
+
+  button.addEventListener("click", function() {
+
+    changeLanguage(this.dataset.lang);
+
+  });
+
+});
+
+
+changeLanguage("cs");
+
+</script>
+
+
+</body>
+</html>
